@@ -324,3 +324,18 @@ footer ul{list-style:none;padding:0;margin:0;line-height:2.1}
 .feature.boxed{overflow:hidden;}
 .feature.boxed .ic{left:28px;opacity:.10;}
 @media(max-width:840px){.feature .ic svg{width:120px;height:120px;}}
+
+
+/* ── Targetes 'Què fem': foto de fons + efecte glass amb contrast ── */
+.feature.boxed{position:relative;overflow:hidden;background-size:cover;background-position:center;
+  border:1px solid rgba(255,255,255,.45);border-radius:14px;min-height:280px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  box-shadow:0 10px 26px rgba(31,41,34,.16)}
+.feature.boxed::before{content:"";position:absolute;inset:0;z-index:0;
+  background:linear-gradient(180deg,rgba(246,243,236,.30) 0%,rgba(246,243,236,.55) 55%,rgba(246,243,236,.78) 100%);
+  -webkit-backdrop-filter:blur(4px) saturate(115%);backdrop-filter:blur(4px) saturate(115%)}
+.feature.boxed > *{position:relative;z-index:1}
+.feature.boxed .ic{display:none}
+.feature.boxed h3{color:var(--green);text-shadow:0 1px 2px rgba(255,255,255,.55)}
+.feature.boxed p{color:#33332c;text-shadow:0 1px 2px rgba(255,255,255,.45)}
+.alt .feature.boxed{background-color:#fffdf9}
