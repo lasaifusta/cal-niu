@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Participa &middot; Cal Niu</title>
+<meta name="description" content="Apunta't com a voluntari/a o inscriu-te a una activitat de Cal Niu.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="nav-bar"><nav class="nav">
+  <a class="brand" href="index.html">
+    <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="32" r="31" fill="none" stroke="#4c5440" stroke-width="1.5"/>
+      <path d="M15 39 q17 -13 34 0 q-6 9 -17 9 q-11 0 -17 -9z" fill="none" stroke="#a4664a" stroke-width="2"/>
+      <path d="M18 30 q14 -11 28 0" fill="none" stroke="#b89357" stroke-width="1.6" stroke-linecap="round"/>
+      <ellipse cx="28" cy="39.5" rx="3" ry="2.3" fill="#b89357"/>
+      <ellipse cx="35.5" cy="40" rx="3" ry="2.3" fill="#4c5440"/>
+    </svg>
+    Cal Niu
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <div class="links" id="navLinks">
+    <a href="index.html" data-i18n="nav_home">Inici</a>
+    <a href="projecte.html" data-i18n="nav_about">El projecte</a>
+    <a href="historia.html" data-i18n="nav_history">El lloc</a>
+    <a href="activitats.html" data-i18n="nav_act">Activitats</a>
+    <a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a>
+    <a href="agenda.html" data-i18n="nav_events">Agenda</a>
+    <a href="participa.html" data-i18n="nav_join">Participa</a>
+  </div>
+  <div class="lang" role="group" aria-label="Idioma">
+    <button data-lang="ca" class="on">CA</button><button data-lang="es">ES</button><button data-lang="en">EN</button><button data-lang="eu">EU</button><button data-lang="ga">GA</button>
+  </div>
+</nav></header>
+<section class="pagehero">
+  <img class="bg" src="imagenes/web/festa1.jpg" alt="Comunitat de Cal Niu">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="j_eyebrow"></p>
+    <h1 data-i18n="j_title"></h1>
+  </div>
+</section>
+<section>
+  <div class="wrap center">
+    <p class="lead" data-i18n="j_lead"></p>
+  </div>
+  <div class="wrap">
+    <div class="forms">
+      <form class="card" onsubmit="return sendForm(event,'vol')">
+        <h3 data-i18n="fvol_t"></h3>
+        <p class="sub" data-i18n="fvol_s"></p>
+        <label data-i18n="f_name"></label><input name="nom" required>
+        <label data-i18n="f_email"></label><input type="email" name="email" required>
+        <label data-i18n="fvol_when"></label><input name="dates" placeholder="...">
+        <label data-i18n="fvol_msg"></label><textarea name="missatge"></textarea>
+        <button class="btn btn-primary" type="submit" data-i18n="f_send"></button>
+      </form>
+      <form class="card" onsubmit="return sendForm(event,'act')">
+        <h3 data-i18n="fact_t"></h3>
+        <p class="sub" data-i18n="fact_s"></p>
+        <label data-i18n="f_name"></label><input name="nom" required>
+        <label data-i18n="f_email"></label><input type="email" name="email" required>
+        <label data-i18n="fact_which"></label>
+        <select name="activitat">
+          <option data-i18n="fact_o1"></option><option data-i18n="fact_o2"></option>
+          <option data-i18n="fact_o3"></option><option data-i18n="fact_o4"></option><option data-i18n="fact_o5"></option>
+        </select>
+        <label data-i18n="fact_people"></label><input type="number" name="persones" min="1" value="1">
+        <button class="btn btn-primary" type="submit" data-i18n="f_send"></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap narrow center">
+    <p class="eyebrow" data-i18n="j_contact_t"></p>
+    <h2 data-i18n="j_contact_t"></h2>
+    <div class="divider" style="margin:0 auto 22px"></div>
+    <p class="lead" data-i18n="j_contact_p"></p>
+    <p style="margin-top:18px;font-size:19px">
+      <a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a><br>
+      <a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram &middot; @som.calniu</a><br>
+      <span style="color:var(--mute)"><span class="ic-inline" data-ic="pin"></span>Castellar del Riu &middot; Bergueda</span>
+    </p>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px">Cal Niu</div>
+        <p data-i18n="foot_about"></p>
+      </div>
+      <div>
+        <h4 data-i18n="foot_contact_h">Contacte</h4>
+        <ul>
+          <li><a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a></li>
+          <li><span class="ic-inline" data-ic="pin"></span>Castellar del Riu &middot; Bergueda</li>
+          <li><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram &middot; @som.calniu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="foot_nav_h">Navega</h4>
+        <ul>
+          <li><a href="projecte.html" data-i18n="nav_about">El projecte</a></li>
+          <li><a href="historia.html" data-i18n="nav_history">El lloc</a></li>
+          <li><a href="activitats.html" data-i18n="nav_act">Activitats</a></li>
+          <li><a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a></li>
+          <li><a href="participa.html" data-i18n="nav_join">Participa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Cal Niu &middot; <span data-i18n="foot_rights"></span></span>
+      <span data-i18n="foot_note"></span>
+    </div>
+  </div>
+</footer>
+<div class="lb" id="lightbox"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
