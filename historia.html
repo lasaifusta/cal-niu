@@ -28,15 +28,8 @@
   </div>
 </nav></header>
 
-<section class="pagehero">
-  <img class="bg" src="imagenes/web/esglesia.jpg" alt="L'església de Sant Iscle i Santa Victòria de Llinars">
-  <div class="wrap">
-    <p class="eyebrow" data-i18n="hi_eyebrow"></p>
-    <h1 data-i18n="hi_title"></h1>
-  </div>
-</section>
+<section class="alt" style="padding-top:48px">
 
-<section class="alt">
   <div class="wrap center">
     <p class="eyebrow" data-i18n="tl_eye"></p>
     <h2 data-i18n="tl_title"></h2>
@@ -56,7 +49,7 @@
         <span class="vt-year" data-i18n="tl2_y"></span>
         <h3 data-i18n="tl2_t"></h3>
         <p data-i18n="tl2_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/seu-urgell.jpg" alt="Catedral de la Seu d'Urgell"><figcaption>La Seu d'Urgell, seu del bisbat d'Urgell</figcaption></figure>
+        <figure class="vt-img"><img src="imagenes/web/seu-urgell.jpg" alt="Catedral de la Seu d'Urgell"><figcaption>Catedral de la Seu d'Urgell, seu del bisbe Galderic</figcaption></figure>
       </div>
       <div class="vt-item">
         <span class="vt-dot"></span>
@@ -109,7 +102,7 @@
         <span class="vt-year" data-i18n="tl5_y"></span>
         <h3 data-i18n="tl5_t"></h3>
         <p data-i18n="tl5_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/facana-1919.jpg" alt="Laudes romàniques encastades a la façana barroca, 1919"><figcaption>Laudes sepulcrals encastades a la façana barroca &middot; 1919, J. Salvany</figcaption></figure>
+        <figure class="vt-img"><img src="imagenes/web/facana-1919.jpg" alt="Laudes romàniques encastades a la façana barroca, 1919"><figcaption>Laudes sepulcrals d'època romànica encastades a la façana &middot; 1919, J. Salvany</figcaption></figure>
       </div>
       <div class="vt-item">
         <span class="vt-dot"></span>
@@ -238,9 +231,9 @@
 (function(){
   function rng(s){return function(){s=(s*1664525+1013904223)%4294967296;return s/4294967296;};}
   var rnd=rng(7),cx=470,cy=330,N=10,pins=[],tries=0;
-  while(pins.length<N&&tries<8000){tries++;var x=435+rnd()*70,y=298+rnd()*64,dc=Math.hypot(x-cx,y-cy);
-    if(dc<14||dc>56)continue;
-    if(!pins.every(function(p){return Math.hypot(p.x-x,p.y-y)>20;}))continue; pins.push({x:x,y:y});}
+  while(pins.length<N&&tries<20000){tries++;var x=430+rnd()*80,y=294+rnd()*72,dc=Math.hypot(x-cx,y-cy);
+    if(dc<13||dc>62)continue;
+    if(!pins.every(function(p){return Math.hypot(p.x-x,p.y-y)>16;}))continue; pins.push({x:x,y:y});}
   pins.sort(function(a,b){return Math.hypot(a.x-cx,a.y-cy)-Math.hypot(b.x-cx,b.y-cy);});
   var g=document.getElementById("clPins"); if(!g) return;
   pins.forEach(function(p,i){var el=document.createElementNS("http://www.w3.org/2000/svg","g");
@@ -249,7 +242,7 @@
     p.t=2.6+i*(7.0/N); p.el=el; g.appendChild(el);});
   var ctr=document.getElementById("clCenter"),cg=document.getElementById("clCenterG"),lbl=document.getElementById("clLbl");
   var yr=document.getElementById("clYr"),ph=document.getElementById("clPh"),ct=document.getElementById("clCt"),bar=document.getElementById("clBar");
-  function D(){return (window.I18N&&window.I18N[document.documentElement.lang])||(window.I18N&&window.I18N.ca)||{};}
+  function D(){try{return I18N[document.documentElement.lang]||I18N.ca;}catch(e){return {};}}
   var TOTAL=18, pt=[0,2.6,10,13.5];
   var start=null;
   function frame(ts){if(!start)start=ts;var e=((ts-start)/1000)%TOTAL,d=D();
