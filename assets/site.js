@@ -86,16 +86,20 @@ ca:{
   hi_p_niu:"Després de segles de vida parroquial i rural, aquest espai obre una nova etapa. Cal Niu vol tornar a omplir de vida la vella rectoria: un lloc de trobada, aprenentatge i cura, fidel a la història del territori que l'envolta.",
   hi_src:"Fonts: Viquipèdia i Inventari del Patrimoni Arquitectònic de Catalunya (IPAC, fitxa 3207).",
   tl_eye:"La línia del temps",tl_title:"Més de mil anys d'història",
-  tl1_y:"872",tl1_t:"Repoblació",tl1_d:"El comte Guifré el Pelós impulsa la repoblació de la vall de Lord; Llinars de l'Aiguadora n'és un punt clau.",
-  tl2_y:"s. IX",tl2_t:"Primera parròquia",tl2_d:"El bisbe Galderic de la Seu d'Urgell hi organitza la primera vida parroquial i el nucli es consolida.",
+  tl1_y:"s. IX",tl1_t:"Repoblació",tl1_d:"El comte Guifré el Pelós impulsa la repoblació de la vall de Lord; Llinars de l'Aiguadora n'és un punt clau.",
+  tl2_y:"s. IX",tl2_t:"Primera parròquia",tl2_d:"Sota el bisbat d'Urgell s'hi organitza la primera vida parroquial i el nucli es consolida.",
   tl3_y:"948",tl3_t:"Drets i plet",tl3_d:"L'església té drets sobre una desena d'esglésies veïnes; el bisbe Guisad II en reclama la restitució al comte Sunifred II.",
   tl4_y:"Edat mitjana",tl4_t:"Solsonès i Cardona",tl4_d:"Durant segles el lloc pertany al Solsonès i al vescomtat de Cardona.",
   tl5_y:"s. XVII–XVIII",tl5_t:"Església barroca",tl5_d:"Es bastia l'actual temple barroc sobre l'antic edifici romànic, amb laudes sepulcrals encastades a la façana.",
-  tl6_y:"1840",tl6_t:"Fi del municipi",tl6_d:"Llinars deixa de ser municipi independent i s'integra a Castellar del Riu, del qual esdevé capital.",
+  tl6_y:"s. XIX",tl6_t:"Fi del municipi",tl6_d:"Amb les reorganitzacions municipals del segle XIX, Llinars perd l'autonomia i el terme s'integra a Castellar del Riu.",
   tl7_y:"s. XX",tl7_t:"Èxode rural",tl7_d:"Com tot el rural pirinenc, la vall perd població i moltes cases queden buides.",
   tl8_y:"Avui",tl8_t:"Cal Niu",tl8_d:"L'antiga rectoria reneix com a espai de cultura, permacultura i comunitat.",
   cal_eye:"Calendari",cal_title:"Reserva i disponibilitat",cal_lead:"Consulta les dates dels tallers i esdeveniments, i la disponibilitat per a estades i voluntariats.",cal_book:"Reservar plaça",cal_none:"Cap activitat programada aquest dia.",avail_title:"Disponibilitat per a estades",avail_lead:"Quan obrim places de voluntariat i estades al llarg de l'any.",av_free:"Disponible",av_limited:"Places limitades",av_full:"Complet",av_closed:"Tancat",
-  pop_unit:"hab.",pop_note:"Xifres de població aproximades: les dels segles recents es basen en censos (Idescat) de Castellar del Riu; les medievals són estimacions."
+  pop_unit:"hab.",pop_note:"Xifres de població aproximades: les dels segles recents es basen en censos (Idescat) de Castellar del Riu; les medievals són estimacions.",
+  mp_cap:"Mapa: els comtats catalans vers l'any 900 · Enciclopèdia Catalana. Cap al 948, Sant Iscle tenia drets sobre una desena d'esglésies de la vall de Lord.",
+  mp_rights:"drets sobre",mp_unit:"esglésies",
+  mp_p1y:"Segle IX",mp_p1:"Repoblació de la vall",mp_p2y:"Vers 948",mp_p2:"Drets sobre les esglésies veïnes",mp_p3y:"Segle XVII–XVIII",mp_p3:"Es basteix l'església barroca",mp_p4y:"Avui",mp_p4:"De rectoria a niu",
+  mp_ax1:"s. IX",mp_ax2:"vers 948",mp_ax3:"s. XVII–XVIII",mp_ax4:"avui"
 },
 es:{
   nav_home:"Inicio",nav_about:"El proyecto",nav_history:"El lugar",nav_act:"Actividades",nav_vol:"Voluntariado",nav_events:"Agenda",nav_join:"Participa",
@@ -183,16 +187,20 @@ es:{
   hi_p_niu:"Tras siglos de vida parroquial y rural, este espacio abre una nueva etapa. Cal Niu quiere volver a llenar de vida la vieja rectoría: un lugar de encuentro, aprendizaje y cuidado, fiel a la historia del territorio que lo rodea.",
   hi_src:"Fuentes: Wikipedia e Inventario del Patrimonio Arquitectónico de Cataluña (IPAC, ficha 3207).",
   tl_eye:"La línea del tiempo",tl_title:"Más de mil años de historia",
-  tl1_y:"872",tl1_t:"Repoblación",tl1_d:"El conde Guifré el Pelós impulsa la repoblación del valle de Lord; Llinars de l'Aiguadora es uno de sus puntos clave.",
-  tl2_y:"s. IX",tl2_t:"Primera parroquia",tl2_d:"El obispo Galderic de la Seu d'Urgell organiza la primera vida parroquial y el núcleo se consolida.",
+  tl1_y:"s. IX",tl1_t:"Repoblación",tl1_d:"El conde Guifré el Pelós impulsa la repoblación del valle de Lord; Llinars de l'Aiguadora es uno de sus puntos clave.",
+  tl2_y:"s. IX",tl2_t:"Primera parroquia",tl2_d:"Bajo el obispado de Urgell se organiza la primera vida parroquial y el núcleo se consolida.",
   tl3_y:"948",tl3_t:"Derechos y pleito",tl3_d:"La iglesia tiene derechos sobre una decena de iglesias vecinas; el obispo Guisad II reclama su restitución al conde Sunifred II.",
   tl4_y:"Edad media",tl4_t:"Solsonès y Cardona",tl4_d:"Durante siglos el lugar pertenece al Solsonès y al vizcondado de Cardona.",
   tl5_y:"s. XVII–XVIII",tl5_t:"Iglesia barroca",tl5_d:"Se construye el actual templo barroco sobre el antiguo edificio románico, con laudas sepulcrales empotradas en la fachada.",
-  tl6_y:"1840",tl6_t:"Fin del municipio",tl6_d:"Llinars deja de ser municipio independiente y se integra en Castellar del Riu, del que pasa a ser capital.",
+  tl6_y:"s. XIX",tl6_t:"Fin del municipio",tl6_d:"Con las reorganizaciones municipales del siglo XIX, Llinars pierde la autonomía y el término se integra en Castellar del Riu.",
   tl7_y:"s. XX",tl7_t:"Éxodo rural",tl7_d:"Como todo el rural pirenaico, el valle pierde población y muchas casas quedan vacías.",
   tl8_y:"Hoy",tl8_t:"Cal Niu",tl8_d:"La antigua rectoría renace como espacio de cultura, permacultura y comunidad.",
   cal_eye:"Calendario",cal_title:"Reserva y disponibilidad",cal_lead:"Consulta las fechas de talleres y eventos, y la disponibilidad para estancias y voluntariados.",cal_book:"Reservar plaza",cal_none:"Ninguna actividad programada este día.",avail_title:"Disponibilidad para estancias",avail_lead:"Cuándo abrimos plazas de voluntariado y estancias a lo largo del año.",av_free:"Disponible",av_limited:"Plazas limitadas",av_full:"Completo",av_closed:"Cerrado",
-  pop_unit:"hab.",pop_note:"Cifras de población aproximadas: las de siglos recientes se basan en censos (Idescat) de Castellar del Riu; las medievales son estimaciones."
+  pop_unit:"hab.",pop_note:"Cifras de población aproximadas: las de siglos recientes se basan en censos (Idescat) de Castellar del Riu; las medievales son estimaciones.",
+  mp_cap:"Mapa: los condados catalanes hacia el año 900 · Enciclopèdia Catalana. Hacia el 948, Sant Iscle tenía derechos sobre una decena de iglesias del valle de Lord.",
+  mp_rights:"derechos sobre",mp_unit:"iglesias",
+  mp_p1y:"Siglo IX",mp_p1:"Repoblación del valle",mp_p2y:"Hacia 948",mp_p2:"Derechos sobre las iglesias vecinas",mp_p3y:"Siglo XVII–XVIII",mp_p3:"Se construye la iglesia barroca",mp_p4y:"Hoy",mp_p4:"De rectoría a nido",
+  mp_ax1:"s. IX",mp_ax2:"hacia 948",mp_ax3:"s. XVII–XVIII",mp_ax4:"hoy"
 },
 en:{
   nav_home:"Home",nav_about:"The project",nav_history:"The place",nav_act:"Activities",nav_vol:"Volunteering",nav_events:"Calendar",nav_join:"Join us",
@@ -280,16 +288,20 @@ en:{
   hi_p_niu:"After centuries of parish and rural life, this space opens a new chapter. Cal Niu wants to fill the old rectory with life again: a place of gathering, learning and care, faithful to the history of the land around it.",
   hi_src:"Sources: Wikipedia and the Architectural Heritage Inventory of Catalonia (IPAC, record 3207).",
   tl_eye:"The timeline",tl_title:"More than a thousand years of history",
-  tl1_y:"872",tl1_t:"Repopulation",tl1_d:"Count Guifré el Pelós drives the repopulation of the Lord valley; Llinars de l'Aiguadora is one of its key points.",
-  tl2_y:"9th c.",tl2_t:"First parish",tl2_d:"Bishop Galderic of Seu d'Urgell organises the first parish life and the settlement takes hold.",
+  tl1_y:"9th c.",tl1_t:"Repopulation",tl1_d:"Count Guifré el Pelós drives the repopulation of the Lord valley; Llinars de l'Aiguadora is one of its key points.",
+  tl2_y:"9th c.",tl2_t:"First parish",tl2_d:"Under the bishopric of Urgell, the first parish life is organised and the settlement takes hold.",
   tl3_y:"948",tl3_t:"Rights and dispute",tl3_d:"The church holds rights over a dozen neighbouring churches; Bishop Guisad II claims their restitution from Count Sunifred II.",
   tl4_y:"Middle Ages",tl4_t:"Solsonès & Cardona",tl4_d:"For centuries the place belongs to the Solsonès and the viscounty of Cardona.",
   tl5_y:"17th–18th c.",tl5_t:"Baroque church",tl5_d:"The present Baroque church is built over the old Romanesque one, with funerary slabs embedded in the façade.",
-  tl6_y:"1840",tl6_t:"End of the municipality",tl6_d:"Llinars stops being an independent municipality and joins Castellar del Riu, becoming its capital.",
+  tl6_y:"19th c.",tl6_t:"End of the municipality",tl6_d:"With the 19th-century municipal reorganisations, Llinars loses its autonomy and the area is integrated into Castellar del Riu.",
   tl7_y:"20th c.",tl7_t:"Rural exodus",tl7_d:"Like all the Pyrenean countryside, the valley loses population and many houses fall empty.",
   tl8_y:"Today",tl8_t:"Cal Niu",tl8_d:"The old rectory is reborn as a space of culture, permaculture and community.",
   cal_eye:"Calendar",cal_title:"Booking & availability",cal_lead:"Check the dates of workshops and events, and availability for stays and volunteering.",cal_book:"Book a place",cal_none:"No activity scheduled on this day.",avail_title:"Availability for stays",avail_lead:"When we open volunteering and stay places throughout the year.",av_free:"Available",av_limited:"Limited places",av_full:"Full",av_closed:"Closed",
-  pop_unit:"inhab.",pop_note:"Population figures are approximate: recent centuries are based on censuses (Idescat) for Castellar del Riu; medieval ones are estimates."
+  pop_unit:"inhab.",pop_note:"Population figures are approximate: recent centuries are based on censuses (Idescat) for Castellar del Riu; medieval ones are estimates.",
+  mp_cap:"Map: the Catalan counties around the year 900 · Enciclopèdia Catalana. By around 948, Sant Iscle held rights over about ten churches in the Lord valley.",
+  mp_rights:"rights over",mp_unit:"churches",
+  mp_p1y:"9th century",mp_p1:"Repopulation of the valley",mp_p2y:"Around 948",mp_p2:"Rights over neighbouring churches",mp_p3y:"17th–18th century",mp_p3:"The Baroque church is built",mp_p4y:"Today",mp_p4:"From rectory to nest",
+  mp_ax1:"9th c.",mp_ax2:"c. 948",mp_ax3:"17th–18th c.",mp_ax4:"today"
 },
 eu:{
   nav_home:"Hasiera",nav_about:"Proiektua",nav_history:"Lekua",nav_act:"Jarduerak",nav_vol:"Boluntariotza",nav_events:"Agenda",nav_join:"Parte hartu",
@@ -377,16 +389,20 @@ eu:{
   hi_p_niu:"Mendeetako parrokia- eta landa-bizitzaren ondoren, gune honek etapa berri bat irekitzen du. Cal Niuk abadetxe zaharra berriz biziz bete nahi du: topaketa, ikaskuntza eta zaintza leku bat, inguruko lurraldearen historiari leial.",
   hi_src:"Iturriak: Wikipedia eta Kataluniako Ondare Arkitektonikoaren Inbentarioa (IPAC, 3207 fitxa).",
   tl_eye:"Denbora-lerroa",tl_title:"Mila urte baino gehiagoko historia",
-  tl1_y:"872",tl1_t:"Birpopulatzea",tl1_d:"Guifré el Pelós kondeak Lord haranaren birpopulatzea bultzatzen du; Llinars de l'Aiguadora funtsezko puntua da.",
-  tl2_y:"IX. m.",tl2_t:"Lehen parrokia",tl2_d:"Urgellgo Galderic apezpikuak lehen parrokia-bizitza antolatzen du eta gunea sendotzen da.",
+  tl1_y:"IX. m.",tl1_t:"Birpopulatzea",tl1_d:"Guifré el Pelós kondeak Lord haranaren birpopulatzea bultzatzen du; Llinars de l'Aiguadora funtsezko puntua da.",
+  tl2_y:"IX. m.",tl2_t:"Lehen parrokia",tl2_d:"Urgellgo apezpikutzaren menpe lehen parrokia-bizitza antolatzen da eta gunea sendotzen da.",
   tl3_y:"948",tl3_t:"Eskubideak eta auzia",tl3_d:"Elizak inguruko hamar bat elizaren gaineko eskubideak ditu; Guisad II.a apezpikuak Sunifred II.a kondeari itzulketa erreklamatzen dio.",
   tl4_y:"Erdi Aroa",tl4_t:"Solsonès eta Cardona",tl4_d:"Mendeetan zehar lekua Solsonèsekoa eta Cardonako bizkonderrikoa da.",
   tl5_y:"XVII–XVIII. m.",tl5_t:"Eliza barrokoa",tl5_d:"Egungo tenplu barrokoa antzinako eraikin erromanikoaren gainean eraikitzen da, fatxadan hilarriak txertatuta.",
-  tl6_y:"1840",tl6_t:"Udalerriaren amaiera",tl6_d:"Llinarsek udalerri independentea izateari uzten dio eta Castellar del Riun integratzen da, bertako hiriburu bihurtuz.",
+  tl6_y:"XIX. m.",tl6_t:"Udalerriaren amaiera",tl6_d:"XIX. mendeko udal berrantolaketekin, Llinarsek autonomia galtzen du eta lurraldea Castellar del Riun integratzen da.",
   tl7_y:"XX. m.",tl7_t:"Landa-exodoa",tl7_d:"Pirinioetako landa osoan bezala, haranak biztanleria galtzen du eta etxe asko hutsik geratzen dira.",
   tl8_y:"Gaur",tl8_t:"Cal Niu",tl8_d:"Abadetxe zaharra kultura, permakultura eta komunitate gune gisa berpizten da.",
   cal_eye:"Egutegia",cal_title:"Erreserba eta eskuragarritasuna",cal_lead:"Begiratu tailer eta ekitaldien datak, eta egonaldi eta boluntariotzetarako eskuragarritasuna.",cal_book:"Erreserbatu plaza",cal_none:"Egun honetan ez dago jarduerarik programatuta.",avail_title:"Egonaldietarako eskuragarritasuna",avail_lead:"Noiz irekitzen ditugun boluntariotza eta egonaldi plazak urtean zehar.",av_free:"Eskuragarri",av_limited:"Plaza mugatuak",av_full:"Beteta",av_closed:"Itxita",
-  pop_unit:"biz.",pop_note:"Biztanleria-zifrak gutxi gorabeherakoak dira: azken mendeetakoak Castellar del Riuko erroldetan (Idescat) oinarritzen dira; Erdi Arokoak estimazioak dira."
+  pop_unit:"biz.",pop_note:"Biztanleria-zifrak gutxi gorabeherakoak dira: azken mendeetakoak Castellar del Riuko erroldetan (Idescat) oinarritzen dira; Erdi Arokoak estimazioak dira.",
+  mp_cap:"Mapa: Kataluniako konderriak 900. urte inguruan · Enciclopèdia Catalana. 948 inguruan, Sant Isclek Lord haraneko hamar bat elizaren gaineko eskubideak zituen.",
+  mp_rights:"Eskubideak",mp_unit:"elizaren gainean",
+  mp_p1y:"IX. mendea",mp_p1:"Haranaren birpopulatzea",mp_p2y:"948 inguruan",mp_p2:"Inguruko elizen gaineko eskubideak",mp_p3y:"XVII–XVIII. mendea",mp_p3:"Eliza barrokoa eraikitzen da",mp_p4y:"Gaur",mp_p4:"Abadetxetik habiara",
+  mp_ax1:"IX. m.",mp_ax2:"948 ing.",mp_ax3:"XVII–XVIII. m.",mp_ax4:"gaur"
 },
 ga:{
   nav_home:"Baile",nav_about:"An tionscadal",nav_history:"An áit",nav_act:"Gníomhaíochtaí",nav_vol:"Obair dheonach",nav_events:"Féilire",nav_join:"Bí páirteach",
@@ -474,17 +490,21 @@ ga:{
   hi_p_niu:"Tar éis na gcéadta bliain de shaol paróiste agus tuaithe, osclaíonn an spás seo caibidil nua. Ba mhaith le Cal Niu an seanteach a líonadh le beatha arís: áit chruinnithe, foghlama agus cúraim, dílis do stair na talún mórthimpeall.",
   hi_src:"Foinsí: Wikipedia agus Fardal Oidhreachta Ailtireachta na Catalóine (IPAC, taifead 3207).",
   tl_eye:"An t-amlíne",tl_title:"Breis is míle bliain de stair",
-  tl1_y:"872",tl1_t:"Athphobalú",tl1_d:"Spreagann an Contae Guifré el Pelós athphobalú ghleann Lord; tá Llinars de l'Aiguadora ar cheann de na príomhphointí.",
-  tl2_y:"9ú haois",tl2_t:"Céad pharóiste",tl2_d:"Eagraíonn an tEaspag Galderic ó Seu d'Urgell an chéad saol paróiste agus daingnítear an lonnaíocht.",
+  tl1_y:"9ú haois",tl1_t:"Athphobalú",tl1_d:"Spreagann an Contae Guifré el Pelós athphobalú ghleann Lord; tá Llinars de l'Aiguadora ar cheann de na príomhphointí.",
+  tl2_y:"9ú haois",tl2_t:"Céad pharóiste",tl2_d:"Faoi easpagóideacht Urgell, eagraítear an chéad saol paróiste agus daingnítear an lonnaíocht.",
   tl3_y:"948",tl3_t:"Cearta agus aighneas",tl3_d:"Tá cearta ag an eaglais ar dhosaen eaglais comharsanachta; éilíonn an tEaspag Guisad II a n-aischur ón gContae Sunifred II.",
   tl4_y:"Meánaois",tl4_t:"Solsonès agus Cardona",tl4_d:"Ar feadh na gcéadta bliain baineann an áit leis an Solsonès agus le bíocúntacht Cardona.",
   tl5_y:"17ú–18ú haois",tl5_t:"Eaglais bharócach",tl5_d:"Tógtar an eaglais bharócach reatha ar an seancheann Rómhánúil, le leaca uaighe san aghaidh.",
-  tl6_y:"1840",tl6_t:"Deireadh an bhardais",tl6_d:"Scoireann Llinars de bheith ina bhardas neamhspleách agus ceanglaíonn sé le Castellar del Riu, ag éirí ina phríomhbhaile.",
+  tl6_y:"19ú haois",tl6_t:"Deireadh an bhardais",tl6_d:"Le hatheagrú na mbardas sa 19ú haois, cailleann Llinars a neamhspleáchas agus cuirtear an ceantar isteach i gCastellar del Riu.",
   tl7_y:"20ú haois",tl7_t:"Eisimirce tuaithe",tl7_d:"Cosúil le tuath uile na bPiréiní, cailleann an gleann daonra agus fágtar go leor tithe folamh.",
   tl8_y:"Inniu",tl8_t:"Cal Niu",tl8_d:"Athbheirtear seanteach an tsagairt mar spás cultúir, buanchultúir agus pobail."
 },
   cal_eye:"Féilire",cal_title:"Áirithe agus fáil",cal_lead:"Féach dátaí na gceardlann agus na n-imeachtaí, agus an fháil do thréimhsí agus obair dheonach.",cal_book:"Cuir áit in áirithe",cal_none:"Níl aon ghníomhaíocht sceidealta don lá seo.",avail_title:"Fáil do thréimhsí",avail_lead:"Cathain a osclaímid áiteanna oibre deonaí agus tréimhsí i rith na bliana.",av_free:"Ar fáil",av_limited:"Áiteanna teoranta",av_full:"Lán",av_closed:"Dúnta",
-  pop_unit:"áitr.",pop_note:"Figiúirí daonra neas-mheasta: tá na cinn le déanaí bunaithe ar dhaonáirimh (Idescat) do Castellar del Riu; is meastacháin iad na cinn mheánaoiseacha."
+  pop_unit:"áitr.",pop_note:"Figiúirí daonra neas-mheasta: tá na cinn le déanaí bunaithe ar dhaonáirimh (Idescat) do Castellar del Riu; is meastacháin iad na cinn mheánaoiseacha.",
+  mp_cap:"Léarscáil: contaetha na Catalóine timpeall na bliana 900 · Enciclopèdia Catalana. Faoi thart ar 948, bhí cearta ag Sant Iscle ar thart ar dheich n-eaglais i ngleann Lord.",
+  mp_rights:"cearta ar",mp_unit:"eaglais",
+  mp_p1y:"9ú haois",mp_p1:"Athphobalú an ghleanna",mp_p2y:"Timpeall 948",mp_p2:"Cearta ar eaglaisí comharsanachta",mp_p3y:"17ú–18ú haois",mp_p3:"Tógtar an eaglais bharócach",mp_p4y:"Inniu",mp_p4:"Ó theach an tsagairt go nead",
+  mp_ax1:"9ú h.",mp_ax2:"c. 948",mp_ax3:"17ú–18ú h.",mp_ax4:"inniu"
 };
 
 const ICONS = {
@@ -652,3 +672,4 @@ document.addEventListener("DOMContentLoaded",function(){
     document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setTimeout(renderAll,30);});});
   });
 })();
+/* Cal Niu — timeline i mapa revisats */
