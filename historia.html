@@ -1,221 +1,36 @@
 <!doctype html>
 <html lang="ca">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>El lloc &middot; Sant Iscle i Santa Victòria de Llinars &middot; Cal Niu</title>
-<meta name="description" content="Història del territori i de l'església-rectoria de Sant Iscle i Santa Victòria de Llinars de l'Aiguadora (Castellar del Riu), avui seu de Cal Niu.">
-<link rel="stylesheet" href="assets/styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cal Niu · El lloc</title>
+<link rel="stylesheet" href="assets/mock.css?v=3">
 </head>
 <body>
-<header class="nav-bar"><nav class="nav">
-  <a class="brand" href="index.html">
-    <img class="logo" src="logo-calniu/logo-calniu-terracota.svg" alt="Cal Niu">
-    Cal Niu
-  </a>
-  <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-  <div class="links" id="navLinks">
-    <a href="index.html" data-i18n="nav_home">Inici</a>
-    <a href="projecte.html" data-i18n="nav_about">El projecte</a>
-    <a href="historia.html" data-i18n="nav_history">El lloc</a>
-    <a href="activitats.html" data-i18n="nav_act">Activitats</a>
-    <a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a>
-    <a href="agenda.html" data-i18n="nav_events">Agenda</a>
-    <a href="participa.html" data-i18n="nav_join">Participa</a>
-  </div>
-  <div class="lang" role="group" aria-label="Idioma">
-    <button data-lang="ca" class="on">CA</button><button data-lang="es">ES</button><button data-lang="en">EN</button><button data-lang="eu">EU</button><button data-lang="ga">GA</button>
-  </div>
-</nav></header>
 
-<section class="alt" style="padding-top:48px">
+<header class="nav"><div class="wrap row">
+  <a class="brand" href="index.html">Cal Niu</a>
+  <nav class="links">
+    <a href="index.html">Inici</a><a href="projecte.html">El projecte</a><a href="historia.html" class="on">El lloc</a>
+    <a href="activitats.html">Activitats</a><a href="voluntariat.html">Voluntariat</a><a href="agenda.html">Agenda</a><a href="participa.html">Participa</a>
+  </nav>
+  <div class="lang"><b>CA</b> · ES · EN</div>
+</div></header>
 
-  <div class="wrap center">
-    <p class="eyebrow" data-i18n="tl_eye"></p>
-    <h2 data-i18n="tl_title"></h2>
-    <div class="divider"></div>
-  </div>
+<section class="phero ba">
+  <img class="ba-old" src="imagenes/web/masia-actual-hd-horizontal.jpg" alt="La masia avui">
+  <img class="ba-new" src="imagenes/web/llinars-1919.jpg" alt="La rectoria antiga, Llinars 1919">
+  <span class="ba-div"></span>
+  <div class="wrap inner"><p class="eyebrow">El lloc</p><h1>De rectoria <em>a niu</em></h1></div>
+</section>
+
+<section class="sec alt">
   <div class="wrap">
-    <div class="vtimeline">
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl1_y"></span>
-        <h3 data-i18n="tl1_t"></h3>
-        <p data-i18n="tl1_d"></p>
-        <figure class="vt-img map"><img src="imagenes/web/repoblacio-guifre.jpg" alt="Zona repoblada per Guifré el Pelós"><figcaption>Zona repoblada per Guifré el Pelós a la vall de Lord</figcaption></figure>
-      </div>
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl2_y"></span>
-        <h3 data-i18n="tl2_t"></h3>
-        <p data-i18n="tl2_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/seu-urgell.jpg" alt="Catedral de la Seu d'Urgell"><figcaption>Catedral de la Seu d'Urgell, seu del bisbe Galderic</figcaption></figure>
-      </div>
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl3_y"></span>
-        <h3 data-i18n="tl3_t"></h3>
-        <p data-i18n="tl3_d"></p>
-        <figure class="vt-img">
-<style>
-.clmap{border-radius:14px;overflow:hidden;box-shadow:0 12px 34px rgba(50,40,25,.2);font-family:'Cormorant Garamond',Georgia,serif}
-.clmap svg{display:block;width:100%;height:auto}
-.clmap .sml{font-family:'Jost',system-ui,sans-serif}.clmap .ttl{font-family:'Cormorant Garamond',Georgia,serif}
-.clmap .pin{opacity:0;transform:translateY(-12px) scale(.5);transition:transform .5s cubic-bezier(.2,.8,.3,1.3),opacity .4s}
-.clmap .pin.show{opacity:1;transform:translateY(0) scale(1)}
-.clmap .ctr .halo{transform-box:fill-box;transform-origin:center;opacity:0}
-.clmap .ctr.pulse .halo{animation:clpulse 2.4s ease-out infinite}
-@keyframes clpulse{0%{opacity:.55;transform:scale(.4)}70%{opacity:0;transform:scale(2.4)}100%{opacity:0;transform:scale(2.4)}}
-</style>
-<div class="clmap">
-<svg viewBox="0 0 1000 775" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa dels comtats catalans cap a l'any 900; van apareixent les esglesies amb drets de Sant Iscle a la Vall de Lord">
-  <image href="imagenes/web/mapa-comtats-900.jpg" x="0" y="0" width="1000" height="775"/>
-  <ellipse cx="470" cy="330" rx="72" ry="54" fill="#a4664a" opacity=".12"/>
-  <g id="clPins"></g>
-  <g class="ctr" id="clCenter" transform="translate(470 330)">
-    <circle class="halo" r="18" fill="#a4664a"/>
-    <g opacity="0" id="clCenterG"><circle r="7" fill="#7a2e1a" stroke="#fff" stroke-width="2.5"/></g>
-    <text x="0" y="-15" text-anchor="middle" class="ttl" font-size="16" fill="#5b2f1c" id="clLbl" opacity="0" style="paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round">Sant Iscle &middot; Llinars</text>
-  </g>
-</svg>
-<div style="padding:14px 20px 18px;background:#e6d9bd">
-  <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap">
-    <div><span id="clYr" class="ttl" style="font-size:30px;color:#7a5a3a">Segle IX</span><span id="clPh" class="sml" style="font-size:13px;color:#6f6448;margin-left:8px">Repoblació de la vall</span></div>
-    <div class="sml" style="font-size:13px;color:#6f6448"><span data-i18n="mp_rights">drets sobre</span> <b id="clCt" style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#a4664a">0</b> <span data-i18n="mp_unit">esglésies</span></div>
-  </div>
-  <div style="margin-top:9px;height:6px;background:#cdbf9c;border-radius:4px;overflow:hidden"><div id="clBar" style="height:100%;width:0;background:#a4664a;border-radius:4px"></div></div>
-  <div class="sml" style="display:flex;justify-content:space-between;margin-top:6px;font-size:11px;letter-spacing:.05em;color:#9a8a63"><span data-i18n="mp_ax1">s. IX</span><span data-i18n="mp_ax2">vers 948</span><span data-i18n="mp_ax3">s. XVII&ndash;XVIII</span><span data-i18n="mp_ax4">avui</span></div>
-</div>
-</div>
-<figcaption data-i18n="mp_cap">Mapa: els comtats catalans vers l'any 900 &middot; Enciclopèdia Catalana. Cap al 948, Sant Iscle tenia drets sobre una desena d'esglésies de la vall de Lord.</figcaption>
-</figure>
-      </div>
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl4_y"></span>
-        <h3 data-i18n="tl4_t"></h3>
-        <p data-i18n="tl4_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/cardona.jpg" alt="El castell de Cardona, seu del vescomtat"><figcaption>El castell de Cardona, seu del vescomtat &middot; el llinatge dels Cardona dominava la zona</figcaption></figure>
-      </div>
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl5_y"></span>
-        <h3 data-i18n="tl5_t"></h3>
-        <p data-i18n="tl5_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/facana-1919.jpg" alt="Laudes romàniques encastades a la façana barroca, 1919"><figcaption>Laudes sepulcrals d'època romànica encastades a la façana &middot; 1919, J. Salvany</figcaption></figure>
-      </div>
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl6_y"></span>
-        <h3 data-i18n="tl6_t"></h3>
-        <p data-i18n="tl6_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/llinars-1919.jpg" alt="Llinars de l'Aiguadora el 1919"><figcaption>Llinars de l'Aiguadora, 1919 &middot; J. Salvany</figcaption></figure>
-      </div>
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl7_y"></span>
-        <h3 data-i18n="tl7_t"></h3>
-        <p data-i18n="tl7_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/hivern.jpg" alt="L'església de Llinars a l'hivern"><figcaption>L'hivern a la vall, després de l'èxode</figcaption></figure>
-      </div>
-      <div class="vt-item">
-        <span class="vt-dot"></span>
-        <span class="vt-year" data-i18n="tl8_y"></span>
-        <h3 data-i18n="tl8_t"></h3>
-        <p data-i18n="tl8_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/comunidad.jpg" alt="La comunitat de Cal Niu avui"><figcaption>La comunitat de Cal Niu, avui</figcaption></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap narrow center">
-    <p class="lead" data-i18n="hi_intro"></p>
-  </div>
-</section>
-
-<section class="olive-band cta-band">
-  <div class="wrap narrow">
-    <p class="eyebrow" data-i18n="hi_t_niu"></p>
-    <h2 data-i18n="hi_t_niu"></h2>
-    <p class="lead" data-i18n="hi_p_niu"></p>
-    <div class="cta-row" style="justify-content:center">
-      <a class="btn btn-primary" href="participa.html" data-i18n="cta_join"></a>
-      <a class="btn btn-light" href="projecte.html" data-i18n="nav_about"></a>
-    </div>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap narrow center">
-    <p style="color:var(--mute);font-size:14px" data-i18n="hi_src"></p>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="brand" style="margin-bottom:14px">Cal Niu</div>
-        <p data-i18n="foot_about"></p>
-      </div>
-      <div>
-        <h4 data-i18n="foot_contact_h">Contacte</h4>
-        <ul>
-          <li><a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a></li>
-          <li><span class="ic-inline" data-ic="pin"></span>Castellar del Riu &middot; Berguedà</li>
-          <li><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram &middot; @som.calniu</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="foot_nav_h">Navega</h4>
-        <ul>
-          <li><a href="projecte.html" data-i18n="nav_about">El projecte</a></li>
-          <li><a href="historia.html" data-i18n="nav_history">El lloc</a></li>
-          <li><a href="activitats.html" data-i18n="nav_act">Activitats</a></li>
-          <li><a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a></li>
-          <li><a href="participa.html" data-i18n="nav_join">Participa</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>&copy; 2026 Cal Niu &middot; <span data-i18n="foot_rights"></span></span>
-      <span data-i18n="foot_note"></span>
-    </div>
-  </div>
-</footer>
-<div class="lb" id="lightbox"><img alt=""></div>
-<script src="assets/site.js"></script>
-<script>
-(function(){
-  function rng(s){return function(){s=(s*1664525+1013904223)%4294967296;return s/4294967296;};}
-  var rnd=rng(7),cx=470,cy=330,N=10,pins=[],tries=0;
-  while(pins.length<N&&tries<20000){tries++;var x=430+rnd()*80,y=294+rnd()*72,dc=Math.hypot(x-cx,y-cy);
-    if(dc<13||dc>62)continue;
-    if(!pins.every(function(p){return Math.hypot(p.x-x,p.y-y)>16;}))continue; pins.push({x:x,y:y});}
-  pins.sort(function(a,b){return Math.hypot(a.x-cx,a.y-cy)-Math.hypot(b.x-cx,b.y-cy);});
-  var g=document.getElementById("clPins"); if(!g) return;
-  pins.forEach(function(p,i){var el=document.createElementNS("http://www.w3.org/2000/svg","g");
-    el.setAttribute("class","pin"); el.setAttribute("transform","translate("+p.x.toFixed(0)+" "+p.y.toFixed(0)+")");
-    el.innerHTML='<path d="M0 0 C 7 -10 7 -15 0 -21 C -7 -15 -7 -10 0 0 Z" fill="#a4664a" stroke="#fff" stroke-width="1.2"/><circle cx="0" cy="-14" r="3" fill="#fff"/>';
-    p.t=2.6+i*(7.0/N); p.el=el; g.appendChild(el);});
-  var ctr=document.getElementById("clCenter"),cg=document.getElementById("clCenterG"),lbl=document.getElementById("clLbl");
-  var yr=document.getElementById("clYr"),ph=document.getElementById("clPh"),ct=document.getElementById("clCt"),bar=document.getElementById("clBar");
-  function D(){try{return I18N[document.documentElement.lang]||I18N.ca;}catch(e){return {};}}
-  var TOTAL=18, pt=[0,2.6,10,13.5];
-  var start=null;
-  function frame(ts){if(!start)start=ts;var e=((ts-start)/1000)%TOTAL,d=D();
-    cg.style.transition="opacity .8s";cg.style.opacity=e>0.4?1:0;
-    lbl.style.transition="opacity .8s";lbl.style.opacity=e>0.8?1:0;
-    var n=0;pins.forEach(function(p){if(e>=p.t){p.el.classList.add("show");n++;}else{p.el.classList.remove("show");}});
-    if(e>=pt[3])ctr.classList.add("pulse");else ctr.classList.remove("pulse");
-    var pi=0;for(var i=0;i<pt.length;i++){if(e>=pt[i])pi=i;}
-    var ys=[d.mp_p1y,d.mp_p2y,d.mp_p3y,d.mp_p4y],ps=[d.mp_p1,d.mp_p2,d.mp_p3,d.mp_p4];
-    yr.textContent=ys[pi]||"";ph.textContent=ps[pi]||"";ct.textContent=n;bar.style.width=(e/TOTAL*100).toFixed(1)+"%";
-    requestAnimationFrame(frame);}
-  requestAnimationFrame(frame);
-})();
-</script>
-</body>
-</html>
+    <p class="eyebrow center" style="text-align:center">Línia de temps</p>
+    <div class="sec-head center"><h2>Mil anys d'història</h2></div>
+    <div class="tl alt" style="margin-top:44px">
+      <div class="step"><div class="y">872–878 · Segle IX</div><h3>Repoblació</h3><p>El comte Guifré el Pelós impulsa la repoblació de la vall de Lord; Llinars de l'Aiguadora n'és un punt clau.</p><figure class="tl-img"><img src="imagenes/web/repoblacio-guifre.jpg" alt="Zona repoblada"></figure><figcaption>Zona repoblada per Guifré el Pelós a la vall de Lord</figcaption></div>
+      <div class="step"><div class="y">Segle IX</div><h3>Primera parròquia</h3><p>El bisbe Galderic de la Seu d'Urgell hi organitza la primera vida parroquial i el nucli es consolida.</p><figure class="tl-img"><img src="imagenes/web/seu-urgell.jpg" alt="La Seu d'Urgell"></figure><figcaption>La Seu d'Urgell, seu del bisbat</figcaption></div>
+      <div class="step"><div class="y">Vers 948</div><h3>Drets i plet</h3><p>L'església de Llinars té drets sobre una desena d'esglésies veïnes —Sisquer, Castelltort, la Selva, Tentellatge, la Valldora, el Cint, la Mora, Travil, Terrers i la Pedra—; el comte Sunifred II n'usurpa alguns i el bisbe Guisad II en reclama la restitució.</p><figure class="tl-img map"><img src="imagenes/web/mapa-comtats-900.jpg" alt="Mapa dels comtats catalans vers l'any 900"></figure><figcaption>Els comtats catalans vers l'any 900 · Enciclopèdia Catalana</figcaption></div>
+      <div class="step"><div class="y">Edat mitjana</div><h3>Solsonès i Cardona</h3><p>Durant segles el lloc pertany al Solsonès i al vescomtat de Cardona.</p><figure class="tl-img"><img src="imagenes/web/cardona.jpg" alt="El castell de Cardona"></figure><figcaption>El castell de Cardona, seu del vescomtat</figcaption></div>
+      <div class="step"><div class="y">Segle XVII–XVIII</div><h3>Església barroca</h3><p>Es basteix l'actual temple barroc sobre l'antic edifici romànic, amb laudes sepulcrals d'època romànica encastades a la façana.</p><figure class="tl-img"><img src="imagenes/web/facana-1919.jpg" alt="Laudes a la façana, 1919"></figure><figcaption>Laudes sepulcrals encastades a la façana · 1919, J. Salvany</figcaption></div>
+      <div class="step"><div class="y">1840</div><h3>Fi del municipi</h3><p>Llinars deixa de ser municipi independent

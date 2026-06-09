@@ -1,0 +1,16 @@
+# Privat — NO publicar
+_originals/
+_projecte/*
+!_projecte/prova-estil/
+
+# Còpies, comprimits i temporals
+*.bak
+*.rar
+*.zip
+
+# Imatges HD orfes (massa pesades i no usades a la web)
+imagenes/web/hort-hd1.jpg
+imagenes/web/hort-hd2.jpg
+imagenes/web/horthd3.jpg
+imagenes/web/horthd4.jpg
+imagenes/web/masia-actual-hd-vertical.jpg
