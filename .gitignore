@@ -3,6 +3,9 @@ _originals/
 _projecte/
 mockup-web/
 
+# Pàgina retirada (ja no es publica)
+agenda.html
+
 # Disseny antic (multilingüe) — substituït per la web immersiva
 assets/styles.css
 assets/site.js

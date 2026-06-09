@@ -615,6 +615,17 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 .vol-txt span{color:var(--mute);font-size:14px;font-weight:300}
 @media(max-width:560px){.vol-status{flex-wrap:wrap;text-align:center;justify-content:center}.vol-txt{flex:1 0 100%;align-items:center}}
 
+/* ===== Icones de línia animades darrere dels passos numerats ===== */
+.numbered .it{position:relative}
+.numbered .it > *{position:relative;z-index:1}
+.it-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:132px;height:132px;z-index:0;fill:none;stroke:var(--clay);stroke-width:1;opacity:.13;pointer-events:none;overflow:visible}
+.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dasharray:400;stroke-dashoffset:400}
+.numbered.in .it-bg path,.numbered.in .it-bg circle,.numbered.in .it-bg line,.numbered.in .it-bg polyline,.numbered.in .it-bg rect,.numbered.in .it-bg polygon{animation:itdraw 2.2s var(--ease) forwards}
+.numbered.in .it:nth-child(2) .it-bg *{animation-delay:.22s}
+.numbered.in .it:nth-child(3) .it-bg *{animation-delay:.44s}
+@keyframes itdraw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dashoffset:0;animation:none}}
+
 /* ===== Logo a la barra (a dalt esquerra) i logo gran centrat al footer ===== */
 .nav .brand{display:inline-flex;align-items:center;gap:18px;line-height:0}
 .nav .brand-logo{height:36px;width:auto;display:block}
