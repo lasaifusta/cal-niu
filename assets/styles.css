@@ -371,10 +371,10 @@ footer ul{list-style:none;padding:0;margin:0;line-height:2.1}
 @media(max-width:780px){.event{grid-template-columns:1fr}.event .ev-pic{min-height:240px}.event .ev-txt{padding:26px}}
 
 /* ── Targetes 'boxed': text gran, centrat i títol amb color ── */
-.feature.boxed{justify-content:center;align-items:center;text-align:center;min-height:320px;padding:34px 28px}
-.feature.boxed::before{background:linear-gradient(180deg,rgba(247,242,233,.5),rgba(247,242,233,.66))}
-.feature.boxed h3{color:var(--terra);font-size:32px;line-height:1.12;margin:0 0 12px;text-shadow:0 1px 3px rgba(255,255,255,.6)}
-.feature.boxed p{color:#2c2a24;font-size:18px;line-height:1.55;max-width:30ch;margin:0 auto;text-shadow:0 1px 3px rgba(255,255,255,.5)}
+.feature.boxed{justify-content:center;align-items:center;text-align:center;min-height:320px;padding:34px 28px;background-color:var(--terra);background-blend-mode:luminosity}
+.feature.boxed::before{background:linear-gradient(180deg,rgba(247,242,233,.42),rgba(247,242,233,.6))}
+.feature.boxed h3{color:#5b2f1c;font-size:32px;line-height:1.12;margin:0 0 12px;text-shadow:0 1px 3px rgba(255,255,255,.7)}
+.feature.boxed p{color:#3a2a20;font-size:18px;line-height:1.55;max-width:30ch;margin:0 auto;text-shadow:0 1px 3px rgba(255,255,255,.65)}
 
 /* ── Celebracions fetes (esdeveniments passats) ─────────────── */
 .evpast{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:34px}
