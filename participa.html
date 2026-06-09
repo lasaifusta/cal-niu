@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cal Niu · Participa</title>
-<link rel="stylesheet" href="assets/mock.css?v=3">
+<meta name="description" content="Fes el primer pas: vine de voluntari/a, apunta't a un taller o col·labora amb el projecte de Cal Niu.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/mock.css">
+<script src="assets/immersive.js" defer></script>
 </head>
 <body>
+
+<div class="scrollbar"><i></i></div>
+<div class="grain"></div>
 
 <header class="nav"><div class="wrap row">
   <a class="brand" href="index.html">Cal Niu</a>
@@ -17,37 +23,50 @@
 </div></header>
 
 <section class="phero">
-  <img class="bg" src="imagenes/web/festa1.jpg" alt="">
-  <div class="wrap inner"><p class="eyebrow">Participa</p><h1>Fes el <em>primer pas</em></h1></div>
+  <div class="bgwrap"><img class="bg" data-parallax="0.14" src="imagenes/web/hivern.jpg" alt="Camí entre la boira i la llum del bosc"></div>
+  <div class="wrap inner">
+    <p class="eyebrow reveal">Participa</p>
+    <h1 class="reveal d1">Fes el <em>primer pas</em></h1>
+    <p class="kicker reveal d2">El camí ja és aquí. Només cal que ens diguis que vens.</p>
+  </div>
 </section>
 
 <section class="sec">
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Escriu-nos</p>
-      <h2>Comencem a parlar</h2>
-      <div class="rule"></div>
-      <p>Vols venir de voluntari/a, apuntar-te a un taller o col·laborar amb el projecte? Omple el formulari i et responem aviat.</p>
-      <p style="margin-top:18px"><strong style="font-weight:500">som.calniu@gmail.com</strong><br><span style="color:var(--mute)">Castellar del Riu · Berguedà</span><br><span style="color:var(--mute)">Instagram · @som.calniu</span></p>
+      <p class="eyebrow reveal">Escriu-nos</p>
+      <h2 class="reveal d1">Comencem a parlar</h2>
+      <div class="rule reveal d1"></div>
+      <p class="reveal d2">Vols venir de voluntari/a, apuntar-te a un taller o col·laborar amb el projecte? Explica'ns què tens al cap i et responem aviat, de persona a persona.</p>
+      <p class="reveal d3" style="margin-top:18px"><a href="mailto:som.calniu@gmail.com" style="font-weight:500;color:var(--ink)">som.calniu@gmail.com</a><br><span style="color:var(--mute)">Castellar del Riu · Berguedà</span><br><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener" style="color:var(--mute)">Instagram · @som.calniu</a></p>
     </div>
-    <form class="form" onsubmit="return false">
-      <div><label>Nom</label><input type="text" placeholder="El teu nom"></div>
-      <div><label>Correu</label><input type="email" placeholder="hola@correu.com"></div>
+    <form class="form reveal d2" action="mailto:som.calniu@gmail.com" method="post" enctype="text/plain">
+      <div><label>Nom</label><input type="text" name="Nom" placeholder="El teu nom"></div>
+      <div><label>Correu</label><input type="email" name="Correu" placeholder="hola@correu.com"></div>
       <div class="full"><label>Què t'interessa</label>
-        <select><option>Voluntariat / estada</option><option>Apuntar-me a un taller</option><option>Col·laborar amb el projecte</option><option>Una altra cosa</option></select></div>
-      <div class="full"><label>Missatge</label><textarea placeholder="Explica'ns una mica…"></textarea></div>
+        <select name="Interes"><option>Voluntariat / estada</option><option>Apuntar-me a un taller</option><option>Col·laborar amb el projecte</option><option>Una altra cosa</option></select></div>
+      <div class="full"><label>Missatge</label><textarea name="Missatge" placeholder="Explica'ns una mica qui ets i què somies…"></textarea></div>
       <div class="full"><button class="btn-pill" type="submit">Enviar</button></div>
     </form>
   </div>
 </section>
 
+<section class="band"><div class="wrap reveal">
+  <p class="eyebrow">Ens veiem aviat</p>
+  <h2>Et guardem un lloc a taula</h2>
+  <p>Tant si vens per un dia com per una temporada, aquí hi trobaràs una casa oberta i gent amb ganes de conèixer-te.</p>
+  <a class="btn-pill" href="agenda.html">Veure què passa</a></div></section>
+
 <footer><div class="wrap">
   <div class="foot-top">
-    <div><div class="brand">Cal Niu</div><p class="tag">Projecte rural i comunitari a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
-      <div class="swatches"><i style="background:#F3EDE3"></i><i style="background:#1c1b17"></i><i style="background:#8C9A7E"></i><i style="background:#C2A98E"></i></div></div>
+    <div><div class="brand">Cal Niu</div><p class="tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
+      <div class="swatches"><i style="background:#f7f2e9"></i><i style="background:#2c2a24"></i><i style="background:#4c5440"></i><i style="background:#a4664a"></i><i style="background:#b89357"></i></div></div>
     <div class="foot-links">
       <div><a href="projecte.html">El projecte</a><a href="historia.html">El lloc</a><a href="activitats.html">Activitats</a><a href="agenda.html">Agenda</a></div>
       <div><a href="voluntariat.html">Voluntariat</a><a href="participa.html">Participa</a><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a><a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a></div>
     </div>
   </div>
-  <div class="foot-bottom"><span
+  <div class="foot-bottom"><span>© 2026 Cal Niu · Fet amb cura al Berguedà</span><span>Castellar del Riu · Berguedà</span></div>
+</div></footer>
+
+</body></html>
