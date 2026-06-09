@@ -29,7 +29,7 @@
 </nav></header>
 
 <section class="pagehero">
-  <img class="bg" src="imagenes/web/església.jpg" alt="L'església de Sant Iscle i Santa Victòria de Llinars">
+  <img class="bg" src="imagenes/web/esglesia.jpg" alt="L'església de Sant Iscle i Santa Victòria de Llinars">
   <div class="wrap">
     <p class="eyebrow" data-i18n="hi_eyebrow"></p>
     <h1 data-i18n="hi_title"></h1>
@@ -66,7 +66,49 @@
         <span class="vt-pop">&#8776; 45 <span data-i18n="pop_unit"></span></span>
         <h3 data-i18n="tl3_t"></h3>
         <p data-i18n="tl3_d"></p>
-        <figure class="vt-img"><img src="imagenes/web/església.jpg" alt="L'església parroquial de Llinars"><figcaption>L'església parroquial de Sant Iscle i Santa Victòria</figcaption></figure>
+        <figure class="vt-img">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap');
+.clmap{font-family:'Cormorant Garamond',Georgia,serif;border-radius:14px;overflow:hidden;box-shadow:0 12px 34px rgba(50,40,25,.2)}
+.clmap svg{display:block;width:100%;height:auto}
+.clmap .ttl{font-family:'Cormorant Garamond',Georgia,serif}.clmap .sml{font-family:'Jost',system-ui,sans-serif}
+.clmap .pin{opacity:0;transform:translateY(-15px) scale(.6);transition:transform .5s cubic-bezier(.2,.8,.3,1.3),opacity .4s}
+.clmap .pin.show{opacity:1;transform:translateY(0) scale(1)}
+.clmap .ctr .halo{transform-box:fill-box;transform-origin:center;opacity:0}
+.clmap .ctr.pulse .halo{animation:clpulse 2.4s ease-out infinite}
+@keyframes clpulse{0%{opacity:.5;transform:scale(.5)}70%{opacity:0;transform:scale(2.6)}100%{opacity:0;transform:scale(2.6)}}
+</style>
+<div class="clmap">
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa animat: cada cop apareixen mes esglesies amb drets">
+  <rect width="960" height="600" fill="#efe4cd"/>
+  <g fill="#d9cfa9" opacity=".55"><path d="M-20 180 q120 -70 260 -30 q150 40 300 -10 q160 -50 320 10 q120 40 140 0 l0 -200 -1040 0z"/></g>
+  <g fill="#cfdcb4" opacity=".5"><path d="M-20 470 q160 60 340 20 q180 -42 360 10 q160 46 320 -8 l0 140 -1020 0z"/></g>
+  <g fill="#c7bd95" opacity=".45"><ellipse cx="250" cy="250" rx="120" ry="60"/><ellipse cx="690" cy="380" rx="150" ry="70"/><ellipse cx="540" cy="180" rx="90" ry="44"/></g>
+  <path d="M120 70 q60 120 -10 200 q-60 80 20 170 q70 80 0 160" fill="none" stroke="#9bb4c4" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+  <text x="150" y="120" class="sml" font-size="13" fill="#6f8295" transform="rotate(20 150 120)">riu Aiguadora</text>
+  <rect x="16" y="16" width="928" height="568" fill="none" stroke="#b6a878" stroke-width="2" rx="8"/>
+  <text x="40" y="52" class="ttl" font-size="26" fill="#7a5a3a">La vall de Lord</text>
+  <text x="40" y="74" class="sml" font-size="13" letter-spacing="3" fill="#9a8a63">DRETS PARROQUIALS &middot; SANT ISCLE DE LLINARS</text>
+  <g class="sml" fill="#8a7a54"><circle cx="120" cy="150" r="4"/><text x="132" y="154" font-size="13">la Seu d'Urgell</text><circle cx="850" cy="430" r="4"/><text x="772" y="450" font-size="13">Cardona</text></g>
+  <g id="clPins"></g>
+  <g class="ctr" id="clCenter" transform="translate(450 320)">
+    <circle class="halo" r="26" fill="#a4664a"/>
+    <g opacity="0" id="clCenterG"><path d="M0 -34 L0 -50 M-6 -44 L6 -44" stroke="#5b4632" stroke-width="2.4" fill="none"/><path d="M-16 6 L0 -30 L16 6 Z" fill="#7a5a3a"/><rect x="-14" y="6" width="28" height="22" fill="#8a6a45"/><rect x="-4" y="14" width="8" height="14" fill="#efe4cd"/></g>
+    <text x="0" y="52" text-anchor="middle" class="ttl" font-size="19" fill="#5b4632" id="clLbl" opacity="0">Sant Iscle i Santa Victòria</text>
+    <text x="0" y="70" text-anchor="middle" class="sml" font-size="12" fill="#8a7a54" id="clSub" opacity="0">Llinars de l'Aiguadora</text>
+  </g>
+</svg>
+<div style="padding:14px 20px 18px;background:#e6d9bd">
+  <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div><span id="clYr" class="ttl" style="font-size:30px;color:#7a5a3a">Segle IX</span><span id="clPh" class="sml" style="font-size:13px;color:#6f6448;margin-left:8px">Repoblació de la vall</span></div>
+    <div class="sml" style="font-size:13px;color:#6f6448">drets sobre <b id="clCt" style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#a4664a">1</b> esglésies</div>
+  </div>
+  <div style="margin-top:9px;height:6px;background:#cdbf9c;border-radius:4px;overflow:hidden"><div id="clBar" style="height:100%;width:0;background:#a4664a;border-radius:4px"></div></div>
+  <div class="sml" style="display:flex;justify-content:space-between;margin-top:6px;font-size:11px;letter-spacing:.05em;color:#9a8a63"><span>s. IX</span><span>vers 948</span><span>s. XVII&ndash;XVIII</span><span>avui</span></div>
+</div>
+</div>
+<figcaption>Cap al 948, Sant Iscle tenia drets sobre una desena d'esglésies veïnes de la vall</figcaption>
+</figure>
       </div>
       <div class="vt-item">
         <span class="vt-dot"></span>
@@ -155,60 +197,6 @@
       <p data-i18n="hi_p_esg2"></p>
     </div>
     <div class="ph"><img src="imagenes/web/llinars-1919.jpg" alt="Llinars de l'Aiguadora el 1919"></div>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap" style="text-align:center">
-    <p class="eyebrow">El territori parroquial</p>
-    <h2>Els drets de Sant Iscle, segle a segle</h2>
-    <div class="divider" style="margin:18px auto 0"></div>
-  </div>
-  <div class="wrap" style="max-width:760px">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap');
-    .clmap{font-family:'Cormorant Garamond',Georgia,serif;border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(50,40,25,.22);margin-top:30px}
-    .clmap svg{display:block;width:100%;height:auto}
-    .clmap .ttl{font-family:'Cormorant Garamond',Georgia,serif}.clmap .sml{font-family:'Jost',system-ui,sans-serif}
-    .clmap .pin{opacity:0;transform:translateY(-15px) scale(.6);transition:transform .5s cubic-bezier(.2,.8,.3,1.3),opacity .4s}
-    .clmap .pin.show{opacity:1;transform:translateY(0) scale(1)}
-    .clmap .ctr .halo{transform-box:fill-box;transform-origin:center;opacity:0}
-    .clmap .ctr.pulse .halo{animation:clpulse 2.4s ease-out infinite}
-    @keyframes clpulse{0%{opacity:.5;transform:scale(.5)}70%{opacity:0;transform:scale(2.6)}100%{opacity:0;transform:scale(2.6)}}
-    </style>
-    <div class="clmap">
-    <svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa animat: cada cop apareixen mes esglésies amb drets al llarg dels segles">
-      <rect width="960" height="600" fill="#efe4cd"/>
-      <g fill="#d9cfa9" opacity=".55"><path d="M-20 180 q120 -70 260 -30 q150 40 300 -10 q160 -50 320 10 q120 40 140 0 l0 -200 -1040 0z"/></g>
-      <g fill="#cfdcb4" opacity=".5"><path d="M-20 470 q160 60 340 20 q180 -42 360 10 q160 46 320 -8 l0 140 -1020 0z"/></g>
-      <g fill="#c7bd95" opacity=".45"><ellipse cx="250" cy="250" rx="120" ry="60"/><ellipse cx="690" cy="380" rx="150" ry="70"/><ellipse cx="540" cy="180" rx="90" ry="44"/></g>
-      <path d="M120 70 q60 120 -10 200 q-60 80 20 170 q70 80 0 160" fill="none" stroke="#9bb4c4" stroke-width="7" stroke-linecap="round" opacity=".85"/>
-      <text x="150" y="120" class="sml" font-size="13" fill="#6f8295" transform="rotate(20 150 120)">riu Aiguadora</text>
-      <rect x="16" y="16" width="928" height="568" fill="none" stroke="#b6a878" stroke-width="2" rx="8"/>
-      <text x="40" y="52" class="ttl" font-size="26" fill="#7a5a3a">La vall de Lord</text>
-      <text x="40" y="74" class="sml" font-size="13" letter-spacing="3" fill="#9a8a63">DRETS PARROQUIALS · SANT ISCLE DE LLINARS</text>
-      <g class="sml" fill="#8a7a54"><circle cx="120" cy="150" r="4"/><text x="132" y="154" font-size="13">la Seu d'Urgell</text><circle cx="850" cy="430" r="4"/><text x="772" y="450" font-size="13">Cardona</text></g>
-      <g id="clPins"></g>
-      <g class="ctr" id="clCenter" transform="translate(450 320)">
-        <circle class="halo" r="26" fill="#a4664a"/>
-        <g opacity="0" id="clCenterG">
-          <path d="M0 -34 L0 -50 M-6 -44 L6 -44" stroke="#5b4632" stroke-width="2.4" fill="none"/>
-          <path d="M-16 6 L0 -30 L16 6 Z" fill="#7a5a3a"/><rect x="-14" y="6" width="28" height="22" fill="#8a6a45"/><rect x="-4" y="14" width="8" height="14" fill="#efe4cd"/>
-        </g>
-        <text x="0" y="52" text-anchor="middle" class="ttl" font-size="19" fill="#5b4632" id="clLbl" opacity="0">Sant Iscle i Santa Victòria</text>
-        <text x="0" y="70" text-anchor="middle" class="sml" font-size="12" fill="#8a7a54" id="clSub" opacity="0">Llinars de l'Aiguadora</text>
-      </g>
-    </svg>
-    <div style="padding:16px 24px 22px;background:#e6d9bd">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap">
-        <div><span id="clYr" class="ttl" style="font-size:34px;color:#7a5a3a">Segle IX</span><span id="clPh" class="sml" style="font-size:14px;color:#6f6448;margin-left:8px">Repoblació de la vall</span></div>
-        <div class="sml" style="font-size:13px;color:#6f6448">drets sobre <b id="clCt" style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#a4664a">1</b> esglésies</div>
-      </div>
-      <div style="margin-top:10px;height:6px;background:#cdbf9c;border-radius:4px;overflow:hidden"><div id="clBar" style="height:100%;width:0;background:#a4664a;border-radius:4px"></div></div>
-      <div class="sml" style="display:flex;justify-content:space-between;margin-top:6px;font-size:11px;letter-spacing:.06em;color:#9a8a63"><span>s. IX</span><span>vers 948</span><span>s. XVII-XVIII</span><span>avui</span></div>
-    </div>
-    </div>
-    <p style="text-align:center;color:var(--mute);font-size:13px;margin-top:14px">Mapa il·lustratiu: cap al 948 l'església de Sant Iscle tenia drets sobre una desena d'esglésies veïnes de la vall.</p>
   </div>
 </section>
 
