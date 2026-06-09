@@ -46,35 +46,32 @@
   </div>
   <div class="wrap">
     <div class="grid cols-3">
-      <div class="feature boxed"><span class="ic" data-ic="home"></span><h3 data-i18n="a1_t"></h3><p data-i18n="a1_d"></p></div>
-      <div class="feature boxed"><span class="ic" data-ic="sprout"></span><h3 data-i18n="a2_t"></h3><p data-i18n="a2_d"></p></div>
-      <div class="feature boxed"><span class="ic" data-ic="music"></span><h3 data-i18n="a3_t"></h3><p data-i18n="a3_d"></p></div>
-      <div class="feature boxed"><span class="ic" data-ic="heart"></span><h3 data-i18n="a4_t"></h3><p data-i18n="a4_d"></p></div>
-      <div class="feature boxed"><span class="ic" data-ic="book"></span><h3 data-i18n="a5_t"></h3><p data-i18n="a5_d"></p></div>
-      <div class="feature boxed"><span class="ic" data-ic="calendar"></span><h3 data-i18n="a6_t"></h3><p data-i18n="a6_d"></p></div>
+      <div class="feature boxed" style="background-image:url('imagenes/web/card-tallers.jpg')"><span class="ic" data-ic="home"></span><h3 data-i18n="a1_t"></h3><p data-i18n="a1_d"></p></div>
+      <div class="feature boxed" style="background-image:url('imagenes/web/card-permacultura.jpg')"><span class="ic" data-ic="sprout"></span><h3 data-i18n="a2_t"></h3><p data-i18n="a2_d"></p></div>
+      <div class="feature boxed" style="background-image:url('imagenes/web/card-cultura.jpg')"><span class="ic" data-ic="music"></span><h3 data-i18n="a3_t"></h3><p data-i18n="a3_d"></p></div>
+      <div class="feature boxed" style="background-image:url('imagenes/web/comunitat-camp.jpg')"><span class="ic" data-ic="heart"></span><h3 data-i18n="a4_t"></h3><p data-i18n="a4_d"></p></div>
+      <div class="feature boxed" style="background-image:url('imagenes/web/cinema-fresca.jpg')"><span class="ic" data-ic="music"></span><h3>Cinema a la fresca</h3><p>Projeccions a l'aire lliure les nits d'estiu, vora l'església i amb paradeta de crispetes. Per a totes les edats.</p></div>
+      <div class="feature boxed" style="background-image:url('imagenes/web/festa1.jpg')"><span class="ic" data-ic="calendar"></span><h3 data-i18n="a6_t"></h3><p data-i18n="a6_d"></p></div>
     </div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap center">
-    <p class="eyebrow" data-i18n="a_gal_eye"></p>
-    <h2 data-i18n="a_gal_t"></h2>
-    <div class="divider"></div>
-    <p class="lead" data-i18n="a_gal_p"></p>
+    <p class="eyebrow">Agenda</p>
+    <h2>Propers esdeveniments</h2>
+    <div class="divider" style="margin:18px auto 0"></div>
   </div>
-  <div class="wrap">
-    <div class="gallery">
-      <a href="imagenes/web/festa1.jpg" class="wide"><img src="imagenes/web/festa1.jpg" alt="Festa a Cal Niu"></a>
-      <a href="imagenes/web/festa3.jpg"><img src="imagenes/web/festa3.jpg" alt="Ball de cintes"></a>
-      <a href="imagenes/web/festa4.jpg"><img src="imagenes/web/festa4.jpg" alt="Celebracio popular"></a>
-      <a href="imagenes/web/festa5.jpg"><img src="imagenes/web/festa5.jpg" alt="Dansa tradicional"></a>
-      <a href="imagenes/web/festa6.jpg"><img src="imagenes/web/festa6.jpg" alt="Comunitat"></a>
-      <a href="imagenes/web/festa7.jpg"><img src="imagenes/web/festa7.jpg" alt="Festa al camp"></a>
-      <a href="imagenes/web/festa8.jpg"><img src="imagenes/web/festa8.jpg" alt="Trobada"></a>
-      <a href="imagenes/web/festa2.jpg" class="wide"><img src="imagenes/web/festa2.jpg" alt="Festa major"></a>
-    </div>
+  <div class="wrap"><div id="evUpcoming"></div></div>
+</section>
+
+<section id="pastSection">
+  <div class="wrap center">
+    <p class="eyebrow">Memòria</p>
+    <h2>Celebracions fetes</h2>
+    <div class="divider" style="margin:18px auto 0"></div>
   </div>
+  <div class="wrap"><div id="evPast" class="evpast"></div></div>
 </section>
 <footer>
   <div class="wrap">
@@ -110,5 +107,51 @@
 </footer>
 <div class="lb" id="lightbox"><img alt=""></div>
 <script src="assets/site.js"></script>
+<script>
+(function(){
+  var EVENTS=[
+    {date:"2026-06-23", title:"Sant Joan a Cal Niu", img:"imagenes/web/comunitat-camp.jpg",
+     desc:"Aquest Sant Joan, fes niu amb nosaltres. Volem viure la nit més curta de l'any d'una altra manera: amb bona companyia, música i el caliu del foc, sota el cel del Berguedà. Ens trobem al voltant del foc i compartim la nit.",
+     meta:[["pin","Cal Niu · Castellar del Riu (Berguedà)"],["calendar","Nit del 23 de juny"],["heart","Sopar: cadascú es porta el seu"],["home","Dormir: furgo o tenda de campanya"]],
+     note:"Espai sense petards, alcohol ni fum · si tens un instrument, porta'l!"},
+    {date:"2026-05-04", title:"Ball de cintes de primavera", img:"imagenes/web/festa1.jpg",
+     desc:"Una tarda de dansa tradicional i comunitat al prat de Cal Niu."},
+    {date:"2025-08-16", title:"Cinema a la fresca d'estiu", img:"imagenes/web/cinema-fresca.jpg",
+     desc:"Projecció a l'aire lliure vora l'església, amb paradeta de crispetes."}
+  ];
+  var IC={
+    pin:'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+    calendar:'<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+    heart:'<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+    home:'<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>'
+  };
+  function svg(k){return '<span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true">'+(IC[k]||'')+'</svg></span>';}
+  var M=["gener","febrer","març","abril","maig","juny","juliol","agost","setembre","octubre","novembre","desembre"];
+  function fmt(d){var p=d.split("-");return parseInt(p[2],10)+" "+M[parseInt(p[1],10)-1]+" "+p[0];}
+  var today=new Date(); today.setHours(0,0,0,0);
+  var up=[],past=[];
+  EVENTS.forEach(function(e){ (new Date(e.date+"T00:00:00")>=today?up:past).push(e); });
+  up.sort(function(a,b){return new Date(a.date)-new Date(b.date);});
+  past.sort(function(a,b){return new Date(b.date)-new Date(a.date);});
+  var u=document.getElementById("evUpcoming");
+  if(up.length){
+    u.innerHTML=up.map(function(e){
+      var meta=(e.meta||[]).map(function(m){return '<li>'+svg(m[0])+' '+m[1]+'</li>';}).join("");
+      return '<div class="event"><div class="ev-pic"><img src="'+e.img+'" alt="'+e.title+'"><span class="ev-date">'+fmt(e.date)+'</span></div>'
+        +'<div class="ev-txt"><h3>'+e.title+'</h3><p>'+e.desc+'</p>'
+        +(meta?'<ul class="ev-meta">'+meta+'</ul>':'')
+        +(e.note?'<p class="ev-note">'+e.note+'</p>':'')
+        +'<a class="btn btn-primary" href="participa.html">Vull venir</a></div></div>';
+    }).join("");
+  } else { u.innerHTML='<p class="center" style="color:var(--mute)">Aviat anunciarem noves dates. Escriu-nos per estar al dia.</p>'; }
+  var pe=document.getElementById("evPast");
+  if(past.length){
+    pe.innerHTML=past.map(function(e){
+      return '<div class="pc"><div class="im"><img src="'+e.img+'" alt="'+e.title+'"><span class="tag">Celebrat</span></div>'
+        +'<div class="bd"><div class="d">'+fmt(e.date)+'</div><h3>'+e.title+'</h3><p>'+(e.desc||'')+'</p></div></div>';
+    }).join("");
+  } else { var ps=document.getElementById("pastSection"); if(ps) ps.style.display="none"; }
+})();
+</script>
 </body>
 </html>
