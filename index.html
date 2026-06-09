@@ -5,8 +5,12 @@
 <title>Cal Niu · Vine a casa</title>
 <meta name="description" content="Una antiga rectoria al cor del Berguedà que torna a omplir-se de vida: cultura, bioconstrucció, permacultura i comunitat.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="stylesheet" href="assets/mock.css">
 <script src="assets/immersive.js" defer></script>
+<script src="assets/i18n.js" defer></script>
 </head>
 <body class="preload">
 
@@ -20,11 +24,12 @@
 
 <header class="nav"><div class="wrap row">
   <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a>
-  <nav class="links">
-    <a href="index.html" class="on">Inici</a><a href="projecte.html">El projecte</a><a href="historia.html">El lloc</a>
-    <a href="activitats.html">Activitats</a><a href="voluntariat.html">Voluntariat</a><a href="agenda.html">Agenda</a><a href="participa.html">Participa</a>
+  <div class="nav-collapse"><nav class="links">
+    <a href="index.html" class="on" data-i18n="nav_home">Inici</a><a href="projecte.html" data-i18n="nav_about">El projecte</a><a href="historia.html" data-i18n="nav_lloc">El lloc</a>
+    <a href="activitats.html" data-i18n="nav_act">Activitats</a><a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a><a href="agenda.html" data-i18n="nav_agenda">Agenda</a><a href="participa.html" data-i18n="nav_participa">Participa</a>
   </nav>
-  <div class="lang"><b>CA</b> · ES · EN</div>
+  <div class="lang"><button data-lang="ca" class="on">CA</button> · <button data-lang="es">ES</button> · <button data-lang="en">EN</button> · <button data-lang="eu">EU</button> · <button data-lang="ga">GA</button></div>
+  </div>
   <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
 
@@ -32,15 +37,15 @@
 <section class="hero">
   <div class="bgwrap"><img class="bg" src="imagenes/web/masia-actual-hd-horizontal.jpg" alt="La masia de Cal Niu"></div>
   <div class="wrap inner">
-    <p class="eyebrow reveal">Projecte rural · Castellar del Riu</p>
-    <h1 class="reveal d1">Aprendre, fer i <em>compartir</em> al ritme del camp</h1>
-    <p class="sub reveal d2">Cal Niu és un espai rural on creixen la cultura, la bioconstrucció, la permacultura i les ganes de fer comunitat.</p>
+    <p class="eyebrow reveal" data-i18n="h_eyebrow">Projecte rural · Castellar del Riu</p>
+    <h1 class="reveal d1" data-i18n="h_title">Aprendre, fer i <em>compartir</em> al ritme del camp</h1>
+    <p class="sub reveal d2" data-i18n="h_sub">Cal Niu és un espai rural on creixen la cultura, la bioconstrucció, la permacultura i les ganes de fer comunitat.</p>
     <div class="row reveal d3">
-      <a class="btn-pill" href="participa.html">Vull participar</a>
-      <a class="btn-line" href="projecte.html">Conèixer el projecte</a>
+      <a class="btn-pill" href="participa.html" data-i18n="cta_participar">Vull participar</a>
+      <a class="btn-line" href="projecte.html" data-i18n="cta_projecte">Conèixer el projecte</a>
     </div>
   </div>
-  <div class="scroll-cue"><span>Comença el viatge</span><span class="bar"></span></div>
+  <div class="scroll-cue"><span data-i18n="scroll_cue">Comença el viatge</span><span class="bar"></span></div>
 </section>
 
 <div class="fade-sep" aria-hidden="true"></div>
@@ -57,31 +62,31 @@
   </div>
   <div class="scrolly-steps">
     <div class="step" data-i="0"><div class="wrap"><div class="panel">
-      <span class="step-k">Benvinguts a Cal Niu</span>
-      <h2>Un niu al cor del <em>Berguedà</em></h2>
-      <p>Tornem a habitar el món rural des de la cura: per la terra, per les persones i pels sabers que es transmeten fent.</p>
+      <span class="step-k" data-i18n="s0_k">Benvinguts a Cal Niu</span>
+      <h2 data-i18n="s0_t">Un niu al cor del <em>Berguedà</em></h2>
+      <p data-i18n="s0_p">Tornem a habitar el món rural des de la cura: per la terra, per les persones i pels sabers que es transmeten fent.</p>
     </div></div></div>
     <div class="step" data-i="1"><div class="wrap"><div class="panel">
-      <span class="step-k">Què fem · Oficis</span>
-      <h2>Tallers de <em>bioconstrucció</em></h2>
-      <p>Tècniques amb terra, palla, fusta i calç per construir de manera sana i sostenible.</p>
-      <a class="btn-line" href="activitats.html">Veure els tallers</a>
+      <span class="step-k" data-i18n="s1_k">Què fem · Oficis</span>
+      <h2 data-i18n="s1_t">Tallers de <em>bioconstrucció</em></h2>
+      <p data-i18n="s1_p">Tècniques amb terra, palla, fusta i calç per construir de manera sana i sostenible.</p>
+      <a class="btn-line" href="activitats.html" data-i18n="s1_link">Veure els tallers</a>
     </div></div></div>
     <div class="step" data-i="2"><div class="wrap"><div class="panel">
-      <span class="step-k">Què fem · Terra</span>
-      <h2>Permacultura i <em>hort</em></h2>
-      <p>Disseny de sistemes, hort ecològic, compostatge i sobirania alimentària.</p>
+      <span class="step-k" data-i18n="s2_k">Què fem · Terra</span>
+      <h2 data-i18n="s2_t">Permacultura i <em>hort</em></h2>
+      <p data-i18n="s2_p">Disseny de sistemes, hort ecològic, compostatge i sobirania alimentària.</p>
     </div></div></div>
     <div class="step" data-i="3"><div class="wrap"><div class="panel">
-      <span class="step-k">Què fem · Comunitat</span>
-      <h2>Voluntariats i vida <em>compartida</em></h2>
-      <p>Queda't una temporada: aprèn fent, treballa la terra i forma part del dia a dia de la casa.</p>
-      <a class="btn-line" href="voluntariat.html">Saber-ne més</a>
+      <span class="step-k" data-i18n="s3_k">Què fem · Comunitat</span>
+      <h2 data-i18n="s3_t">Voluntariats i vida <em>compartida</em></h2>
+      <p data-i18n="s3_p">Queda't una temporada: aprèn fent, treballa la terra i forma part del dia a dia de la casa.</p>
+      <a class="btn-line" href="voluntariat.html" data-i18n="s3_link">Saber-ne més</a>
     </div></div></div>
     <div class="step" data-i="4"><div class="wrap"><div class="panel">
-      <span class="step-k">Què fem · Cultura</span>
-      <h2>Cultura i <em>art</em></h2>
-      <p>Concerts, cinema a la fresca, exposicions i trobades que donen vida al territori.</p>
+      <span class="step-k" data-i18n="s4_k">Què fem · Cultura</span>
+      <h2 data-i18n="s4_t">Cultura i <em>art</em></h2>
+      <p data-i18n="s4_p">Concerts, cinema a la fresca, exposicions i trobades que donen vida al territori.</p>
     </div></div></div>
   </div>
 </section>
@@ -90,26 +95,26 @@
 <div class="endcap">
 <section class="invite">
   <div class="inner reveal">
-    <p class="eyebrow">L'última cosa</p>
-    <h2>Vols formar part del <em>niu</em>?</h2>
-    <p>Vine a un taller, queda't de voluntari/a o porta la teva pròpia idea.</p>
+    <p class="eyebrow" data-i18n="inv_eye">L'última cosa</p>
+    <h2 data-i18n="inv_t">Vols formar part del <em>niu</em>?</h2>
+    <p data-i18n="inv_p">Vine a un taller, queda't de voluntari/a o porta la teva pròpia idea.</p>
     <div class="invite-cta">
-      <a class="btn-pill" href="participa.html">Vull participar</a>
-      <a class="btn-ghost" href="voluntariat.html">Voluntariat</a>
+      <a class="btn-pill" href="participa.html" data-i18n="cta_participar">Vull participar</a>
+      <a class="btn-ghost" href="voluntariat.html" data-i18n="inv_cta2">Voluntariat</a>
     </div>
   </div>
 </section>
 
 <footer><div class="wrap">
   <div class="foot-top">
-    <div><div class="brand">Cal Niu</div><p class="tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
+    <div><div class="brand">Cal Niu</div><p class="tag" data-i18n="foot_tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
       <div class="swatches"><i style="background:#f7f2e9"></i><i style="background:#2c2a24"></i><i style="background:#4c5440"></i><i style="background:#a4664a"></i><i style="background:#b89357"></i></div></div>
     <div class="foot-links">
-      <div><a href="projecte.html">El projecte</a><a href="historia.html">El lloc</a><a href="activitats.html">Activitats</a><a href="agenda.html">Agenda</a></div>
-      <div><a href="voluntariat.html">Voluntariat</a><a href="participa.html">Participa</a><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a><a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a></div>
+      <div><a href="projecte.html" data-i18n="nav_about">El projecte</a><a href="historia.html" data-i18n="nav_lloc">El lloc</a><a href="activitats.html" data-i18n="nav_act">Activitats</a><a href="agenda.html" data-i18n="nav_agenda">Agenda</a></div>
+      <div><a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a><a href="participa.html" data-i18n="nav_participa">Participa</a><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a><a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a></div>
     </div>
   </div>
-  <div class="foot-bottom"><span>© 2026 Cal Niu · Fet amb cura al Berguedà</span><span>Castellar del Riu · Berguedà</span></div>
+  <div class="foot-bottom"><span data-i18n="foot_rights">© 2026 Cal Niu · Fet amb cura al Berguedà</span><span data-i18n="foot_loc">Castellar del Riu · Berguedà</span></div>
 </div>
   <div class="foot-logo"><img src="assets/logo-calniu-oliva.svg" alt="Cal Niu"></div>
 </footer>

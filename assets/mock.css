@@ -554,23 +554,31 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 }
 
 /* ===== Menú mòbil (hamburguesa) ===== */
+.nav-collapse{display:contents}
 .nav-toggle{display:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:42px;height:42px;padding:0;background:none;border:0;cursor:pointer}
 .nav-toggle span{display:block;width:23px;height:2px;border-radius:2px;background:var(--ink);transition:transform .3s var(--ease),opacity .25s}
 @media(max-width:860px){
   .nav-toggle{display:inline-flex}
-  .nav .lang{display:none}
-  .nav .links{display:flex;flex-direction:column;gap:0;position:absolute;top:calc(100% + 14px);left:0;right:0;
-    background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:8px 0;
-    box-shadow:0 22px 46px -22px rgba(38,36,31,.55);text-transform:uppercase;
+  .nav-collapse{display:block;position:absolute;top:calc(100% + 14px);left:0;right:0;
+    background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:6px 0 4px;
+    box-shadow:0 22px 46px -22px rgba(38,36,31,.55);
     opacity:0;visibility:hidden;transform:translateY(-10px);
     transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s}
-  .nav.menu-open .links{opacity:1;visibility:visible;transform:none}
+  .nav.menu-open .nav-collapse{opacity:1;visibility:visible;transform:none}
+  .nav .links{display:flex;flex-direction:column;gap:0;text-transform:uppercase}
   .nav .links a{padding:13px 26px;font-size:14px;letter-spacing:.14em;opacity:.85;border-bottom:0}
   .nav .links a.on{opacity:1;color:var(--clay);border-bottom:0}
+  .nav .lang{display:block;text-align:center;padding:14px 26px 8px;margin-top:4px;border-top:1px solid var(--line);font-size:12.5px;letter-spacing:.18em;color:var(--mute)}
   .nav.menu-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .nav.menu-open .nav-toggle span:nth-child(2){opacity:0}
   .nav.menu-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 }
+
+/* ===== Botons del selector d'idioma ===== */
+.nav .lang button{background:none;border:0;padding:0;margin:0;font:inherit;letter-spacing:inherit;color:inherit;cursor:pointer;opacity:.55;transition:opacity .25s,color .25s}
+.nav .lang button:hover{opacity:.9}
+.nav .lang button.on{opacity:1;font-weight:600;color:var(--ink)}
+@media(max-width:860px){.nav .lang button{padding:2px 4px}.nav .lang button.on{color:var(--clay)}}
 
 /* ===== Logo a la barra (a dalt esquerra) i logo gran centrat al footer ===== */
 .nav .brand{display:inline-flex;align-items:center;gap:18px;line-height:0}
