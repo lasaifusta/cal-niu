@@ -176,3 +176,28 @@
     document.addEventListener("DOMContentLoaded", init);
   } else { init(); }
 })();
+
+/* ---- mobile menu toggle ---- */
+(function () {
+  function initMenu() {
+    var nav = document.querySelector(".nav");
+    var tog = document.querySelector(".nav-toggle");
+    if (!nav || !tog) return;
+    tog.addEventListener("click", function () {
+      var open = nav.classList.toggle("menu-open");
+      tog.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.querySelectorAll(".links a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        nav.classList.remove("menu-open");
+        tog.setAttribute("aria-expanded", "false");
+      });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { nav.classList.remove("menu-open"); tog.setAttribute("aria-expanded", "false"); }
+    });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initMenu);
+  } else { initMenu(); }
+})();
