@@ -514,8 +514,7 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 .phero.ba img.ba-new{clip-path:inset(0 calc(100% - var(--ba,50%)) 0 0)}
 .phero.ba::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,12,8,.12),rgba(10,12,8,.5))}
 .phero.ba .ba-div{position:absolute;top:0;bottom:0;left:var(--ba,50%);width:2px;background:rgba(255,255,255,.9);z-index:3;pointer-events:none}
-.phero.ba .ba-div::before{content:"";position:absolute;top:50%;left:50%;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);transform:translate(-50%,-50%);box-shadow:0 4px 16px rgba(0,0,0,.3)}
-.phero.ba .ba-div::after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:15px;letter-spacing:6px;text-indent:6px;color:var(--ink);font-weight:600;line-height:1}
+.phero.ba .ba-div::before{content:"";position:absolute;top:50%;left:50%;width:46px;height:46px;border-radius:50%;background:transparent;border:2px solid rgba(255,255,255,.92);transform:translate(-50%,-50%);box-shadow:0 2px 12px rgba(0,0,0,.32)}
 .phero.ba .inner{z-index:4}
 .phero.ba .ba-tag{position:absolute;bottom:18px;z-index:3;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.9);background:rgba(0,0,0,.32);padding:5px 11px;border-radius:30px}
 .phero.ba .ba-tag.l{left:18px}.phero.ba .ba-tag.r{right:18px}
@@ -541,15 +540,30 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
   .htl-item::before,.htl-item:nth-child(odd)::before,.htl-item:nth-child(even)::before{left:11px;right:auto}
 }
 
+/* ===== Animacions de la línia de temps (línia estàtica, text en fade, imatges des dels costats) ===== */
+.htl-item .y,.htl-item h3,.htl-item p,.htl-item figcaption{opacity:0;transform:translateY(16px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.htl-item h3{transition-delay:.05s}
+.htl-item p,.htl-item figcaption{transition-delay:.1s}
+.htl-item figure{opacity:0;transition:opacity .9s var(--ease),transform .9s var(--ease) .16s}
+.htl-item:nth-child(odd) figure{transform:translateX(-46px)}
+.htl-item:nth-child(even) figure{transform:translateX(46px)}
+.htl-item.in .y,.htl-item.in h3,.htl-item.in p,.htl-item.in figcaption{opacity:1;transform:none}
+.htl-item.in figure{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .htl-item .y,.htl-item h3,.htl-item p,.htl-item figcaption,.htl-item figure{opacity:1;transform:none;transition:none}
+}
+
 /* ===== Logo a la barra (a dalt esquerra) i logo gran centrat al footer ===== */
-.nav .brand{display:inline-flex;align-items:center;gap:11px;line-height:0}
+.nav .brand{display:inline-flex;align-items:center;gap:18px;line-height:0}
 .nav .brand-logo{height:36px;width:auto;display:block}
 .nav .brand-name{font-family:'Fraunces',serif;font-size:25px;letter-spacing:.02em;color:var(--ink);line-height:1}
-footer{position:relative;overflow:hidden}
+footer{position:relative;overflow:hidden;padding-top:44px;padding-bottom:28px}
 footer .wrap{position:relative;z-index:1}
-.foot-logo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:0;margin:0;pointer-events:none}
-.foot-logo img{height:min(78%,360px);width:auto;display:block;opacity:.07}
-@media(max-width:760px){.nav .brand-logo{height:28px}.nav .brand-name{font-size:21px}.foot-logo img{height:min(70%,230px);opacity:.08}}
+footer .foot-top{gap:36px}
+footer .foot-bottom{margin-top:30px;padding-top:18px}
+.foot-logo{position:absolute;top:0;left:0;right:0;height:64%;display:flex;align-items:center;justify-content:center;z-index:0;margin:0;pointer-events:none}
+.foot-logo img{height:min(80%,300px);width:auto;display:block;opacity:.08}
+@media(max-width:760px){.nav .brand-logo{height:28px}.nav .brand-name{font-size:21px}.foot-logo img{height:min(72%,190px);opacity:.09}}
 
 /* ===== Secció numerada centrada ===== */
 .numbered.center .it{text-align:center;padding:34px 18px 12px;border-right:1px solid var(--line)}
