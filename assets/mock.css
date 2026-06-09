@@ -515,7 +515,7 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 .phero.ba::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,12,8,.12),rgba(10,12,8,.5))}
 .phero.ba .ba-div{position:absolute;top:0;bottom:0;left:var(--ba,50%);width:2px;background:rgba(255,255,255,.9);z-index:3;pointer-events:none}
 .phero.ba .ba-div::before{content:"";position:absolute;top:50%;left:50%;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);transform:translate(-50%,-50%);box-shadow:0 4px 16px rgba(0,0,0,.3)}
-.phero.ba .ba-div::after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:18px;letter-spacing:-1px;color:var(--ink);font-weight:600}
+.phero.ba .ba-div::after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:15px;letter-spacing:6px;text-indent:6px;color:var(--ink);font-weight:600;line-height:1}
 .phero.ba .inner{z-index:4}
 .phero.ba .ba-tag{position:absolute;bottom:18px;z-index:3;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.9);background:rgba(0,0,0,.32);padding:5px 11px;border-radius:30px}
 .phero.ba .ba-tag.l{left:18px}.phero.ba .ba-tag.r{right:18px}
@@ -540,3 +540,23 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
   .htl-item,.htl-item:nth-child(odd),.htl-item:nth-child(even){width:100%;left:0;text-align:left;padding:0 0 50px 46px}
   .htl-item::before,.htl-item:nth-child(odd)::before,.htl-item:nth-child(even)::before{left:11px;right:auto}
 }
+
+/* ===== Logo a la barra (a dalt esquerra) i logo gran centrat al footer ===== */
+.nav .brand{display:inline-flex;align-items:center;line-height:0}
+.nav .brand-logo{height:36px;width:auto;display:block}
+.foot-logo{margin-top:48px;display:flex;justify-content:center;align-items:center}
+.foot-logo img{height:clamp(92px,15vw,150px);width:auto;display:block}
+@media(max-width:760px){.nav .brand-logo{height:28px}.foot-logo img{height:84px}}
+
+/* ===== Secció numerada centrada ===== */
+.numbered.center .it{text-align:center;padding:34px 18px 12px;border-right:1px solid var(--line)}
+.numbered.center .it:last-child{border-right:none}
+.numbered.center .n{display:block}
+@media(max-width:760px){.numbered.center .it{border-right:none;border-bottom:1px solid var(--line);padding:26px 0 18px}}
+
+/* ===== Pas final de la línia de temps: ample complet i centrat ===== */
+.htl-item.full{width:100%;left:0;text-align:center;padding:8px 0 50px}
+.htl-item.full::before{left:50%;right:auto;transform:translateX(-50%)}
+.htl-item.full p{margin-left:auto;margin-right:auto}
+.htl-item.full figure{max-width:540px;margin-left:auto;margin-right:auto}
+@media(max-width:760px){.htl-item.full{text-align:left;padding:0 0 50px 46px}.htl-item.full::before{left:11px;transform:none}.htl-item.full figure{margin-left:0}}

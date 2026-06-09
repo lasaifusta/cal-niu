@@ -1,12 +1,22 @@
 # Privat — NO publicar
 _originals/
-_projecte/*
-!_projecte/prova-estil/
+_projecte/
+mockup-web/
+
+# Disseny antic (multilingüe) — substituït per la web immersiva
+assets/styles.css
+assets/site.js
+
+# Fotos originals sense optimitzar (no s'usen al web)
+imagenes/files/
 
 # Còpies, comprimits i temporals
 *.bak
+*.bak2
 *.rar
 *.zip
+.DS_Store
+__MACOSX/
 
 # Imatges HD orfes (massa pesades i no usades a la web)
 imagenes/web/hort-hd1.jpg
