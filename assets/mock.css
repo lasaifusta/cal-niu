@@ -580,6 +580,32 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 .nav .lang button.on{opacity:1;font-weight:600;color:var(--ink)}
 @media(max-width:860px){.nav .lang button{padding:2px 4px}.nav .lang button.on{color:var(--clay)}}
 
+/* ===== Disponibilitat de tallers (caps de setmana) ===== */
+.wk-list{display:flex;flex-direction:column}
+.wk-month{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-d);margin:24px 0 6px}
+.wk-row{display:flex;align-items:center;gap:16px;padding:15px 4px;border-bottom:1px solid var(--line)}
+.wk-dates{font-family:'Fraunces',serif;font-size:20px;color:var(--ink);flex:1}
+.wk-state{font-size:13px;letter-spacing:.04em;display:inline-flex;align-items:center;gap:8px;color:var(--mute)}
+.wk-row.lliure .wk-state{color:var(--sage-d)}
+.wk-row.lliure .wk-state i{width:9px;height:9px;border-radius:50%;background:#4c8a3f;box-shadow:0 0 0 3px rgba(76,138,63,.18)}
+.wk-row.ocupat{opacity:.5}
+.wk-btn{font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:9px 18px;border:1px solid var(--ink);border-radius:30px;transition:background .3s,color .3s;white-space:nowrap}
+.wk-btn:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:560px){.wk-row{flex-wrap:wrap;gap:8px}.wk-dates{flex:1 0 100%}}
+
+/* ===== Pròxima activitat (cartell destacat) ===== */
+.next-poster img{width:100%;height:auto;border-radius:14px;box-shadow:0 24px 60px -28px rgba(38,36,31,.6);display:block}
+@media(max-width:860px){.next-poster{max-width:340px;margin:0 auto}}
+
+/* ===== Estat verd de voluntariat ===== */
+.vol-status{display:flex;align-items:center;gap:18px;background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:22px 26px}
+.vol-dot{width:14px;height:14px;border-radius:50%;background:#4c8a3f;box-shadow:0 0 0 4px rgba(76,138,63,.2);flex:none;animation:volpulse 2.6s ease-in-out infinite}
+@keyframes volpulse{0%,100%{box-shadow:0 0 0 4px rgba(76,138,63,.2)}50%{box-shadow:0 0 0 9px rgba(76,138,63,.06)}}
+.vol-txt{flex:1;display:flex;flex-direction:column;gap:3px}
+.vol-txt strong{font-weight:500;color:var(--ink)}
+.vol-txt span{color:var(--mute);font-size:14px;font-weight:300}
+@media(max-width:560px){.vol-status{flex-wrap:wrap;text-align:center;justify-content:center}.vol-txt{flex:1 0 100%;align-items:center}}
+
 /* ===== Logo a la barra (a dalt esquerra) i logo gran centrat al footer ===== */
 .nav .brand{display:inline-flex;align-items:center;gap:18px;line-height:0}
 .nav .brand-logo{height:36px;width:auto;display:block}

@@ -92,6 +92,7 @@ function setLang(lang){
     b.classList.toggle("on", b.dataset.lang === lang);
   });
   try { localStorage.setItem("calniu_lang", lang); } catch(e){}
+  if (typeof window.renderDisponibilitat === "function") window.renderDisponibilitat();
 }
 
 (function(){
