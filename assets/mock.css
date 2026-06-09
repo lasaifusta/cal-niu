@@ -542,21 +542,17 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 }
 
 /* ===== Logo a la barra (a dalt esquerra) i logo gran centrat al footer ===== */
-.nav .brand{display:inline-flex;align-items:center;line-height:0}
+.nav .brand{display:inline-flex;align-items:center;gap:11px;line-height:0}
 .nav .brand-logo{height:36px;width:auto;display:block}
-.foot-logo{margin-top:48px;display:flex;justify-content:center;align-items:center}
-.foot-logo img{height:clamp(92px,15vw,150px);width:auto;display:block}
-@media(max-width:760px){.nav .brand-logo{height:28px}.foot-logo img{height:84px}}
+.nav .brand-name{font-family:'Fraunces',serif;font-size:25px;letter-spacing:.02em;color:var(--ink);line-height:1}
+footer{position:relative;overflow:hidden}
+footer .wrap{position:relative;z-index:1}
+.foot-logo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:0;margin:0;pointer-events:none}
+.foot-logo img{height:min(78%,360px);width:auto;display:block;opacity:.07}
+@media(max-width:760px){.nav .brand-logo{height:28px}.nav .brand-name{font-size:21px}.foot-logo img{height:min(70%,230px);opacity:.08}}
 
 /* ===== Secció numerada centrada ===== */
 .numbered.center .it{text-align:center;padding:34px 18px 12px;border-right:1px solid var(--line)}
 .numbered.center .it:last-child{border-right:none}
 .numbered.center .n{display:block}
 @media(max-width:760px){.numbered.center .it{border-right:none;border-bottom:1px solid var(--line);padding:26px 0 18px}}
-
-/* ===== Pas final de la línia de temps: ample complet i centrat ===== */
-.htl-item.full{width:100%;left:0;text-align:center;padding:8px 0 50px}
-.htl-item.full::before{left:50%;right:auto;transform:translateX(-50%)}
-.htl-item.full p{margin-left:auto;margin-right:auto}
-.htl-item.full figure{max-width:540px;margin-left:auto;margin-right:auto}
-@media(max-width:760px){.htl-item.full{text-align:left;padding:0 0 50px 46px}.htl-item.full::before{left:11px;transform:none}.htl-item.full figure{margin-left:0}}
