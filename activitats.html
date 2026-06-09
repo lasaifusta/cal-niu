@@ -27,6 +27,36 @@
     <button data-lang="ca" class="on">CA</button><button data-lang="es">ES</button><button data-lang="en">EN</button><button data-lang="eu">EU</button><button data-lang="ga">GA</button>
   </div>
 </nav></header>
+<style>
+.nextban{display:block;background:#fffdf9;border:.5px solid var(--line);border-left:4px solid var(--terra);border-radius:10px;padding:15px 18px;text-decoration:none;color:inherit;transition:border-color .2s,box-shadow .2s;max-width:720px;margin:0 auto}
+.nextban:hover{border-color:var(--terra);box-shadow:0 12px 32px -20px rgba(50,40,25,.55)}
+.nextban .nb-row{display:flex;align-items:center;gap:16px}
+.nextban .nb-date{text-align:center;min-width:48px}
+.nextban .nb-day{font-family:var(--serif);font-size:34px;line-height:.9;color:var(--terra-d)}
+.nextban .nb-mon{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.nextban .nb-ey{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:2px}
+.nextban .nb-ttl{font-family:var(--serif);font-size:23px;color:var(--ink);line-height:1.05}
+.nextban .nb-cd{flex:0 0 auto;text-align:center;background:#efe2c9;color:var(--terra-d);border-radius:9px;padding:7px 12px;font-size:11px;line-height:1.2}
+.nextban .nb-cd b{display:block;font-family:var(--serif);font-size:22px;line-height:1}
+.nextban .nb-chev{flex:0 0 auto;color:var(--mute);font-style:normal;transition:transform .3s}
+.nextban:hover .nb-chev{transform:rotate(180deg)}
+.nextban .nb-det{max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .25s,margin-top .3s}
+.nextban:hover .nb-det{max-height:180px;opacity:1;margin-top:13px}
+.nextban .nb-det .inner{border-top:.5px solid var(--line);padding-top:12px;font-size:14px;color:var(--mute);line-height:1.5}
+.minical{max-width:360px;margin:0 auto 10px}
+.minical .mc-head{font-family:var(--serif);font-size:20px;color:var(--ink);text-align:center;margin-bottom:10px}
+.minical .mc-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.minical .mc-wd{font-size:11px;color:var(--mute);text-align:center}
+.minical .mc-d{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:13px;border-radius:7px;color:var(--ink)}
+.minical .mc-d.today{outline:1.5px solid var(--olive);outline-offset:-1.5px}
+.minical .mc-d.has{position:relative;cursor:pointer;font-weight:500;color:var(--terra-d);background:#efe2c9}
+.minical .mc-d.has::after{content:"";position:absolute;bottom:5px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:var(--terra)}
+.minical .mc-d.has:hover{background:var(--terra);color:#fff}
+.minical .mc-d.has:hover::after{background:#fff}
+.minical .mc-tip{position:absolute;bottom:122%;left:50%;transform:translateX(-50%);background:#3c2818;color:#f7f2e9;padding:7px 10px;border-radius:7px;font-size:12px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;z-index:6}
+.minical .mc-d.has .mc-tip::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#3c2818}
+.minical .mc-d.has:hover .mc-tip{opacity:1}
+</style>
 <section class="pagehero">
   <img class="bg" src="imagenes/web/festa2.jpg" alt="Festa popular a Cal Niu">
   <div class="wrap">
@@ -35,6 +65,7 @@
   </div>
 </section>
 <section>
+  <div class="wrap"><a id="nextBanner" class="nextban" href="participa.html" hidden></a></div>
   <div class="wrap narrow center">
     <p class="lead" data-i18n="a_lead"></p>
   </div>
@@ -56,6 +87,7 @@
     <h2>Propers esdeveniments</h2>
     <div class="divider" style="margin:18px auto 0"></div>
   </div>
+  <div class="wrap"><div id="miniCal" class="minical"></div></div>
   <div class="wrap"><div id="evUpcoming"></div></div>
 </section>
 
@@ -145,6 +177,40 @@
         +'<div class="bd"><div class="d">'+fmt(e.date)+'</div><h3>'+e.title+'</h3><p>'+(e.desc||'')+'</p></div></div>';
     }).join("");
   } else { var ps=document.getElementById("pastSection"); if(ps) ps.style.display="none"; }
+
+  var DAY=86400000;
+  var nb=document.getElementById("nextBanner");
+  if(nb && up.length){
+    var ne=up[0], np=ne.date.split("-"), diff=Math.round((new Date(ne.date+"T00:00:00")-today)/DAY);
+    var cd = diff<=0 ? '<span style="font-size:14px">Avui</span>' : diff===1 ? '<span style="font-size:14px">Demà</span>' : 'Falten<b>'+diff+'</b>dies';
+    var meta=(ne.meta||[]).slice(0,2).map(function(m){return m[1];}).join(' &nbsp;·&nbsp; ');
+    nb.innerHTML='<div class="nb-row">'
+      +'<div class="nb-date"><div class="nb-day">'+parseInt(np[2],10)+'</div><div class="nb-mon">'+M[parseInt(np[1],10)-1]+'</div></div>'
+      +'<div style="flex:1"><div class="nb-ey">Propera activitat</div><div class="nb-ttl">'+ne.title+'</div></div>'
+      +'<div class="nb-cd">'+cd+'</div>'
+      +'<i class="nb-chev">&#9662;</i></div>'
+      +'<div class="nb-det"><div class="inner">'+(ne.desc||'')
+      +(meta?'<div style="margin-top:8px;color:var(--terra-d)">'+meta+'</div>':'')
+      +'<div style="margin-top:11px"><span class="btn btn-primary" style="font-size:13px;padding:9px 18px">Vull venir</span></div></div></div>';
+    nb.removeAttribute("hidden");
+  }
+
+  var mc=document.getElementById("miniCal");
+  if(mc && up.length){
+    var base=new Date(up[0].date+"T00:00:00"), Y=base.getFullYear(), Mo=base.getMonth(), byDay={};
+    up.forEach(function(e){var dd=new Date(e.date+"T00:00:00"); if(dd.getFullYear()===Y&&dd.getMonth()===Mo) byDay[dd.getDate()]=e.title;});
+    var first=(new Date(Y,Mo,1).getDay()+6)%7, ndays=new Date(Y,Mo+1,0).getDate(), wd=["dl","dt","dc","dj","dv","ds","dg"];
+    var h='<div class="mc-head">'+M[Mo].charAt(0).toUpperCase()+M[Mo].slice(1)+' '+Y+'</div><div class="mc-grid">';
+    wd.forEach(function(w){h+='<div class="mc-wd">'+w+'</div>';});
+    for(var b=0;b<first;b++) h+='<div class="mc-d"></div>';
+    for(var i=1;i<=ndays;i++){
+      var cls="mc-d", tip="", isT=(Y===today.getFullYear()&&Mo===today.getMonth()&&i===today.getDate());
+      if(isT) cls+=" today";
+      if(byDay[i]){cls+=" has"; tip='<span class="mc-tip">'+byDay[i]+'</span>';}
+      h+='<div class="'+cls+'">'+i+tip+'</div>';
+    }
+    mc.innerHTML=h+'</div>';
+  } else if(mc){ mc.style.display="none"; }
 })();
 </script>
 </body>
