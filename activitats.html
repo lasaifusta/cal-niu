@@ -10,6 +10,7 @@
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="stylesheet" href="assets/mock.css">
 <script src="assets/immersive.js" defer></script>
+<script src="assets/i18n.js" defer></script>
 <script src="assets/disponibilitat.js" defer></script>
 </head>
 <body>
@@ -20,10 +21,10 @@
 <header class="nav"><div class="wrap row">
   <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a>
   <div class="nav-collapse"><nav class="links">
-    <a href="index.html">Inici</a><a href="projecte.html">El projecte</a><a href="historia.html">El lloc</a>
-    <a href="activitats.html" class="on">Activitats</a><a href="voluntariat.html">Voluntariat</a><a href="participa.html">Participa</a>
+    <a href="index.html" data-i18n="nav_home">Inici</a><a href="projecte.html" data-i18n="nav_about">El projecte</a><a href="historia.html" data-i18n="nav_lloc">El lloc</a>
+    <a href="activitats.html" class="on" data-i18n="nav_act">Activitats</a><a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a><a href="participa.html" data-i18n="nav_participa">Participa</a>
   </nav>
-  <div class="lang"><b>CA</b> · ES · EN · EU · GA</div>
+  <div class="lang"><button data-lang="ca" class="on">CA</button> · <button data-lang="es">ES</button> · <button data-lang="en">EN</button> · <button data-lang="eu">EU</button> · <button data-lang="ga">GA</button></div>
   </div>
   <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
@@ -31,17 +32,17 @@
 <section class="phero">
   <div class="bgwrap"><img class="bg" data-parallax="0.14" src="imagenes/web/festa2.jpg" alt="Festa popular a Cal Niu"></div>
   <div class="wrap inner">
-    <p class="eyebrow reveal">Activitats</p>
-    <h1 class="reveal d1">Tallers, cultura i <em>vida al camp</em></h1>
-    <p class="kicker reveal d2">Vinguis quan vinguis, sempre hi passa alguna cosa. I sempre hi ha lloc per a un parell de mans més.</p>
+    <p class="eyebrow reveal" data-i18n="a_hero_eye">Activitats</p>
+    <h1 class="reveal d1" data-i18n="a_hero_t">Tallers, cultura i <em>vida al camp</em></h1>
+    <p class="kicker reveal d2" data-i18n="a_hero_k">Vinguis quan vinguis, sempre hi passa alguna cosa. I sempre hi ha lloc per a un parell de mans més.</p>
   </div>
 </section>
 
 <section class="sec alt" id="proposa">
   <div class="wrap" style="max-width:880px">
-    <p class="eyebrow reveal" style="text-align:center">Ets tallerista?</p>
-    <div class="sec-head center reveal d1"><h2>Proposa una activitat</h2></div>
-    <p class="reveal d1" style="text-align:center;max-width:62ch;margin:14px auto 0;color:var(--mute)">Acollim tallers i activitats els caps de setmana, de divendres a diumenge. Tria un cap de setmana lliure i escriu-nos amb la teva proposta.</p>
+    <p class="eyebrow reveal" style="text-align:center" data-i18n="a_prop_eye">Ets tallerista?</p>
+    <div class="sec-head center reveal d1"><h2 data-i18n="a_prop_t">Proposa una activitat</h2></div>
+    <p class="reveal d1" style="text-align:center;max-width:62ch;margin:14px auto 0;color:var(--mute)" data-i18n="a_prop_p">Acollim tallers i activitats els caps de setmana, de divendres a diumenge. Tria un cap de setmana lliure i escriu-nos amb la teva proposta.</p>
     <div id="tallers-cal" class="reveal d1" style="margin-top:30px"></div>
   </div>
 </section>
@@ -50,12 +51,12 @@
   <div class="wrap split">
     <div class="next-poster reveal-zoom"><img loading="lazy" src="imagenes/web/cartell-sant-joan.jpg" alt="Cartell de Sant Joan a Cal Niu"></div>
     <div>
-      <p class="eyebrow reveal">Pròxima activitat</p>
-      <h2 class="reveal d1">Sant Joan a Cal Niu</h2>
+      <p class="eyebrow reveal" data-i18n="a_next_eye">Pròxima activitat</p>
+      <h2 class="reveal d1" data-i18n="a_next_t">Sant Joan a Cal Niu</h2>
       <div class="rule reveal d1"></div>
-      <p class="reveal d2">La revetlla més màgica de l'any: foguera, música i sopar compartit sota les estrelles, vora la masia. Una nit per celebrar l'arribada de l'estiu, oberta a totes les edats i <strong>sense alcohol ni fum</strong>.</p>
-      <p class="reveal d3" style="color:var(--mute)">Nit de Sant Joan · Castellar del Riu</p>
-      <a class="btn-pill reveal d4" href="participa.html" style="margin-top:10px">Vull venir</a>
+      <p class="reveal d2" data-i18n="a_next_p">La revetlla més màgica de l'any: foguera, música i sopar compartit sota les estrelles, vora la masia. Una nit per celebrar l'arribada de l'estiu, oberta a totes les edats i <strong>sense alcohol ni fum</strong>.</p>
+      <p class="reveal d3" style="color:var(--mute)" data-i18n="a_next_meta">Nit de Sant Joan · Castellar del Riu</p>
+      <a class="btn-pill reveal d4" href="participa.html" style="margin-top:10px" data-i18n="a_next_btn">Vull venir</a>
     </div>
   </div>
 </section>
@@ -64,17 +65,17 @@
   <div class="wrap">
     <div class="cards">
       <div class="card reveal d1"><div class="im"><img loading="lazy" src="imagenes/web/biocontruccio-forn.jpg" alt="Taller de bioconstrucció"></div>
-        <div class="bd"><div class="k">Oficis</div><h3>Bioconstrucció</h3><p>Aixeca una paret amb terra, palla, fusta i calç. Surt de la jornada cansat, ple de pols i somrient.</p></div></div>
+        <div class="bd"><div class="k" data-i18n="a_c1_k">Oficis</div><h3 data-i18n="a_c1_t">Bioconstrucció</h3><p data-i18n="a_c1_p">Aixeca una paret amb terra, palla, fusta i calç. Surt de la jornada cansat, ple de pols i somrient.</p></div></div>
       <div class="card reveal d2"><div class="im"><img loading="lazy" src="imagenes/web/hort-1.jpg" alt="Hort i permacultura" style="object-position:center 28%"></div>
-        <div class="bd"><div class="k">Terra</div><h3>Permacultura i hort</h3><p>Disseny de l'hort, compostatge i sobirania alimentària. Sembrar avui per menjar demà.</p></div></div>
+        <div class="bd"><div class="k" data-i18n="a_c2_k">Terra</div><h3 data-i18n="a_c2_t">Permacultura i hort</h3><p data-i18n="a_c2_p">Disseny de l'hort, compostatge i sobirania alimentària. Sembrar avui per menjar demà.</p></div></div>
       <div class="card reveal d3"><div class="im"><img loading="lazy" src="imagenes/web/card-cultura.jpg" alt="Cultura a l'aire lliure"></div>
-        <div class="bd"><div class="k">Cultura</div><h3>Cultura i art</h3><p>Concerts, cinema a la fresca, exposicions i trobades entre els arbres que omplen la nit.</p></div></div>
+        <div class="bd"><div class="k" data-i18n="a_c3_k">Cultura</div><h3 data-i18n="a_c3_t">Cultura i art</h3><p data-i18n="a_c3_p">Concerts, cinema a la fresca, exposicions i trobades entre els arbres que omplen la nit.</p></div></div>
       <div class="card reveal d4"><div class="im"><img loading="lazy" src="imagenes/web/comunitat-camp.jpg" alt="Comunitat treballant a l'hort"></div>
-        <div class="bd"><div class="k">Comunitat</div><h3>Voluntariat</h3><p>Estades per aprendre fent i formar part de la vida diària de la casa, dia rere dia.</p></div></div>
+        <div class="bd"><div class="k" data-i18n="a_c4_k">Comunitat</div><h3 data-i18n="a_c4_t">Voluntariat</h3><p data-i18n="a_c4_p">Estades per aprendre fent i formar part de la vida diària de la casa, dia rere dia.</p></div></div>
       <div class="card reveal d1"><div class="im"><img loading="lazy" src="imagenes/web/cinema-a-la-fresca.jpg" alt="Cinema a la fresca"></div>
-        <div class="bd"><div class="k">Estiu</div><h3>Cinema a la fresca</h3><p>Projeccions a l'aire lliure les nits d'estiu, vora l'església. Per a totes les edats.</p></div></div>
+        <div class="bd"><div class="k" data-i18n="a_c5_k">Estiu</div><h3 data-i18n="a_c5_t">Cinema a la fresca</h3><p data-i18n="a_c5_p">Projeccions a l'aire lliure les nits d'estiu, vora l'església. Per a totes les edats.</p></div></div>
       <div class="card reveal d2"><div class="im"><img loading="lazy" src="imagenes/web/union.jpg" alt="Trobada comunitària"></div>
-        <div class="bd"><div class="k">Comunitat</div><h3>Esdeveniments</h3><p>Festes de temporada, mercats i jornades obertes a tothom, com el Sant Joan a Cal Niu.</p></div></div>
+        <div class="bd"><div class="k" data-i18n="a_c6_k">Comunitat</div><h3 data-i18n="a_c6_t">Esdeveniments</h3><p data-i18n="a_c6_p">Festes de temporada, mercats i jornades obertes a tothom, com el Sant Joan a Cal Niu.</p></div></div>
     </div>
   </div>
 </section>
@@ -82,27 +83,27 @@
 <section class="pull">
   <div class="wrap reveal">
     <span class="mark">“</span>
-    <blockquote>Aixecar una paret amb les teves mans enganxa més del que sembla.</blockquote>
-    <cite>— un cap de setmana de bioconstrucció</cite>
+    <blockquote data-i18n="a_pull_q">Aixecar una paret amb les teves mans enganxa més del que sembla.</blockquote>
+    <cite data-i18n="a_pull_c">— un cap de setmana de bioconstrucció</cite>
   </div>
 </section>
 
 <section class="band"><div class="wrap reveal">
-  <p class="eyebrow">T'esperem</p>
-  <h2>Vols venir a un taller?</h2>
-  <p>Escriu-nos per reservar plaça i t'expliquem les pròximes dates.</p>
-  <a class="btn-pill" href="participa.html">Escriu-nos</a></div></section>
+  <p class="eyebrow" data-i18n="a_band_eye">T'esperem</p>
+  <h2 data-i18n="a_band_t">Vols venir a un taller?</h2>
+  <p data-i18n="a_band_p">Escriu-nos per reservar plaça i t'expliquem les pròximes dates.</p>
+  <a class="btn-pill" href="participa.html" data-i18n="a_band_btn">Escriu-nos</a></div></section>
 
 <footer><div class="wrap">
-  <div class="foot-top">
-    <div><div class="brand">Cal Niu</div><p class="tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
-      <div class="swatches"><i style="background:#f7f2e9"></i><i style="background:#2c2a24"></i><i style="background:#4c5440"></i><i style="background:#a4664a"></i><i style="background:#b89357"></i></div></div>
-    <div class="foot-links">
-      <div><a href="projecte.html">El projecte</a><a href="historia.html">El lloc</a><a href="activitats.html">Activitats</a></div>
-      <div><a href="voluntariat.html">Voluntariat</a><a href="participa.html">Participa</a><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a><a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a></div>
+  <div class="foot-top center">
+    <div class="brand">Cal Niu</div>
+    <p class="tag" data-i18n="foot_tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
+    <div class="foot-contact">
+      <a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a>
+      <a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a>
     </div>
   </div>
-  <div class="foot-bottom"><span>© 2026 Cal Niu · Fet amb cura al Berguedà</span><span>Castellar del Riu · Berguedà</span></div>
+  <div class="foot-bottom"><span data-i18n="foot_rights">© 2026 Cal Niu · Fet amb cura al Berguedà</span><span data-i18n="foot_loc">Castellar del Riu · Berguedà</span></div>
 </div>
   <div class="foot-logo"><img src="assets/logo-calniu-oliva.svg" alt="Cal Niu"></div>
 </footer>

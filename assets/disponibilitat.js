@@ -23,7 +23,7 @@ const DISPONIBILITAT = {
 (function(){
   var FALLBACK = { lliure:"Lliure", ocupat:"Ocupat", propose:"Proposa-la" };
   function lang(){ return document.documentElement.lang || "ca"; }
-  function lab(k){ var dd = (window.I18N && window.I18N[lang()]) || {}; return dd["wk_"+k] || FALLBACK[k]; }
+  function lab(k){ var e = window.I18N && window.I18N["wk_"+k]; return (e && (e[lang()] || e.ca)) || FALLBACK[k]; }
   function cap(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
   function pad(n){ return (n<10?"0":"") + n; }
   function d(s){ return new Date(s + "T12:00:00"); }

@@ -10,6 +10,7 @@
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="stylesheet" href="assets/mock.css">
 <script src="assets/immersive.js" defer></script>
+<script src="assets/i18n.js" defer></script>
 </head>
 <body>
 
@@ -19,10 +20,10 @@
 <header class="nav"><div class="wrap row">
   <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a>
   <div class="nav-collapse"><nav class="links">
-    <a href="index.html">Inici</a><a href="projecte.html">El projecte</a><a href="historia.html" class="on">El lloc</a>
-    <a href="activitats.html">Activitats</a><a href="voluntariat.html">Voluntariat</a><a href="participa.html">Participa</a>
+    <a href="index.html" data-i18n="nav_home">Inici</a><a href="projecte.html" data-i18n="nav_about">El projecte</a><a href="historia.html" class="on" data-i18n="nav_lloc">El lloc</a>
+    <a href="activitats.html" data-i18n="nav_act">Activitats</a><a href="voluntariat.html" data-i18n="nav_vol">Voluntariat</a><a href="participa.html" data-i18n="nav_participa">Participa</a>
   </nav>
-  <div class="lang"><b>CA</b> · ES · EN · EU · GA</div>
+  <div class="lang"><button data-lang="ca" class="on">CA</button> · <button data-lang="es">ES</button> · <button data-lang="en">EN</button> · <button data-lang="eu">EU</button> · <button data-lang="ga">GA</button></div>
   </div>
   <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
@@ -32,11 +33,11 @@
   <img class="ba-new" src="imagenes/web/llinars-1919-salvany.jpeg" alt="Llinars de l'Aiguadora cap al 1919, J. Salvany" style="object-position:center 38%">
   <span class="ba-div"></span>
   <span class="ba-tag l">1919</span>
-  <span class="ba-tag r">Avui</span>
+  <span class="ba-tag r" data-i18n="hi_tag_new">Avui</span>
   <div class="wrap inner">
-    <p class="eyebrow">El lloc · arrossega per comparar</p>
-    <h1>De rectoria <em>a niu</em></h1>
-    <p class="kicker">Hi ha llocs que guarden mil anys de vida entre les seves pedres. Aquest n'és un.</p>
+    <p class="eyebrow" data-i18n="hi_hero_eye">El lloc · arrossega per comparar</p>
+    <h1 data-i18n="hi_hero_t">De rectoria <em>a niu</em></h1>
+    <p class="kicker" data-i18n="hi_hero_k">Hi ha llocs que guarden mil anys de vida entre les seves pedres. Aquest n'és un.</p>
   </div>
 </section>
 
@@ -44,68 +45,68 @@
   <div class="wrap split rev">
     <div class="pic reveal-zoom"><img loading="lazy" src="imagenes/web/entrebosc.jpeg" alt="L'entorn de bosc de Cal Niu"></div>
     <div>
-      <p class="eyebrow reveal">El territori</p>
-      <h2 class="reveal d1">Llinars de l'Aiguadora</h2>
+      <p class="eyebrow reveal" data-i18n="hi_terr_eye">El territori</p>
+      <h2 class="reveal d1" data-i18n="hi_terr_t">Llinars de l'Aiguadora</h2>
       <div class="rule reveal d1"></div>
-      <p class="reveal d2">La masia que avui acull Cal Niu és l'antiga rectoria de <strong style="font-weight:500;color:var(--ink)">Sant Iscle i Santa Victòria</strong>, adossada a l'església i amb una gran portalada d'arc de mig punt.</p>
-      <p class="reveal d3">Un lloc documentat des del segle IX, al mig d'un paisatge de prats, boscos i muntanya, dins l'antic terme de Llinars de l'Aiguadora, avui a Castellar del Riu (Berguedà).</p>
+      <p class="reveal d2" data-i18n="hi_terr_p1">La masia que avui acull Cal Niu és l'antiga rectoria de <strong style="font-weight:500;color:var(--ink)">Sant Iscle i Santa Victòria</strong>, adossada a l'església i amb una gran portalada d'arc de mig punt.</p>
+      <p class="reveal d3" data-i18n="hi_terr_p2">Un lloc documentat des del segle IX, al mig d'un paisatge de prats, boscos i muntanya, dins l'antic terme de Llinars de l'Aiguadora, avui a Castellar del Riu (Berguedà).</p>
     </div>
   </div>
 </section>
 
 <section class="sec alt">
   <div class="wrap">
-    <p class="eyebrow reveal" style="text-align:center">Línia de temps</p>
-    <div class="sec-head reveal d1" style="text-align:center"><h2>Mil anys d'història</h2></div>
+    <p class="eyebrow reveal" style="text-align:center" data-i18n="hi_tl_eye">Línia de temps</p>
+    <div class="sec-head reveal d1" style="text-align:center"><h2 data-i18n="hi_tl_t">Mil anys d'història</h2></div>
     <div class="htl" style="margin-top:44px">
 
-      <div class="htl-item reveal"><div class="y">872–878 · Segle IX</div><h3>Repoblació</h3><p>El comte Guifré el Pelós impulsa la repoblació de la vall de Lord; Llinars de l'Aiguadora n'és un punt clau.</p>
-        <figure><img loading="lazy" src="imagenes/web/repoblacio-guifre.jpg" alt="Zona repoblada per Guifré el Pelós"></figure><figcaption>Zona repoblada per Guifré el Pelós a la vall de Lord</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s1_y">872–878 · Segle IX</div><h3 data-i18n="hi_s1_t">Repoblació</h3><p data-i18n="hi_s1_p">El comte Guifré el Pelós impulsa la repoblació de la vall de Lord; Llinars de l'Aiguadora n'és un punt clau.</p>
+        <figure><img loading="lazy" src="imagenes/web/repoblacio-guifre.jpg" alt="Zona repoblada per Guifré el Pelós"></figure><figcaption data-i18n="hi_s1_c">Zona repoblada per Guifré el Pelós a la vall de Lord</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">Segle IX</div><h3>Primera parròquia</h3><p>Sota el bisbat de la Seu d'Urgell s'hi organitza la primera vida parroquial i el nucli es consolida.</p>
-        <figure class="bw"><img loading="lazy" src="imagenes/web/seu-urgell.jpg" alt="La Seu d'Urgell"></figure><figcaption>La Seu d'Urgell, seu del bisbat</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s2_y">Segle IX</div><h3 data-i18n="hi_s2_t">Primera parròquia</h3><p data-i18n="hi_s2_p">Sota el bisbat de la Seu d'Urgell s'hi organitza la primera vida parroquial i el nucli es consolida.</p>
+        <figure class="bw"><img loading="lazy" src="imagenes/web/seu-urgell.jpg" alt="La Seu d'Urgell"></figure><figcaption data-i18n="hi_s2_c">La Seu d'Urgell, seu del bisbat</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">Vers 948</div><h3>Drets i plet</h3><p>L'església de Llinars té drets sobre una desena d'esglésies veïnes —Sisquer, Castelltort, la Selva, Tentellatge, la Valldora, el Cint, la Mora, Travil, Terrers i la Pedra—. El comte Sunifred II n'usurpa alguns i el bisbe Guisad II en reclama la restitució.</p>
-        <figure><img loading="lazy" src="imagenes/web/mapa-comtats-900.jpg" alt="Mapa dels comtats catalans vers l'any 900"></figure><figcaption>Els comtats catalans vers l'any 900 · Enciclopèdia Catalana</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s3_y">Vers 948</div><h3 data-i18n="hi_s3_t">Drets i plet</h3><p data-i18n="hi_s3_p">L'església de Llinars té drets sobre una desena d'esglésies veïnes —Sisquer, Castelltort, la Selva, Tentellatge, la Valldora, el Cint, la Mora, Travil, Terrers i la Pedra—. El comte Sunifred II n'usurpa alguns i el bisbe Guisad II en reclama la restitució.</p>
+        <figure><img loading="lazy" src="imagenes/web/mapa-comtats-900.jpg" alt="Mapa dels comtats catalans vers l'any 900"></figure><figcaption data-i18n="hi_s3_c">Els comtats catalans vers l'any 900 · Enciclopèdia Catalana</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">Edat mitjana</div><h3>Solsonès i Cardona</h3><p>Durant segles el lloc resta vinculat al Solsonès i a l'òrbita del vescomtat de Cardona.</p>
-        <figure class="bw"><img loading="lazy" src="imagenes/web/cardona.jpg" alt="El castell de Cardona"></figure><figcaption>El castell de Cardona, seu del vescomtat</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s4_y">Edat mitjana</div><h3 data-i18n="hi_s4_t">Solsonès i Cardona</h3><p data-i18n="hi_s4_p">Durant segles el lloc resta vinculat al Solsonès i a l'òrbita del vescomtat de Cardona.</p>
+        <figure class="bw"><img loading="lazy" src="imagenes/web/cardona.jpg" alt="El castell de Cardona"></figure><figcaption data-i18n="hi_s4_c">El castell de Cardona, seu del vescomtat</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">Segle XVII–XVIII</div><h3>Església barroca</h3><p>Es basteix l'actual temple barroc sobre l'antic edifici romànic, amb laudes sepulcrals d'època romànica encastades a la façana.</p>
-        <figure class="bw"><img loading="lazy" src="imagenes/web/facana-1919.jpg" alt="Laudes sepulcrals a la façana, 1919"></figure><figcaption>Laudes sepulcrals encastades a la façana · 1919, J. Salvany</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s5_y">Segle XVII–XVIII</div><h3 data-i18n="hi_s5_t">Església barroca</h3><p data-i18n="hi_s5_p">Es basteix l'actual temple barroc sobre l'antic edifici romànic, amb laudes sepulcrals d'època romànica encastades a la façana.</p>
+        <figure class="bw"><img loading="lazy" src="imagenes/web/facana-1919.jpg" alt="Laudes sepulcrals a la façana, 1919"></figure><figcaption data-i18n="hi_s5_c">Laudes sepulcrals encastades a la façana · 1919, J. Salvany</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">1840</div><h3>Fi del municipi</h3><p>Llinars deixa de ser municipi independent i el seu terme acaba integrant-se a Castellar del Riu.</p>
-        <figure><img loading="lazy" src="imagenes/web/mapa-castellar.png" alt="Mapa de Castellar del Riu"></figure><figcaption>El terme de Castellar del Riu, al Berguedà</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s6_y">1840</div><h3 data-i18n="hi_s6_t">Fi del municipi</h3><p data-i18n="hi_s6_p">Llinars deixa de ser municipi independent i el seu terme acaba integrant-se a Castellar del Riu.</p>
+        <figure><img loading="lazy" src="imagenes/web/mapa-castellar.png" alt="Mapa de Castellar del Riu"></figure><figcaption data-i18n="hi_s6_c">El terme de Castellar del Riu, al Berguedà</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">1919</div><h3>La vida al poble</h3><p>Les fotografies de Josep Salvany documenten una comunitat rural viva al voltant de l'església i la rectoria.</p>
-        <figure class="bw"><img loading="lazy" src="imagenes/web/llinars-1919.jpg" alt="Llinars de l'Aiguadora cap al 1919"></figure><figcaption>Llinars de l'Aiguadora · 1919, J. Salvany</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s7_y">1919</div><h3 data-i18n="hi_s7_t">La vida al poble</h3><p data-i18n="hi_s7_p">Les fotografies de Josep Salvany documenten una comunitat rural viva al voltant de l'església i la rectoria.</p>
+        <figure class="bw"><img loading="lazy" src="imagenes/web/llinars-1919.jpg" alt="Llinars de l'Aiguadora cap al 1919"></figure><figcaption data-i18n="hi_s7_c">Llinars de l'Aiguadora · 1919, J. Salvany</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">Segle XX</div><h3>Èxode rural</h3><p>Com a bona part del món rural pirinenc, la població marxa cap a les ciutats. L'església i la rectoria es van quedant buides i en silenci.</p>
-        <figure class="bw"><img loading="lazy" src="imagenes/web/rectoria-antiga.jpeg" alt="L'antiga rectoria de Cal Niu"></figure><figcaption>L'antiga rectoria, abans de Cal Niu</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s8_y">Segle XX</div><h3 data-i18n="hi_s8_t">Èxode rural</h3><p data-i18n="hi_s8_p">Com a bona part del món rural pirinenc, la població marxa cap a les ciutats. L'església i la rectoria es van quedant buides i en silenci.</p>
+        <figure class="bw"><img loading="lazy" src="imagenes/web/rectoria-antiga.jpeg" alt="L'antiga rectoria de Cal Niu"></figure><figcaption data-i18n="hi_s8_c">L'antiga rectoria, abans de Cal Niu</figcaption></div>
 
-      <div class="htl-item reveal"><div class="y">Avui</div><h3>De rectoria a niu</h3><p>La casa torna a omplir-se de vida com a espai d'aprenentatge, bioconstrucció i comunitat: Cal Niu.</p>
-        <figure><img loading="lazy" src="imagenes/web/rotul-calniu-foto.jpg" alt="El rètol de Cal Niu" style="object-position:center 44%"></figure><figcaption>El rètol de Cal Niu, avui</figcaption></div>
+      <div class="htl-item reveal"><div class="y" data-i18n="hi_s9_y">Avui</div><h3 data-i18n="hi_s9_t">De rectoria a niu</h3><p data-i18n="hi_s9_p">La casa torna a omplir-se de vida com a espai d'aprenentatge, bioconstrucció i comunitat: Cal Niu.</p>
+        <figure><img loading="lazy" src="imagenes/web/rotul-calniu-foto.jpg" alt="El rètol de Cal Niu" style="object-position:center 44%"></figure><figcaption data-i18n="hi_s9_c">El rètol de Cal Niu, avui</figcaption></div>
 
     </div>
   </div>
 </section>
 
 <section class="band"><div class="wrap reveal">
-  <p class="eyebrow">El següent capítol</p>
-  <h2>El vols escriure amb nosaltres?</h2>
-  <p>La història d'aquesta casa encara s'està fent. Vine a posar-hi la teva pàgina.</p>
-  <a class="btn-pill" href="participa.html">Vull venir</a></div></section>
+  <p class="eyebrow" data-i18n="hi_band_eye">El següent capítol</p>
+  <h2 data-i18n="hi_band_t">El vols escriure amb nosaltres?</h2>
+  <p data-i18n="hi_band_p">La història d'aquesta casa encara s'està fent. Vine a posar-hi la teva pàgina.</p>
+  <a class="btn-pill" href="participa.html" data-i18n="hi_band_btn">Vull venir</a></div></section>
 
 <footer><div class="wrap">
-  <div class="foot-top">
-    <div><div class="brand">Cal Niu</div><p class="tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
-      <div class="swatches"><i style="background:#f7f2e9"></i><i style="background:#2c2a24"></i><i style="background:#4c5440"></i><i style="background:#a4664a"></i><i style="background:#b89357"></i></div></div>
-    <div class="foot-links">
-      <div><a href="projecte.html">El projecte</a><a href="historia.html">El lloc</a><a href="activitats.html">Activitats</a></div>
-      <div><a href="voluntariat.html">Voluntariat</a><a href="participa.html">Participa</a><a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a><a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a></div>
+  <div class="foot-top center">
+    <div class="brand">Cal Niu</div>
+    <p class="tag" data-i18n="foot_tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
+    <div class="foot-contact">
+      <a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a>
+      <a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a>
     </div>
   </div>
-  <div class="foot-bottom"><span>© 2026 Cal Niu · Fet amb cura al Berguedà</span><span>Castellar del Riu · Berguedà</span></div>
+  <div class="foot-bottom"><span data-i18n="foot_rights">© 2026 Cal Niu · Fet amb cura al Berguedà</span><span data-i18n="foot_loc">Castellar del Riu · Berguedà</span></div>
 </div>
   <div class="foot-logo"><img src="assets/logo-calniu-oliva.svg" alt="Cal Niu"></div>
 </footer>

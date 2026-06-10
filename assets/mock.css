@@ -618,13 +618,28 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 /* ===== Icones de línia animades darrere dels passos numerats ===== */
 .numbered .it{position:relative}
 .numbered .it > *{position:relative;z-index:1}
-.it-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:132px;height:132px;z-index:0;fill:none;stroke:var(--clay);stroke-width:1;opacity:.13;pointer-events:none;overflow:visible}
-.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dasharray:400;stroke-dashoffset:400}
-.numbered.in .it-bg path,.numbered.in .it-bg circle,.numbered.in .it-bg line,.numbered.in .it-bg polyline,.numbered.in .it-bg rect,.numbered.in .it-bg polygon{animation:itdraw 2.2s var(--ease) forwards}
-.numbered.in .it:nth-child(2) .it-bg *{animation-delay:.22s}
-.numbered.in .it:nth-child(3) .it-bg *{animation-delay:.44s}
-@keyframes itdraw{to{stroke-dashoffset:0}}
+.it-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:132px;height:132px;z-index:0;fill:none;stroke:var(--clay);stroke-width:1.1;opacity:.18;pointer-events:none;overflow:visible}
+.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dasharray:400;stroke-dashoffset:400;animation:itdraw 6.5s var(--ease) infinite}
+.numbered .it:nth-child(2) .it-bg path,.numbered .it:nth-child(2) .it-bg circle,.numbered .it:nth-child(2) .it-bg line,.numbered .it:nth-child(2) .it-bg polyline,.numbered .it:nth-child(2) .it-bg rect,.numbered .it:nth-child(2) .it-bg polygon{animation-delay:.9s}
+.numbered .it:nth-child(3) .it-bg path,.numbered .it:nth-child(3) .it-bg circle,.numbered .it:nth-child(3) .it-bg line,.numbered .it:nth-child(3) .it-bg polyline,.numbered .it:nth-child(3) .it-bg rect,.numbered .it:nth-child(3) .it-bg polygon{animation-delay:1.8s}
+@keyframes itdraw{0%{stroke-dashoffset:400}42%{stroke-dashoffset:0}62%{stroke-dashoffset:0}100%{stroke-dashoffset:-400}}
 @media(prefers-reduced-motion:reduce){.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dashoffset:0;animation:none}}
+
+/* ===== Hero mòbil: que el text no quedi tapat pel menú i no s'enganxi al cue ===== */
+@media(max-width:860px){
+  .hero{align-items:flex-start;padding-top:120px;padding-bottom:96px}
+  .hero h1{font-size:clamp(36px,8.5vw,54px)}
+  .hero p.sub{font-size:17px}
+  .hero .row{margin-top:28px}
+}
+
+/* ===== Footer centrat (només el que NO és al menú: contacte) ===== */
+.foot-top.center{display:block;text-align:center;max-width:560px;margin:0 auto}
+.foot-top.center .tag{max-width:48ch;margin:12px auto 0}
+.foot-contact{display:flex;gap:10px 28px;justify-content:center;flex-wrap:wrap;margin-top:22px;font-size:14px}
+.foot-contact a{color:var(--mute);transition:color .3s}
+.foot-contact a:hover{color:var(--ink)}
+.foot-bottom{justify-content:center;gap:8px 22px;flex-wrap:wrap;text-align:center}
 
 /* ===== Logo a la barra (a dalt esquerra) i logo gran centrat al footer ===== */
 .nav .brand{display:inline-flex;align-items:center;gap:18px;line-height:0}
