@@ -408,6 +408,8 @@ footer .tag{color:var(--mute);max-width:34ch;margin-top:12px;font-weight:300}
 html{background:#23261c}
 .endcap{padding-bottom:14px}
 .endcap footer{margin-bottom:0}
+/* la banda verda dins l'endcap mostra el degradat verd (com a l'inici) */
+.endcap .band{background:transparent}
 /* remove the colour-palette swatches from the footer */
 .swatches{display:none}
 
