@@ -622,10 +622,10 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 .numbered .it > *:not(.it-bg){position:relative;z-index:1}
 .it-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:132px;height:132px;z-index:0;fill:none;stroke:var(--clay);stroke-width:1.4;opacity:.32;pointer-events:none;overflow:visible}
 @media(max-width:760px){.it-bg{width:108px;height:108px}}
-.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dasharray:400;stroke-dashoffset:400;animation:itdraw 12s var(--ease) infinite}
+.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dasharray:400;stroke-dashoffset:400;animation:itwrite 9s linear infinite}
 .numbered .it:nth-child(2) .it-bg path,.numbered .it:nth-child(2) .it-bg circle,.numbered .it:nth-child(2) .it-bg line,.numbered .it:nth-child(2) .it-bg polyline,.numbered .it:nth-child(2) .it-bg rect,.numbered .it:nth-child(2) .it-bg polygon{animation-delay:.9s}
 .numbered .it:nth-child(3) .it-bg path,.numbered .it:nth-child(3) .it-bg circle,.numbered .it:nth-child(3) .it-bg line,.numbered .it:nth-child(3) .it-bg polyline,.numbered .it:nth-child(3) .it-bg rect,.numbered .it:nth-child(3) .it-bg polygon{animation-delay:1.8s}
-@keyframes itdraw{0%{stroke-dashoffset:400}26%{stroke-dashoffset:0}74%{stroke-dashoffset:0}100%{stroke-dashoffset:-400}}
+@keyframes itwrite{0%{stroke-dashoffset:400;opacity:1}40%{stroke-dashoffset:0;opacity:1}82%{stroke-dashoffset:0;opacity:1}94%{stroke-dashoffset:0;opacity:0}100%{stroke-dashoffset:400;opacity:0}}
 @media(prefers-reduced-motion:reduce){.it-bg path,.it-bg circle,.it-bg line,.it-bg polyline,.it-bg rect,.it-bg polygon{stroke-dashoffset:0;animation:none}}
 
 /* ===== Hero mòbil: que el text no quedi tapat pel menú i no s'enganxi al cue ===== */
