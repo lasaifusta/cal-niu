@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PREVIEW · Cal Niu Voluntariat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/mock.css">
+<style>
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--warm);margin-top:30px}
+  .svc{padding:38px 18px;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .svc:nth-child(3n){border-right:none}.svc:nth-child(n+4){border-bottom:none}
+  .svc svg{width:30px;height:30px;stroke:var(--clay);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+  .svc h4{font-family:'Jost',sans-serif;font-weight:500;font-size:17px;margin:0;color:var(--ink)}
+  .svc span{display:block;font-size:13px;color:var(--mute);margin-top:4px}
+  .callout{display:flex;gap:20px;align-items:flex-start;background:var(--cream);border:1px solid var(--line);border-left:4px solid var(--clay);border-radius:14px;padding:28px 30px;margin-top:24px}
+  .callout svg{width:32px;height:32px;flex:none;stroke:var(--clay);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-top:4px}
+  .callout h3{font-family:'Fraunces',serif;font-size:24px;margin:0 0 8px;color:var(--clay-d)}
+  .callout p{margin:0;color:#3b3724;font-weight:300}
+  .daysched{max-width:640px;margin-top:30px}
+  .day{display:grid;grid-template-columns:130px 1fr;gap:22px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+  .day:last-child{border-bottom:none}
+  .day .t{font-family:'Jost',sans-serif;font-weight:500;color:var(--clay-d);font-size:16px;border-left:2px solid var(--gold);padding-left:16px}
+  .day .a{color:var(--ink);font-weight:300;font-size:18px}
+  .daynote{margin-top:20px;font-size:14.5px;color:var(--mute);max-width:640px}
+  .alertbox{background:#f6ece2;border:1px solid var(--clay);border-left:5px solid var(--clay);border-radius:14px;padding:24px 26px;margin-top:22px}
+  .alertbox h3{font-family:'Fraunces',serif;color:var(--clay-d);margin:0 0 7px;font-size:22px}
+  .alertbox p{margin:0;color:#4a3a30;font-weight:300}
+  .knowlist{list-style:none;padding:0;margin:30px 0 0;max-width:780px}
+  .knowlist li{position:relative;padding-left:28px;margin-bottom:18px;font-weight:300;color:var(--ink);font-size:18px}
+  .knowlist li::before{content:"—";position:absolute;left:0;color:var(--gold);font-weight:500}
+  .knowlist strong{font-weight:500;color:var(--ink)}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px}
+  .infobox{background:var(--warm);border:1px solid var(--line);border-radius:16px;padding:30px 32px}
+  .infobox h3{font-family:'Fraunces',serif;font-size:24px;color:var(--clay-d);margin:0 0 12px}
+  .infobox p{margin:0 0 12px;color:#3b3724;font-weight:300}.infobox p:last-child{margin:0}
+  .infobox strong{font-weight:500;color:var(--ink)}
+  .pvbadge{position:fixed;top:0;left:0;right:0;background:var(--clay-d);color:#fff;text-align:center;font:500 13px 'Jost',sans-serif;letter-spacing:.1em;padding:7px;z-index:99}
+  body{padding-top:32px}
+  @media(max-width:780px){.svc-grid{grid-template-columns:1fr 1fr}.svc:nth-child(3n){border-right:1px solid var(--line)}.svc:nth-child(2n){border-right:none}.svc:nth-child(5),.svc:nth-child(6){border-bottom:none}.twocol{grid-template-columns:1fr}.day{grid-template-columns:96px 1fr;gap:14px}}
+</style>
+</head>
+<body>
+<div class="pvbadge">PREVIEW — disseny proposat (català). En aplicar-lo anirà en CA·ES·EN·EU·GA</div>
+
+<header class="nav"><div class="wrap row">
+  <a class="brand" href="#"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a>
+  <div class="nav-collapse"><nav class="links">
+    <a href="#">Inici</a><a href="#">El projecte</a><a href="#">El lloc</a><a href="#">Activitats</a><a href="#" class="on">Voluntariat</a><a href="#">Participa</a>
+  </nav>
+  <div class="lang"><button class="on">CA</button> · <button>ES</button> · <button>EN</button> · <button>EU</button> · <button>GA</button></div>
+  </div>
+</div></header>
+
+<section class="phero">
+  <div class="bgwrap"><img class="bg" src="imagenes/web/card-cultura.jpg" alt="Vida compartida a Cal Niu"></div>
+  <div class="wrap inner">
+    <p class="eyebrow">Voluntariat</p>
+    <h1>Vine a donar un <em>cop de mà</em></h1>
+    <p class="kicker">Treballa la terra, aprèn oficis i fes pinya amb la gent de la casa.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Aprendre fent</p>
+      <h2>Viu el dia a dia de la masia</h2>
+      <div class="rule"></div>
+      <p>Cal Niu és un projecte rural i comunitari a Castellar del Riu (Berguedà): una antiga rectoria que tornem a omplir de vida, a poc a poc i amb les mans. El voluntariat és la manera de formar-ne part de debò.</p>
+      <p>El plantegem com una estada inicial de 5 dies, prorrogable si ve de gust a tothom. La idea és senzilla: <strong>s'aprèn fent</strong>. A canvi d'unes hores de feina al dia, compartim taula, vida i aprenentatges. No cal experiència prèvia, només ganes i respecte pel lloc i pels altres.</p>
+    </div>
+    <div class="pic"><img loading="lazy" src="imagenes/web/biocontruccio-forn.jpg" alt="Treballant amb les mans a la masia"></div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">El que et posa la casa</p><h2>Serveis</h2></div>
+    <div class="svc-grid">
+      <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg><h4>Wifi</h4></div>
+      <div class="svc"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg><h4>Dutxa amb aigua calenta</h4></div>
+      <div class="svc"><svg viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M7 5h.01M11 5h.01"/></svg><h4>Rentadora</h4></div>
+      <div class="svc"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg><h4>Àpats vegetarians</h4><span>els posem nosaltres</span></div>
+      <div class="svc"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h4>Moments compartits</h4><span>vida en comú</span></div>
+      <div class="svc"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="11" height="5" rx="1"/><path d="M6 8h11a1 1 0 0 1 1 1c0 3.4-2.5 6.2-6 6.8V20H9v-4.2C5.5 15.2 3 12.4 3 9a1 1 0 0 1 1-1h2"/><path d="M8 20h6"/></svg><h4>Bany sec</h4><span>a fora</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">On dormiràs</p><h2>Vine amb furgo o tenda</h2></div>
+    <div class="callout">
+      <svg viewBox="0 0 24 24"><path d="M3 20l9-15 9 15z"/><path d="M12 5v15"/></svg>
+      <p><strong style="color:var(--clay-d)">Encara no tenim espai interior per dormir.</strong> Vine autosuficient, amb furgoneta o tenda de campanya, i munta't el teu racó a la finca. Estem en obres i, a poc a poc, condicionem la casa.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">El ritme del dia</p><h2>Un dia a Cal Niu</h2></div>
+    <div class="daysched">
+      <div class="day"><div class="t">8.00</div><div class="a">Esmorzar. La casa s'obre.</div></div>
+      <div class="day"><div class="t">9–13 h</div><div class="a">Feina, amb horari flexible.</div></div>
+      <div class="day"><div class="t">13.00</div><div class="a">Dinar.</div></div>
+      <div class="day"><div class="t">tarda</div><div class="a">Tarda lliure.</div></div>
+      <div class="day"><div class="t">20.00</div><div class="a">Sopar.</div></div>
+      <div class="day"><div class="t">21.00</div><div class="a">Es tanca la casa.</div></div>
+    </div>
+    <p class="daynote">En tancar (21.00 h) ja no es pot dutxar, fer servir la rentadora ni entrar al bany de dalt. A fora tens el bany sec disponible.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Com arribar</p><h2>Es ve amb cotxe propi</h2>
+      <p class="lead" style="margin-top:8px">No hi ha transport públic fins a la casa: cal vehicle propi. Segueix les indicacions cap a Sant Iscle i Santa Victòria de Llinars (Castellar del Riu, Berguedà).</p>
+    </div>
+    <div class="alertbox">
+      <h3>Important — no agafis cap camí de terra</h3>
+      <p>Tot el camí fins a casa està asfaltat. El GPS de vegades enganya i et vol fer entrar per pistes de terra: no les agafis. Si el navegador t'hi envia, torna a la carretera asfaltada i segueix-la fins a la casa.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Bo de saber</p><h2>Abans d'apuntar-te</h2></div>
+    <ul class="knowlist">
+      <li><strong>Altitud i clima:</strong> estem a 983 m, clima de muntanya. Nits fresques fins i tot a l'estiu i temporada a l'aire lliure de mitjan maig a mitjan octubre.</li>
+      <li><strong>Mascotes:</strong> s'admeten, però pregunta'ns abans.</li>
+      <li><strong>Dietes:</strong> digues-nos si tens al·lèrgies o intoleràncies alimentàries.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="twocol">
+      <div class="infobox"><h3>Normes de convivència</h3><p>Cal Niu és un espai <strong>sense carn, sense fum i sense alcohol</strong>. Forma part de la identitat del projecte.</p></div>
+      <div class="infobox"><h3>Abans de venir</h3><p><strong>Què portar:</strong> el necessari per dormir (sac, matalàs…), roba de treball, calçat còmode, roba d'abric (fa fresca al vespre), higiene personal i moltes ganes.</p><p>A l'arribada signaràs un document de consentiment i assumpció de responsabilitat sobre tu mateix durant l'estada. És una formalitat senzilla.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap" style="max-width:700px">
+    <div class="vol-status">
+      <span class="vol-dot"></span>
+      <div class="vol-txt"><strong>Disponible per a voluntariat</strong><span>Ara mateix acollim voluntàries i voluntaris. No mirem calendari: escriu-nos i ho parlem; et direm les dates.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center">Com funciona</p>
+    <div class="sec-head center"><h2>Del primer correu a la primera nit</h2></div>
+    <div class="numbered center" style="margin-top:32px">
+      <div class="it"><div class="n">01</div><h3>Escriu-nos</h3><p>Conta'ns qui ets, què t'agradaria fer i quines dates tens al cap.</p></div>
+      <div class="it"><div class="n">02</div><h3>Vine</h3><p>T'ensenyem la casa, et presentem la gent i t'expliquem la feina dels primers dies.</p></div>
+      <div class="it"><div class="n">03</div><h3>Aprèn fent</h3><p>Treballem junts, cuinem junts i deixem el lloc una mica millor que com l'hem trobat.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="endcap">
+<section class="band"><div class="wrap">
+  <p class="eyebrow">L'únic que falta ets tu</p>
+  <h2>T'animes a venir?</h2>
+  <p>Espai sense alcohol ni fum, vida compartida i molt per aprendre. Quan ho hagis llegit tot, omple el formulari i parlem.</p>
+  <a class="btn-pill" href="https://forms.gle/4k8VcsdKLkTM5z6w6" target="_blank" rel="noopener">Vull ser voluntari/a</a></div></section>
+
+<footer><div class="wrap">
+  <div class="foot-top center">
+    <div class="brand">Cal Niu</div>
+    <p class="tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
+    <div class="foot-contact"><a href="#">Instagram · @som.calniu</a><a href="#">som.calniu@gmail.com</a></div>
+  </div>
+  <div class="foot-bottom"><span>© 2026 Cal Niu · Fet amb cura al Berguedà</span><span>Castellar del Riu · Berguedà</span></div>
+</div></footer>
+</div>
+
+</body></html>
