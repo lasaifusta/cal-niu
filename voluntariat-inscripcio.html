@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cal Niu · Apunta't com a voluntari/ària</title>
+<meta name="description" content="Apunta't per ser voluntari/ària a Cal Niu (Castellar del Riu, Berguedà): com funciona, disponibilitat, com arribar i el formulari d'inscripció.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<!-- Formulari d'inscripció de voluntariat (Google Form de Cal Niu): https://forms.gle/4k8VcsdKLkTM5z6w6 -->
+<style>
+  :root{
+    --paper:#f7f2e9; --cream:#efe7d7; --warm:#fffdf9; --ink:#2c2a24; --soft:#2b2e23;
+    --mute:#7a7263; --line:#d9cfba; --sage:#4c5440; --sage-d:#3a4131; --clay:#a4664a;
+    --clay-d:#834f38; --gold:#b89357;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.7 'Jost',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.06}
+  a{color:var(--clay-d)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--clay)}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:40;background:rgba(58,65,49,.97);backdrop-filter:blur(6px)}
+  .nav .row{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding:12px 0}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;margin-right:auto}
+  .brand img{height:34px;width:auto}
+  .brand span{font-family:'Fraunces',serif;font-size:23px;letter-spacing:.02em}
+  .links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+  .links a{color:#e9e3cd;text-decoration:none;padding-bottom:2px;border-bottom:1.5px solid transparent}
+  .links a:hover,.links a.on{color:#fff;border-color:var(--gold)}
+
+  /* hero */
+  .phero{position:relative;color:#fff;overflow:hidden}
+  .phero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .phero .ov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(36,46,28,.78),rgba(28,36,22,.62) 55%,rgba(20,28,16,.82))}
+  .phero .inner{position:relative;padding:78px 0 70px}
+  .phero h1{font-size:clamp(38px,6.4vw,68px);margin:.18em 0 .3em;max-width:18ch}
+  .phero .kicker{font-size:19px;max-width:46ch;color:#f1ead2;margin:0 0 26px}
+
+  .btn{display:inline-block;font-family:'Jost',sans-serif;font-size:15px;font-weight:500;letter-spacing:.02em;
+    text-decoration:none;padding:14px 26px;border-radius:7px;background:var(--gold);color:#27210f;border:1.6px solid var(--gold);transition:.2s;cursor:pointer}
+  .btn:hover{background:transparent;color:var(--gold)}
+  .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+  .btn.ghost:hover{background:#fff;color:var(--sage-d);border-color:#fff}
+  .btn.sage{background:var(--sage);border-color:var(--sage);color:#fff}
+  .btn.sage:hover{background:transparent;color:var(--sage)}
+  .btn-row{display:flex;gap:13px;flex-wrap:wrap}
+
+  section{padding:60px 0}
+  .sec-tag{margin-bottom:12px}
+  h2{font-size:clamp(26px,4vw,40px);margin:0 0 .5em;color:var(--ink)}
+  h2 em{font-style:italic;color:var(--clay)}
+  .lead{font-size:19px;color:#3b3724;max-width:60ch}
+  p{margin:0 0 1em}
+  .muted{color:var(--mute);font-size:14px}
+
+  .photos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+  .photos figure{margin:0;border-radius:12px;overflow:hidden;box-shadow:0 14px 34px rgba(44,42,36,.16);aspect-ratio:4/3}
+  .photos img{width:100%;height:100%;object-fit:cover}
+
+  .chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+  .chip{background:var(--cream);border:1px solid var(--line);border-radius:30px;padding:9px 18px;font-size:15px}
+  .chip b{font-weight:500;color:var(--clay-d)}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .card{background:var(--warm);border:1px solid var(--line);border-radius:14px;padding:24px 26px}
+  .card h3{font-size:21px;margin:0 0 8px;color:var(--clay-d)}
+  .card p{margin:0;color:#3b3724;font-size:15.5px}
+  .card ul{margin:6px 0 0;padding-left:0;list-style:none}
+  .card li{position:relative;padding-left:16px;margin:0 0 8px;font-size:15.5px;color:#3b3724}
+  .card li:before{content:"—";position:absolute;left:0;color:var(--gold)}
+
+  .alert{background:#f6ece2;border:1px solid var(--clay);border-left:5px solid var(--clay);border-radius:12px;padding:20px 22px;margin-top:18px}
+  .alert h3{color:var(--clay-d);margin:0 0 6px;font-size:20px}
+  .alert p{margin:0;color:#4a3a30;font-size:15.5px}
+
+  /* calendari (reusa assets/disponibilitat.js) */
+  .cal2{max-width:520px;margin:0 auto}
+  .cal2-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+  .cal2-head h3{font-family:'Fraunces',serif;font-size:24px;font-weight:500;text-transform:capitalize;margin:0}
+  .cal2-nav{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:none;cursor:pointer;font-size:18px;color:var(--ink)}
+  .cal2-nav:hover{background:var(--cream)} .cal2-nav[disabled]{opacity:.28;cursor:default}
+  .cal2-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+  .cal2-wd{text-align:center;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);padding-bottom:4px}
+  .cal2-day{aspect-ratio:1;display:flex;align-items:center;justify-content:center;flex-direction:column;border-radius:10px;font-size:15px;color:var(--ink);background:var(--cream)}
+  .cal2-day.empty{background:none}
+  .cal2-day.dim{background:transparent;color:var(--mute);opacity:.45}
+  .cal2-day.free{background:rgba(76,138,63,.16);color:#2f5a27;border:1px solid rgba(76,138,63,.55);font-weight:600;pointer-events:none}
+  .cal2-day.busy{background:rgba(164,102,74,.14);color:#8a4a33;border:1px solid rgba(164,102,74,.35)}
+  .cal2-note{font-size:7.5px;letter-spacing:.04em;text-transform:uppercase;line-height:1;margin-top:2px;opacity:.85}
+  .cal2-legend{display:flex;gap:24px;justify-content:center;margin-top:20px;font-size:12.5px;color:var(--mute)}
+  .cal2-legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:7px;vertical-align:-1px}
+  .cal2-legend .lg-free{background:rgba(76,138,63,.55)} .cal2-legend .lg-busy{background:rgba(164,102,74,.45)}
+  @media(max-width:560px){.cal2-day{font-size:13px;border-radius:8px}.cal2-note{display:none}}
+
+  .calwrap{background:var(--warm);border:1px solid var(--line);border-radius:16px;padding:26px}
+  .band{background:var(--sage-d);color:#f4efe2;border-radius:18px;padding:40px 32px;text-align:center}
+  .band h2{color:#fff} .band p{color:#e3ddc6;max-width:48ch;margin:0 auto 22px}
+
+  footer{background:var(--soft);color:#d7d0b8;padding:40px 0;margin-top:20px;font-size:14px;text-align:center}
+  footer .b{font-family:'Fraunces',serif;font-size:28px;color:#fff}
+  footer a{color:var(--gold);text-decoration:none}
+  .foot-c{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+
+  @media(max-width:780px){.grid2,.photos{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap row">
+  <a class="brand" href="index.html"><img src="assets/logo-calniu-blanc.svg" alt="Cal Niu"><span>Cal Niu</span></a>
+  <nav class="links">
+    <a href="index.html">Inici</a>
+    <a href="projecte.html">El projecte</a>
+    <a href="historia.html">El lloc</a>
+    <a href="activitats.html">Activitats</a>
+    <a href="voluntariat.html">Voluntariat</a>
+    <a href="voluntariat-inscripcio.html" class="on">Apunta't</a>
+  </nav>
+</div></header>
+
+<!-- HERO -->
+<section class="phero">
+  <img class="bg" src="imagenes/web/comunitat-camp.jpg" alt="Voluntàries i voluntaris a Cal Niu">
+  <div class="ov"></div>
+  <div class="wrap inner">
+    <p class="eyebrow" style="color:var(--gold)">Voluntariat · Castellar del Riu</p>
+    <h1>Vine a fer <em>niu</em> amb nosaltres</h1>
+    <p class="kicker">Estades de 5 dies per començar, prorrogables. S'aprèn fent: a canvi d'unes hores de feina al dia, compartim taula i vida en comunitat. No cal experiència prèvia.</p>
+    <div class="btn-row">
+      <a class="btn" href="https://forms.gle/4k8VcsdKLkTM5z6w6" target="_blank" rel="noopener">Apunta't al formulari</a>
+      <a class="btn ghost" href="guia-voluntariat.pdf" target="_blank" rel="noopener">Descarrega la guia (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUÈ ÉS / FOTOS -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow sec-tag">Aprendre fent</p>
+    <h2>Forma part del dia a dia de la <em>masia</em></h2>
+    <p class="lead">Cal Niu és un projecte rural i comunitari a una antiga rectoria del Berguedà que tornem a omplir de vida, a poc a poc i amb les mans. Els <b>treballs habituals</b> són l'hort, la construcció i la cuina, entre d'altres.</p>
+    <div class="chips">
+      <span class="chip"><b>Hort</b></span>
+      <span class="chip"><b>Construcció</b></span>
+      <span class="chip"><b>Cuina</b></span>
+      <span class="chip">i el dia a dia de la casa</span>
+    </div>
+    <div class="photos">
+      <figure><img src="imagenes/web/hort-1.jpg" alt="L'hort de Cal Niu"></figure>
+      <figure><img src="imagenes/web/biocontruccio-forn.jpg" alt="Construcció i oficis a Cal Niu"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- DISPONIBILITAT -->
+<section style="background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <p class="eyebrow sec-tag">Disponibilitat</p>
+    <h2>Quines dates hi ha <em>lliures</em></h2>
+    <p class="lead" style="margin-bottom:22px">Al formulari ens demanes <b>de quina data a quina data</b> t'agradaria venir i nosaltres et confirmem si podem acollir-te. El calendari mostra, com a orientació, els caps de setmana amb activitat (tallers i el <b>Festivalet</b>): t'ajuda a triar, però la confirmació sempre te la donem nosaltres.</p>
+    <div class="calwrap">
+      <div id="tallers-cal"></div>
+    </div>
+  </div>
+</section>
+
+<!-- COM ARRIBAR -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow sec-tag">Com arribar</p>
+    <h2>Es ve amb <em>cotxe propi</em></h2>
+    <p class="lead">No hi ha transport públic fins a la casa. Per arribar necessites vehicle propi. Segueix les indicacions cap a <b>Sant Iscle i Santa Victòria de Llinars</b> (Castellar del Riu, Berguedà).</p>
+    <div class="alert">
+      <h3>Important · no agafis cap camí de terra</h3>
+      <p><b>Tot el camí fins a casa està asfaltat.</b> El GPS de vegades enganya i et vol fer entrar per pistes de terra: no les agafis. Si el navegador t'envia a un camí sense asfaltar, torna a la carretera asfaltada i segueix-la fins a la casa.</p>
+    </div>
+    <p style="margin-top:18px"><b>Furgoneta o tenda:</b> quan arribis t'indiquem on deixar-la i on muntar el teu racó.</p>
+  </div>
+</section>
+
+<!-- BO DE SABER -->
+<section style="background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <p class="eyebrow sec-tag">Bo de saber</p>
+    <h2>Abans d'apuntar-te</h2>
+    <div class="grid2" style="margin-top:8px">
+      <div class="card">
+        <h3>On i com es dorm</h3>
+        <ul>
+          <li>Encara no hi ha espai interior per dormir: vine <b>amb furgoneta o tenda</b>, autosuficient.</li>
+          <li><b>Aigua:</b> hi ha una presa a fora.</li>
+          <li><b>Electricitat:</b> no n'hi ha fins al campament; a la casa sí que en pots fer servir.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Altitud i clima</h3>
+        <ul>
+          <li>Estem a <b>983 m</b>, clima de muntanya.</li>
+          <li>Estius temperats i <b>nits fresques</b>, fins i tot a l'estiu: porta roba d'abric.</li>
+          <li>Millor temporada a l'aire lliure: de mitjan maig a mitjan octubre.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Requisits</h3>
+        <ul>
+          <li>Ser <b>major d'edat</b>.</li>
+          <li>A l'arribada, cada voluntari/ària <b>signa un document d'autoresponsabilitat</b> (consentiment i assumpció de riscos durant l'estada).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Mascotes i dietes</h3>
+        <ul>
+          <li><b>Mascotes:</b> s'admeten, però <b>pregunta'ns abans</b>.</li>
+          <li><b>Dietes:</b> digues-nos si tens <b>al·lèrgies o intoleràncies</b>. Els àpats que posem són vegetarians.</li>
+          <li>Cal Niu és un espai <b>sense carn, sense fum i sense alcohol</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section>
+  <div class="wrap">
+    <div class="band">
+      <p class="eyebrow" style="color:var(--gold)">Inscripció</p>
+      <h2>T'animes a venir?</h2>
+      <p>Omple el formulari amb les teves dates, els treballs que prefereixes, una breu descripció i una foto perquè et coneguem. Et confirmem si podem acollir-te.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn" href="https://forms.gle/4k8VcsdKLkTM5z6w6" target="_blank" rel="noopener">Apunta't al formulari</a>
+        <a class="btn ghost" href="mailto:som.calniu@gmail.com?subject=Voluntariat%20a%20Cal%20Niu">Escriu-nos directament</a>
+      </div>
+      <p class="muted" style="color:#cdc6ad;margin:16px 0 0">També pots escriure'ns per Instagram a @som.calniu o per correu, sense formulari.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="b">Cal Niu</div>
+    <p class="muted" style="color:#b8b196">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
+    <div class="foot-c">
+      <a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a>
+      <a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/disponibilitat.js"></script>
+</body>
+</html>
