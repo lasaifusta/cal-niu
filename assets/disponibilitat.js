@@ -11,7 +11,7 @@ const DISPONIBILITAT = {
     { ini:"2026-07-31", fi:"2026-08-02", estat:"ocupat" },
     { ini:"2026-08-07", fi:"2026-08-09", estat:"ocupat" },
     { ini:"2026-08-14", fi:"2026-08-16", estat:"lliure" },
-    { ini:"2026-08-17", fi:"2026-08-23", estat:"esdeveniment", nota:"Bioconstrucció" },
+    { ini:"2026-08-17", fi:"2026-08-23", estat:"esdeveniment", nota:"Bioconstrucció", etiq:"Bio<br>construcció" },
     { ini:"2026-08-28", fi:"2026-08-30", estat:"lliure" },
     { ini:"2026-09-04", fi:"2026-09-06", estat:"lliure" },
     { ini:"2026-09-11", fi:"2026-09-13", estat:"lliure" },
@@ -50,7 +50,7 @@ const DISPONIBILITAT = {
       var range = fmtRange(w.ini, w.fi), a = d(w.ini), b = d(w.fi);
       for (var t=new Date(a); t<=b; t.setDate(t.getDate()+1)){
         var key = t.getFullYear()+"-"+pad(t.getMonth()+1)+"-"+pad(t.getDate());
-        map[key] = { estat:w.estat, range:range, nota:w.nota||"" };
+        map[key] = { estat:w.estat, range:range, nota:w.nota||"", etiq:w.etiq||"" };
       }
     });
     return map;
@@ -91,7 +91,8 @@ const DISPONIBILITAT = {
         h += '<a class="cal2-day free" href="' + mailLink(info.range) + '" title="' + lab("propose") + ' · ' + info.range + '">' + day + '</a>';
       } else if (info && info.estat==="esdeveniment"){
         var et = info.nota || lab("esdeveniment");
-        h += '<div class="cal2-day event" title="' + et + ' · ' + info.range + '">' + day + (info.nota? '<span class="cal2-note">'+info.nota+'</span>' : '') + '</div>';
+        var cell = info.etiq || info.nota;
+        h += '<div class="cal2-day event" title="' + et + ' · ' + info.range + '">' + day + (cell? '<span class="cal2-note">'+cell+'</span>' : '') + '</div>';
       } else if (info){
         var tt = lab("ocupat") + (info.nota? ' · '+info.nota : '');
         h += '<div class="cal2-day busy" title="' + tt + '">' + day + (info.nota? '<span class="cal2-note">'+info.nota+'</span>' : '') + '</div>';
