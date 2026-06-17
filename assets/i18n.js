@@ -19,6 +19,7 @@ const T = {
   wk_lliure:{ca:"Lliure",es:"Libre",en:"Free",eu:"Libre",ga:"Saor"},
   wk_ocupat:{ca:"Ocupat",es:"Ocupado",en:"Booked",eu:"Beteta",ga:"Áirithe"},
   wk_propose:{ca:"Proposa-la",es:"Propónla",en:"Propose it",eu:"Proposatu",ga:"Mol é"},
+  wk_esdeveniment:{ca:"Esdeveniment",es:"Evento",en:"Event",eu:"Ekitaldia",ga:"Imeacht"},
 
   /* ---- INICI ---- */
   h_eyebrow:{ca:"Projecte rural · Castellar del Riu",es:"Proyecto rural · Castellar del Riu",en:"Rural project · Castellar del Riu",eu:"Landa proiektua · Castellar del Riu",ga:"Tionscadal tuaithe · Castellar del Riu"},

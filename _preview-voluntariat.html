@@ -44,18 +44,15 @@
   .numbered.center .n{display:block;margin-bottom:2px}
   .numbered.center .it-bg{position:static;transform:none;flex:none;width:58px;height:58px;opacity:.5;overflow:visible}
   @media(max-width:760px){.numbered.center .it-bg{width:50px;height:50px}}
-  .nav-left{display:flex;align-items:center;gap:16px}
-  .nav-status{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--sage-d);white-space:nowrap}
-  .nav-status .d{width:9px;height:9px;border-radius:50%;background:#4c8a3f;box-shadow:0 0 0 3px rgba(76,138,63,.2);flex:none;animation:volpulse 2.6s ease-in-out infinite}
-  @media(max-width:1100px){.nav-status .t{display:none}}
-  @media(max-width:560px){.nav-status{display:none}}
+  .hero-status{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-radius:40px;padding:9px 17px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:#fff;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+  .hero-status .d{width:9px;height:9px;border-radius:50%;background:#6ed06a;box-shadow:0 0 0 3px rgba(110,208,106,.28);flex:none;animation:volpulse 2.6s ease-in-out infinite}
 </style>
 </head>
 <body>
 <div class="pvbadge">PREVIEW — disseny proposat (català). En aplicar-lo anirà en CA·ES·EN·EU·GA</div>
 
 <header class="nav"><div class="wrap row">
-  <div class="nav-left"><a class="brand" href="#"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a><span class="nav-status"><span class="d"></span><span class="t">Disponible per a voluntariat</span></span></div>
+  <a class="brand" href="#"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a>
   <div class="nav-collapse"><nav class="links">
     <a href="#">Inici</a><a href="#">El projecte</a><a href="#">El lloc</a><a href="#">Activitats</a><a href="#" class="on">Voluntariat</a><a href="#">Contacte</a>
   </nav>
@@ -69,6 +66,7 @@
     <p class="eyebrow">Voluntariat</p>
     <h1>Vine a donar un <em>cop de mà</em></h1>
     <p class="kicker">Treballa la terra, aprèn oficis i fes pinya amb la gent de la casa.</p>
+    <div style="margin-top:24px"><span class="hero-status"><span class="d"></span><span>Disponible per a voluntariat</span></span></div>
   </div>
 </section>
 

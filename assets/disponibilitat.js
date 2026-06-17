@@ -7,11 +7,11 @@ const DISPONIBILITAT = {
     { ini:"2026-07-03", fi:"2026-07-05", estat:"lliure" },
     { ini:"2026-07-10", fi:"2026-07-12", estat:"ocupat" },
     { ini:"2026-07-17", fi:"2026-07-19", estat:"lliure" },
-    { ini:"2026-07-24", fi:"2026-07-26", estat:"ocupat", nota:"Festivalet" },
+    { ini:"2026-07-24", fi:"2026-07-26", estat:"esdeveniment", nota:"Festivalet" },
     { ini:"2026-07-31", fi:"2026-08-02", estat:"ocupat" },
     { ini:"2026-08-07", fi:"2026-08-09", estat:"ocupat" },
     { ini:"2026-08-14", fi:"2026-08-16", estat:"lliure" },
-    { ini:"2026-08-21", fi:"2026-08-23", estat:"lliure" },
+    { ini:"2026-08-17", fi:"2026-08-23", estat:"esdeveniment", nota:"Bioconstrucció" },
     { ini:"2026-08-28", fi:"2026-08-30", estat:"lliure" },
     { ini:"2026-09-04", fi:"2026-09-06", estat:"lliure" },
     { ini:"2026-09-11", fi:"2026-09-13", estat:"lliure" },
@@ -21,7 +21,7 @@ const DISPONIBILITAT = {
 };
 
 (function(){
-  var FALLBACK = { lliure:"Lliure", ocupat:"Ocupat", propose:"Proposa-la" };
+  var FALLBACK = { lliure:"Lliure", ocupat:"Ocupat", esdeveniment:"Esdeveniment", propose:"Proposa-la" };
   function lang(){ return document.documentElement.lang || "ca"; }
   function lab(k){ var e = window.I18N && window.I18N["wk_"+k]; return (e && (e[lang()] || e.ca)) || FALLBACK[k]; }
   function cap(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
@@ -89,6 +89,9 @@ const DISPONIBILITAT = {
       var info = map[key];
       if (info && info.estat==="lliure"){
         h += '<a class="cal2-day free" href="' + mailLink(info.range) + '" title="' + lab("propose") + ' · ' + info.range + '">' + day + '</a>';
+      } else if (info && info.estat==="esdeveniment"){
+        var et = info.nota || lab("esdeveniment");
+        h += '<div class="cal2-day event" title="' + et + ' · ' + info.range + '">' + day + (info.nota? '<span class="cal2-note">'+info.nota+'</span>' : '') + '</div>';
       } else if (info){
         var tt = lab("ocupat") + (info.nota? ' · '+info.nota : '');
         h += '<div class="cal2-day busy" title="' + tt + '">' + day + (info.nota? '<span class="cal2-note">'+info.nota+'</span>' : '') + '</div>';
@@ -97,7 +100,7 @@ const DISPONIBILITAT = {
       }
     }
     h += '</div>';
-    h += '<div class="cal2-legend"><span><i class="lg-free"></i>' + lab("lliure") + '</span><span><i class="lg-busy"></i>' + lab("ocupat") + '</span></div>';
+    h += '<div class="cal2-legend"><span><i class="lg-free"></i>' + lab("lliure") + '</span><span><i class="lg-event"></i>' + lab("esdeveniment") + '</span><span><i class="lg-busy"></i>' + lab("ocupat") + '</span></div>';
     h += '</div>';
     root.innerHTML = h;
 
