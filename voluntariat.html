@@ -38,6 +38,13 @@
   .infobox p{margin:0 0 12px;color:#3b3724;font-weight:300}.infobox p:last-child{margin:0}
   .infobox strong{font-weight:500;color:var(--ink)}
   @media(max-width:780px){.svc-grid{grid-template-columns:1fr 1fr}.svc:nth-child(3n){border-right:1px solid var(--line)}.svc:nth-child(2n){border-right:none}.svc:nth-child(5),.svc:nth-child(6){border-bottom:none}.twocol{grid-template-columns:1fr}.day{grid-template-columns:96px 1fr;gap:14px}}
+  .band-mark{position:absolute;left:-2%;bottom:0;height:88%;width:auto;opacity:.24;z-index:0;pointer-events:none;user-select:none}
+  @media(max-width:760px){.band-mark{height:auto;width:140%;left:-18%;bottom:-2%}}
+  .numbered.center .it{text-align:left;display:flex;align-items:center;gap:16px;padding:30px 30px}
+  .numbered.center .it-txt{flex:1;min-width:0}
+  .numbered.center .n{display:block;margin-bottom:2px}
+  .numbered.center .it-bg{position:static;transform:none;flex:none;width:58px;height:58px;opacity:.5;overflow:visible}
+  @media(max-width:760px){.numbered.center .it-bg{width:50px;height:50px}}
 </style>
 <script src="assets/immersive.js" defer></script>
 <script src="assets/i18n.js" defer></script>
@@ -64,6 +71,15 @@
     <p class="eyebrow reveal" data-i18n="v_hero_eye">Voluntariat</p>
     <h1 class="reveal d1" data-i18n="v_hero_t">Vine a donar un <em>cop de mà</em></h1>
     <p class="kicker reveal d2" data-i18n="v_hero_k">Treballa la terra, aprèn oficis i fes pinya amb la gent de la casa.</p>
+  </div>
+</section>
+
+<section class="sec tight" style="padding-top:64px">
+  <div class="wrap" style="max-width:700px">
+    <div class="vol-status reveal">
+      <span class="vol-dot"></span>
+      <div class="vol-txt"><strong data-i18n="v_status_t">Disponible per a voluntariat</strong><span data-i18n="v_status_p">Ara mateix acollim voluntàries i voluntaris.</span></div>
+    </div>
   </div>
 </section>
 
@@ -151,29 +167,20 @@
   </div>
 </section>
 
-<section class="sec tight">
-  <div class="wrap" style="max-width:700px">
-    <div class="vol-status reveal">
-      <span class="vol-dot"></span>
-      <div class="vol-txt"><strong data-i18n="v_status_t">Disponible per a voluntariat</strong><span data-i18n="v_status_p">Ara mateix acollim voluntàries i voluntaris. No mirem calendari: escriu-nos i ho parlem; et direm les dates.</span></div>
-    </div>
-  </div>
-</section>
-
 <section class="sec alt">
   <div class="wrap">
-    <p class="eyebrow reveal" style="text-align:center" data-i18n="v_how_eye">Com funciona</p>
-    <div class="sec-head center reveal d1"><h2 data-i18n="v_how_t">Del primer correu a la primera nit</h2></div>
+    <p class="eyebrow reveal" data-i18n="v_how_eye">Com funciona</p>
+    <div class="sec-head reveal d1"><h2 data-i18n="v_how_t">Del primer correu a la primera nit</h2></div>
     <div class="numbered center reveal d1" style="margin-top:32px">
-      <div class="it"><svg class="it-bg" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="100" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path pathLength="100" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><div class="n">01</div><h3 data-i18n="v_s1_t">Escriu-nos</h3><p data-i18n="v_s1_p">Conta'ns qui ets, què t'agradaria fer i quines dates tens al cap.</p></div>
-      <div class="it"><svg class="it-bg" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="100" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline pathLength="100" points="9 22 9 12 15 12 15 22"/></svg><div class="n">02</div><h3 data-i18n="v_s2_t">Vine</h3><p data-i18n="v_s2_p">T'ensenyem la casa, et presentem la gent i t'expliquem la feina dels primers dies.</p></div>
-      <div class="it"><svg class="it-bg" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="100" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><div class="n">03</div><h3 data-i18n="v_s3_t">Aprèn fent</h3><p data-i18n="v_s3_p">Treballem junts, cuinem junts i deixem el lloc una mica millor que com l'hem trobat.</p></div>
+      <div class="it"><div class="it-txt"><div class="n">01</div><h3 data-i18n="v_s1_t">Escriu-nos</h3><p data-i18n="v_s1_p">Conta'ns qui ets, què t'agradaria fer i quines dates tens al cap.</p></div><svg class="it-bg" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="100" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path pathLength="100" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+      <div class="it"><div class="it-txt"><div class="n">02</div><h3 data-i18n="v_s2_t">Vine</h3><p data-i18n="v_s2_p">T'ensenyem la casa, et presentem la gent i t'expliquem la feina dels primers dies.</p></div><svg class="it-bg" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="100" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline pathLength="100" points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="it"><div class="it-txt"><div class="n">03</div><h3 data-i18n="v_s3_t">Aprèn fent</h3><p data-i18n="v_s3_p">Treballem junts, cuinem junts i deixem el lloc una mica millor que com l'hem trobat.</p></div><svg class="it-bg" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="100" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
     </div>
   </div>
 </section>
 
 <div class="endcap">
-<section class="band"><div class="wrap reveal">
+<section class="band"><img class="band-mark" src="assets/logo-calniu-oliva.svg" alt="" aria-hidden="true"><div class="wrap reveal">
   <p class="eyebrow" data-i18n="v_band_eye">L'únic que falta ets tu</p>
   <h2 data-i18n="v_band_t">T'animes a venir?</h2>
   <p data-i18n="v_band_p">Espai sense alcohol ni fum, vida compartida i molt per aprendre. Quan ho hagis llegit tot, omple el formulari i ho parlem.</p>
@@ -182,15 +189,14 @@
 <footer><div class="wrap">
   <div class="foot-top center">
     <div class="brand">Cal Niu</div>
-    <p class="tag" data-i18n="foot_tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà. Natural · Local · Conscient.</p>
+    <p class="tag" data-i18n="foot_tag">Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà.</p>
     <div class="foot-contact">
       <a href="https://instagram.com/som.calniu" target="_blank" rel="noopener">Instagram · @som.calniu</a>
-      <a href="mailto:som.calniu@gmail.com">som.calniu@gmail.com</a>
+      <a href="https://wa.me/34617575495" target="_blank" rel="noopener">WhatsApp · +34 617 575 495</a>
     </div>
   </div>
   <div class="foot-bottom"><span data-i18n="foot_rights">© 2026 Cal Niu · Fet amb cura al Berguedà</span><span data-i18n="foot_loc">Castellar del Riu · Berguedà</span></div>
 </div>
-  <div class="foot-logo"><img src="assets/logo-calniu-oliva.svg" alt="Cal Niu"></div>
 </footer>
 </div>
 
