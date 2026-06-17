@@ -37,20 +37,25 @@
   .pvbadge{position:fixed;top:0;left:0;right:0;background:var(--clay-d);color:#fff;text-align:center;font:500 13px 'Jost',sans-serif;letter-spacing:.1em;padding:7px;z-index:99}
   body{padding-top:32px}
   @media(max-width:780px){.svc-grid{grid-template-columns:1fr 1fr}.svc:nth-child(3n){border-right:1px solid var(--line)}.svc:nth-child(2n){border-right:none}.svc:nth-child(5),.svc:nth-child(6){border-bottom:none}.twocol{grid-template-columns:1fr}.day{grid-template-columns:96px 1fr;gap:14px}}
-  .band-mark{position:absolute;left:-2%;bottom:0;height:88%;width:auto;opacity:.24;z-index:0;pointer-events:none;user-select:none}
+  .band-mark{position:absolute;left:-2%;bottom:0;height:88%;width:auto;opacity:.10;z-index:0;pointer-events:none;user-select:none}
   @media(max-width:760px){.band-mark{height:auto;width:140%;left:-18%;bottom:-2%}}
   .numbered.center .it{text-align:left;display:flex;align-items:center;gap:16px;padding:30px 30px}
   .numbered.center .it-txt{flex:1;min-width:0}
   .numbered.center .n{display:block;margin-bottom:2px}
   .numbered.center .it-bg{position:static;transform:none;flex:none;width:58px;height:58px;opacity:.5;overflow:visible}
   @media(max-width:760px){.numbered.center .it-bg{width:50px;height:50px}}
+  .nav-left{display:flex;align-items:center;gap:16px}
+  .nav-status{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--sage-d);white-space:nowrap}
+  .nav-status .d{width:9px;height:9px;border-radius:50%;background:#4c8a3f;box-shadow:0 0 0 3px rgba(76,138,63,.2);flex:none;animation:volpulse 2.6s ease-in-out infinite}
+  @media(max-width:1100px){.nav-status .t{display:none}}
+  @media(max-width:560px){.nav-status{display:none}}
 </style>
 </head>
 <body>
 <div class="pvbadge">PREVIEW — disseny proposat (català). En aplicar-lo anirà en CA·ES·EN·EU·GA</div>
 
 <header class="nav"><div class="wrap row">
-  <a class="brand" href="#"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a>
+  <div class="nav-left"><a class="brand" href="#"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a><span class="nav-status"><span class="d"></span><span class="t">Disponible per a voluntariat</span></span></div>
   <div class="nav-collapse"><nav class="links">
     <a href="#">Inici</a><a href="#">El projecte</a><a href="#">El lloc</a><a href="#">Activitats</a><a href="#" class="on">Voluntariat</a><a href="#">Contacte</a>
   </nav>
@@ -67,14 +72,6 @@
   </div>
 </section>
 
-<section class="sec tight" style="padding-top:64px">
-  <div class="wrap" style="max-width:700px">
-    <div class="vol-status">
-      <span class="vol-dot"></span>
-      <div class="vol-txt"><strong>Disponible per a voluntariat</strong><span>Ara mateix acollim voluntàries i voluntaris.</span></div>
-    </div>
-  </div>
-</section>
 <section class="sec">
   <div class="wrap split">
     <div>
@@ -123,7 +120,6 @@
       <div class="day"><div class="t">20.00</div><div class="a">Sopar.</div></div>
       <div class="day"><div class="t">21.00</div><div class="a">Es tanca la casa.</div></div>
     </div>
-    <p class="daynote">En tancar (21.00 h) ja no es pot dutxar, fer servir la rentadora ni entrar al bany de dalt. A fora tens el bany sec disponible.</p>
   </div>
 </section>
 
@@ -173,7 +169,7 @@
 </section>
 
 <div class="endcap">
-<section class="band"><img class="band-mark" src="assets/logo-calniu-oliva.svg" alt="" aria-hidden="true"><div class="wrap">
+<section class="band"><img class="band-mark" src="assets/logo-calniu-blanc.svg" alt="" aria-hidden="true"><div class="wrap">
   <p class="eyebrow">L'únic que falta ets tu</p>
   <h2>T'animes a venir?</h2>
   <p>Espai sense alcohol ni fum, vida compartida i molt per aprendre. Quan ho hagis llegit tot, omple el formulari i parlem.</p>

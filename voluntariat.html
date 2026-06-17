@@ -38,13 +38,18 @@
   .infobox p{margin:0 0 12px;color:#3b3724;font-weight:300}.infobox p:last-child{margin:0}
   .infobox strong{font-weight:500;color:var(--ink)}
   @media(max-width:780px){.svc-grid{grid-template-columns:1fr 1fr}.svc:nth-child(3n){border-right:1px solid var(--line)}.svc:nth-child(2n){border-right:none}.svc:nth-child(5),.svc:nth-child(6){border-bottom:none}.twocol{grid-template-columns:1fr}.day{grid-template-columns:96px 1fr;gap:14px}}
-  .band-mark{position:absolute;left:-2%;bottom:0;height:88%;width:auto;opacity:.24;z-index:0;pointer-events:none;user-select:none}
+  .band-mark{position:absolute;left:-2%;bottom:0;height:88%;width:auto;opacity:.10;z-index:0;pointer-events:none;user-select:none}
   @media(max-width:760px){.band-mark{height:auto;width:140%;left:-18%;bottom:-2%}}
   .numbered.center .it{text-align:left;display:flex;align-items:center;gap:16px;padding:30px 30px}
   .numbered.center .it-txt{flex:1;min-width:0}
   .numbered.center .n{display:block;margin-bottom:2px}
   .numbered.center .it-bg{position:static;transform:none;flex:none;width:58px;height:58px;opacity:.5;overflow:visible}
   @media(max-width:760px){.numbered.center .it-bg{width:50px;height:50px}}
+  .nav-left{display:flex;align-items:center;gap:16px}
+  .nav-status{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--sage-d);white-space:nowrap}
+  .nav-status .d{width:9px;height:9px;border-radius:50%;background:#4c8a3f;box-shadow:0 0 0 3px rgba(76,138,63,.2);flex:none;animation:volpulse 2.6s ease-in-out infinite}
+  @media(max-width:1100px){.nav-status .t{display:none}}
+  @media(max-width:560px){.nav-status{display:none}}
 </style>
 <script src="assets/immersive.js" defer></script>
 <script src="assets/i18n.js" defer></script>
@@ -55,7 +60,7 @@
 <div class="grain"></div>
 
 <header class="nav"><div class="wrap row">
-  <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a>
+  <div class="nav-left"><a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-calniu-negre.svg" alt="Cal Niu"><span class="brand-name">Cal Niu</span></a><span class="nav-status"><span class="d"></span><span class="t" data-i18n="v_status_t">Disponible per a voluntariat</span></span></div>
   <div class="nav-collapse"><nav class="links">
     <a href="index.html" data-i18n="nav_home">Inici</a><a href="projecte.html" data-i18n="nav_about">El projecte</a><a href="historia.html" data-i18n="nav_lloc">El lloc</a>
     <a href="activitats.html" data-i18n="nav_act">Activitats</a><a href="voluntariat.html" class="on" data-i18n="nav_vol">Voluntariat</a><a href="participa.html" data-i18n="nav_participa">Participa</a>
@@ -71,15 +76,6 @@
     <p class="eyebrow reveal" data-i18n="v_hero_eye">Voluntariat</p>
     <h1 class="reveal d1" data-i18n="v_hero_t">Vine a donar un <em>cop de mà</em></h1>
     <p class="kicker reveal d2" data-i18n="v_hero_k">Treballa la terra, aprèn oficis i fes pinya amb la gent de la casa.</p>
-  </div>
-</section>
-
-<section class="sec tight" style="padding-top:64px">
-  <div class="wrap" style="max-width:700px">
-    <div class="vol-status reveal">
-      <span class="vol-dot"></span>
-      <div class="vol-txt"><strong data-i18n="v_status_t">Disponible per a voluntariat</strong><span data-i18n="v_status_p">Ara mateix acollim voluntàries i voluntaris.</span></div>
-    </div>
   </div>
 </section>
 
@@ -131,7 +127,6 @@
       <div class="day"><div class="t">20.00</div><div class="a" data-i18n="vg_day_5">Sopar.</div></div>
       <div class="day"><div class="t">21.00</div><div class="a" data-i18n="vg_day_6">Es tanca la casa.</div></div>
     </div>
-    <p class="daynote reveal" data-i18n="vg_day_note">En tancar (21.00 h) ja no es pot dutxar, fer servir la rentadora ni entrar al bany de dalt. A fora tens el bany sec disponible.</p>
   </div>
 </section>
 
@@ -180,7 +175,7 @@
 </section>
 
 <div class="endcap">
-<section class="band"><img class="band-mark" src="assets/logo-calniu-oliva.svg" alt="" aria-hidden="true"><div class="wrap reveal">
+<section class="band"><img class="band-mark" src="assets/logo-calniu-blanc.svg" alt="" aria-hidden="true"><div class="wrap reveal">
   <p class="eyebrow" data-i18n="v_band_eye">L'únic que falta ets tu</p>
   <h2 data-i18n="v_band_t">T'animes a venir?</h2>
   <p data-i18n="v_band_p">Espai sense alcohol ni fum, vida compartida i molt per aprendre. Quan ho hagis llegit tot, omple el formulari i ho parlem.</p>
