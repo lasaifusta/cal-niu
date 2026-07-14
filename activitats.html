@@ -12,6 +12,7 @@
 <script src="assets/immersive.js" defer></script>
 <script src="assets/i18n.js" defer></script>
 <script src="assets/disponibilitat.js" defer></script>
+<script src="assets/activitats.js" defer></script>
 </head>
 <body>
 
@@ -47,18 +48,9 @@
   </div>
 </section>
 
-<section class="sec" id="proxima">
-  <div class="wrap split">
-    <div class="next-poster reveal-zoom"><img loading="lazy" src="imagenes/web/cartell-sant-joan.jpg" alt="Cartell de Sant Joan a Cal Niu"></div>
-    <div>
-      <p class="eyebrow reveal" data-i18n="a_next_eye">Pròxima activitat</p>
-      <h2 class="reveal d1" data-i18n="a_next_t">Sant Joan a Cal Niu</h2>
-      <div class="rule reveal d1"></div>
-      <p class="reveal d2" data-i18n="a_next_p">La revetlla més màgica de l'any: foguera, música i sopar compartit sota les estrelles, vora la masia. Una nit per celebrar l'arribada de l'estiu, oberta a totes les edats i <strong>sense alcohol ni fum</strong>.</p>
-      <p class="reveal d3" style="color:var(--mute)" data-i18n="a_next_meta">Nit de Sant Joan · Castellar del Riu</p>
-      <a class="btn-pill reveal d4" href="participa.html" style="margin-top:10px" data-i18n="a_next_btn">Vull venir</a>
-    </div>
-  </div>
+<!-- Pròximes activitats: es genera sol des d'assets/activitats.js (ordena per data i amaga les passades) -->
+<section class="sec" id="proxima" hidden>
+  <div class="wrap" id="proxima-root"></div>
 </section>
 
 <section class="sec tight">

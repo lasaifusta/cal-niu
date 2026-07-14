@@ -6,15 +6,15 @@ const DISPONIBILITAT = {
     { ini:"2026-06-26", fi:"2026-06-28", estat:"ocupat" },
     { ini:"2026-07-03", fi:"2026-07-05", estat:"lliure" },
     { ini:"2026-07-10", fi:"2026-07-12", estat:"ocupat" },
-    { ini:"2026-07-17", fi:"2026-07-19", estat:"lliure" },
+    { ini:"2026-07-17", fi:"2026-07-19", estat:"ocupat" },
     { ini:"2026-07-24", fi:"2026-07-26", estat:"esdeveniment", nota:"Festivalet" },
     { ini:"2026-07-31", fi:"2026-08-02", estat:"ocupat" },
     { ini:"2026-08-07", fi:"2026-08-09", estat:"ocupat" },
     { ini:"2026-08-14", fi:"2026-08-16", estat:"lliure" },
-    { ini:"2026-08-17", fi:"2026-08-23", estat:"esdeveniment", nota:"Bioconstrucció", etiq:"Bio<br>construcció" },
-    { ini:"2026-08-28", fi:"2026-08-30", estat:"lliure" },
+    { ini:"2026-08-21", fi:"2026-08-23", estat:"esdeveniment", nota:"Bioconstrucció", etiq:"Bio<br>construcció" },
+    { ini:"2026-08-28", fi:"2026-08-30", estat:"esdeveniment", nota:"Hügelkultur", etiq:"Hügel<br>kultur" },
     { ini:"2026-09-04", fi:"2026-09-06", estat:"lliure" },
-    { ini:"2026-09-11", fi:"2026-09-13", estat:"lliure" },
+    { ini:"2026-09-11", fi:"2026-09-13", estat:"ocupat", nota:"No disponible" },
     { ini:"2026-09-18", fi:"2026-09-20", estat:"lliure" },
     { ini:"2026-09-25", fi:"2026-09-27", estat:"lliure" }
   ]
@@ -67,7 +67,14 @@ const DISPONIBILITAT = {
     var map = buildMap(), bd = bounds();
     var minY = +bd.min.slice(0,4), minM = +bd.min.slice(5,7)-1;
     var maxY = +bd.max.slice(0,4), maxM = +bd.max.slice(5,7)-1;
-    if (!window._calView) window._calView = { y:minY, m:minM };
+    if (!window._calView){
+      var now = new Date();
+      var nowIdx = mIndex(now.getFullYear(), now.getMonth());
+      var loIdx = mIndex(minY, minM), hiIdx = mIndex(maxY, maxM);
+      if (nowIdx < loIdx) window._calView = { y:minY, m:minM };          // abans del primer taller → primer mes
+      else if (nowIdx > hiIdx) window._calView = { y:maxY, m:maxM };     // després de l'últim → últim mes
+      else window._calView = { y:now.getFullYear(), m:now.getMonth() };  // mes vigent
+    }
     var v = window._calView;
     var cur = mIndex(v.y, v.m), lo = mIndex(minY, minM), hi = mIndex(maxY, maxM);
 

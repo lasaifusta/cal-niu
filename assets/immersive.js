@@ -142,8 +142,8 @@
       document.body.classList.remove("preload");
       setTimeout(function () { if (loader && loader.parentNode) loader.parentNode.removeChild(loader); }, 900);
     }
-    // fixed, pleasant duration — NOT tied to images finishing loading
-    setTimeout(finish, 2300);
+    // fixed, pleasant duration — deixa que el logo animat es dibuixi (2.2s) i reposi un instant
+    setTimeout(finish, 2600);
   }
 
   function init() {

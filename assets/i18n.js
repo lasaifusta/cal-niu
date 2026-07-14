@@ -261,6 +261,7 @@ function setLang(lang){
   document.querySelectorAll(".lang button").forEach(function(b){ b.classList.toggle("on", b.dataset.lang === lang); });
   try { localStorage.setItem("calniu_lang", lang); } catch(e){}
   if (typeof window.renderDisponibilitat === "function") window.renderDisponibilitat();
+  if (typeof window.renderProximes === "function") window.renderProximes();
 }
 window.I18N = T; // perquè altres scripts (disponibilitat) puguin llegir wk_* via window.I18N[lang][k]
 

@@ -607,8 +607,20 @@ h1.reveal.in,h2.reveal.in,.reveal.in h1,.reveal.in h2,.chapter .text.reveal.in h
 @media(max-width:560px){.cal2-day{font-size:13px;border-radius:8px}.cal2-note{display:none}}
 
 /* ===== Pròxima activitat (cartell destacat) ===== */
+.next-poster{display:block}
 .next-poster img{width:100%;height:auto;border-radius:14px;box-shadow:0 24px 60px -28px rgba(38,36,31,.6);display:block}
 @media(max-width:860px){.next-poster{max-width:340px;margin:0 auto}}
+
+/* ===== Properes activitats (llista ordenada) ===== */
+.proxlist{margin-top:72px;padding-top:44px;border-top:1px solid var(--line)}
+.proxlist-h{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--clay-d);font-weight:500;text-align:center;margin-bottom:30px}
+.proxlist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,240px));gap:34px;justify-content:center}
+.proxcard{display:block;color:inherit}
+.proxcard-im{border-radius:12px;overflow:hidden;box-shadow:0 20px 44px -26px rgba(38,36,31,.55)}
+.proxcard-im img{width:100%;height:auto;display:block;transition:transform .6s var(--ease)}
+.proxcard:hover .proxcard-im img{transform:scale(1.04)}
+.proxcard-t{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:19px;line-height:1.15;color:var(--ink);margin-top:16px}
+.proxcard-m{color:var(--mute);font-size:14px;font-weight:300;margin-top:4px}
 
 /* ===== Estat verd de voluntariat ===== */
 .vol-status{display:flex;align-items:center;gap:18px;background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:22px 26px}

@@ -1,0 +1,72 @@
+<svg width="500" height="490" viewBox="0 0 500 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg { overflow: visible; }
+@keyframes kf_Ellipse_2_transform_0 {
+  0% {
+    transform: translateX(231.808px) translateY(252.552px) translate(7.351px, 7.351px) scaleX(0) scaleY(0) translate(-7.351px, -7.351px);
+  }
+  54.17% {
+    animation-timing-function: linear(0, 0.0985, 0.342, 0.6483, 0.9442, 1.1767, 1.3179, 1.364, 1.3302, 1.2427, 1.1314, 1.0233, 0.9377, 0.8853, 0.8675, 0.8791, 0.9105, 0.9509, 0.9904, 1.0219, 1.0414, 1.0482, 1.0443, 1.033, 1.0183, 1.0039, 0.9923, 0.9851, 0.9825, 0.9838, 0.9878, 0.9932, 0.9984, 1.0027, 1.0054, 1.0064, 1.0059, 1.0045, 1.0025, 1.0006, 0.9991, 0.9981, 0.9977, 0.9978, 0.9983, 0.9991, 0.9998, 1.0003, 1.0007, 1.0008, 1.0008);
+    transform: translateX(231.808px) translateY(252.552px) translate(7.351px, 7.351px) scaleX(0) scaleY(0) translate(-7.351px, -7.351px);
+  }
+  58.33% {
+    transform: translateX(231.808px) translateY(252.552px) translate(7.351px, 7.351px) scaleX(1) scaleY(1) translate(-7.351px, -7.351px);
+  }
+  100% {
+    transform: translateX(231.808px) translateY(252.552px) translate(7.351px, 7.351px) scaleX(1) scaleY(1) translate(-7.351px, -7.351px);
+  }
+}
+@keyframes kf_Ellipse_2_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  54.16% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  54.17% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Ellipse_2 {
+  transform-origin: 0 0;
+  animation:
+    kf_Ellipse_2_transform_0 2.2s linear forwards,
+    kf_Ellipse_2_opacity_0 2.2s linear forwards;
+}
+@keyframes kf_Vector_32_path-trim_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.55, 0, 0.45, 1);
+    stroke-dasharray: 0 1;
+    visibility: hidden;
+  }
+  97.222% {
+    stroke-dasharray: 1 1;
+    visibility: visible;
+  }
+  100% {
+    stroke-dasharray: 1 1;
+    visibility: visible;
+  }
+}
+#Vector_32 {
+  stroke-dashoffset: 0;
+  animation: kf_Vector_32_path-trim_0 2.2s linear forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  #Ellipse_2 { animation: none; opacity: 1; }
+  #Vector_32 { animation: none; visibility: visible; stroke-dasharray: 1 1; }
+}
+</style>
+<g id="Frame_2">
+<g id="Group_8" transform="translate(27.8233 27.3127)">
+<ellipse id="Ellipse_2" transform="translate(231.808 252.552)" cx="7.3511" cy="7.3511" rx="7.3511" ry="7.3511" fill="#FFFDF9"/>
+<path id="Vector_32" d="M165.396 113.074C184.001 103.505 183.164 59.68 137.653 61.2281C67.0471 63.6297 57.1474 167.271 92.1209 201.371C119.231 227.803 148.285 216.685 174.717 184.153C201.15 151.621 208.995 120.979 249.624 125.169C211.945 117.031 168.131 180.426 203.484 209.535C226.562 228.538 259.64 200.272 259.049 169.546C258.507 141.351 251.205 131.033 249.624 126.74C260.124 155.239 278.653 215.924 310.101 218.635C349.411 222.024 337.376 22.9456 283.249 50.8936C205.588 90.9931 407.503 168.274 386.566 287.023C370.388 331.961 333.855 269.147 327.981 250.169C334.759 270.276 340.723 314.285 321.203 318.623C301.684 322.96 287.767 272.309 283.249 256.269C296.493 294.852 309.817 379.083 283.249 379.083C256.681 379.083 245.972 308.908 242.584 290.157C248.909 338.956 210.441 433.09 165.396 409.225C97.8162 373.423 248.61 299.31 190.694 256.269C141.84 219.964 105.882 302.529 103.849 345.68C110.355 240.492 36.2645 235.666 47.6469 154.139C61.6405 101.368 120.138 21.3618 229.637 27.5326C339.136 33.7034 392.676 104.927 399.361 198.069C406.046 291.211 348.093 481.442 153.174 409.225C-42.0538 336.895 6.691 126.74 58.4655 68.6071C119.114 0.510472 243.278 -55.5257 393.074 98.6757C524.142 233.598 377.451 409.418 201.29 433.723C49.5457 454.659 -45.2993 254.334 22.0017 164.159C73.5343 95.1119 101.079 7.25067 229.637 3.13681C358.195 -0.977053 447.636 141.459 417.467 269.846C379.967 429.429 300.758 447.961 182.999 425.334C65.2399 402.708 14.8651 280.176 49.5458 145.948" pathLength="1" stroke="#FFFDF9" stroke-width="16.5474" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.9077 1"/>
+</g>
+</g>
+</svg>
