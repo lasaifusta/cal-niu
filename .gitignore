@@ -41,3 +41,11 @@ imagenes/web/masia-actual-hd-vertical.jpg
 /x-*.png
 /y-*.png
 /z-*.png
+
+# Carpeta per compartir al Drive (no publicar al web)
+_compartir-drive/
+
+# Material grafic pesat: viu al espill de Drive, no al repo
+/IG_Bioconstruccio_*.png
+/La Era*.jpeg
+/Tallereseventos/
