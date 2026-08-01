@@ -14,6 +14,7 @@ const T = {
   foot_tag:{ca:"Una antiga rectoria que torna a viure a Castellar del Riu, Berguedà.",es:"Una antigua rectoría que vuelve a vivir en Castellar del Riu, Berguedà.",en:"An old rectory coming back to life in Castellar del Riu, Berguedà.",eu:"Castellar del Riun (Berguedà) berriz biziberritzen ari den antzinako abadetxe bat.",ga:"Seanteach paróiste ag teacht ar ais chun beatha i Castellar del Riu, Berguedà."},
   foot_rights:{ca:"© 2026 Cal Niu · Fet amb cura al Berguedà",es:"© 2026 Cal Niu · Hecho con cariño en el Berguedà",en:"© 2026 Cal Niu · Made with care in the Berguedà",eu:"© 2026 Cal Niu · Berguedàn arduraz egina",ga:"© 2026 Cal Niu · Déanta le cúram sa Berguedà"},
   foot_loc:{ca:"Castellar del Riu · Berguedà",es:"Castellar del Riu · Berguedà",en:"Castellar del Riu · Berguedà",eu:"Castellar del Riu · Berguedà",ga:"Castellar del Riu · Berguedà"},
+  foot_credit:{ca:"Disseny i desenvolupament: <a href=\"https://enekodevs.com\">EnekoDevs</a>",es:"Diseño y desarrollo: <a href=\"https://enekodevs.com\">EnekoDevs</a>",en:"Design and development: <a href=\"https://enekodevs.com\">EnekoDevs</a>",eu:"Diseinua eta garapena: <a href=\"https://enekodevs.com\">EnekoDevs</a>",ga:"Dearadh agus forbairt: <a href=\"https://enekodevs.com\">EnekoDevs</a>"},
 
   /* ---- calendari de disponibilitat (tallers) ---- */
   wk_lliure:{ca:"Lliure",es:"Libre",en:"Free",eu:"Libre",ga:"Saor"},
